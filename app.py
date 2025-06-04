@@ -184,7 +184,7 @@ else:
 # ============
 txt_bytes = generar_txt(preguntas)
 st.download_button(
-    label="Descargar TXT de la Pregunta",
+    label="Descarga documento de la Preguntas editadas",
     data=txt_bytes,
     file_name=f"preguntas.txt",
     mime="text/plain"
