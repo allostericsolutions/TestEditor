@@ -1,51 +1,64 @@
 # app.py
 import streamlit as st
 import pandas as pd
+import unicodedata
 from fpdf import FPDF
 from utils import cargar_json, guardar_json
+
+def limpiar_texto(text):
+    """
+    Normaliza el texto y elimina los caracteres que no se puedan codificar en Latin-1.
+    """
+    if not text:
+        return ""
+    # Normaliza el texto (NFKD) y elimina los caracteres que no sean codificables en Latin-1.
+    return unicodedata.normalize("NFKD", text).encode("latin1", errors="ignore").decode("latin1")
 
 def generar_pdf(pregunta):
     """
     Genera un PDF con la información de la pregunta.
-    Se usa Latin-1 para la codificación, reemplazando caracteres problemáticos.
+    Se aplican transformaciones para que todo el texto pueda codificarse en Latin-1.
     """
     pdf = FPDF()
     pdf.add_page()
     pdf.set_font("Arial", size=12)
 
     # Título
-    pdf.cell(200, 10, txt="Pregunta Editada", ln=True, align='C')
+    titulo = "Pregunta Editada"
+    pdf.cell(200, 10, txt=limpiar_texto(titulo), ln=True, align='C')
     pdf.ln(10)
 
     # Enunciado
-    enunciado = pregunta.get("enunciado", "").strip() or "<Vacío>"
+    enunciado = limpiar_texto(pregunta.get("enunciado", "").strip() or "<Vacío>")
     pdf.multi_cell(0, 10, txt=f"Enunciado: {enunciado}")
     pdf.ln(5)
 
     # Opciones
     pdf.cell(0, 10, txt="Opciones:", ln=True)
     letras = "abcdefghijklmnopqrstuvwxyz"
-    correct_answers = [r.strip() for r in pregunta.get("respuesta_correcta", [])]
+    # Se limpian las respuestas correctas para compararlas de forma segura
+    correct_answers = [limpiar_texto(r.strip()) for r in pregunta.get("respuesta_correcta", [])]
     if pregunta.get("opciones"):
-        for idx, opcion in enumerate(pregunta["opciones"]):
+        for idx, opc in enumerate(pregunta["opciones"]):
+            opcion = limpiar_texto(opc)
             letra = letras[idx] if idx < len(letras) else f"{idx+1}"
-            marker = " ✅" if opcion.strip() in correct_answers else ""
+            marker = " ✅" if opcion in correct_answers else ""
             pdf.multi_cell(0, 10, txt=f"{letra}) {opcion}{marker}")
     else:
         pdf.cell(0, 10, txt="- <Vacío>", ln=True)
     pdf.ln(5)
 
     # Concepto a Estudiar
-    concepto = pregunta.get("concept_to_study", "").strip() or "<Vacío>"
+    concepto = limpiar_texto(pregunta.get("concept_to_study", "").strip() or "<Vacío>")
     pdf.multi_cell(0, 10, txt=f"Concepto a Estudiar: {concepto}")
     pdf.ln(5)
 
     # Explicación OpenAI
-    explicacion = pregunta.get("explicacion_openai", "").strip() or "<Vacío>"
+    explicacion = limpiar_texto(pregunta.get("explicacion_openai", "").strip() or "<Vacío>")
     pdf.multi_cell(0, 10, txt=f"Explicación OpenAI: {explicacion}")
 
-    # Generar los bytes del PDF usando Latin-1 y reemplazando caracteres que no se puedan codificar
-    pdf_bytes = pdf.output(dest="S").encode("latin-1", errors="replace")
+    # Generar los bytes del PDF (ahora ya se garantiza que el contenido sea Latin-1)
+    pdf_bytes = pdf.output(dest="S").encode("latin1")
     return pdf_bytes
 
 # Mostrar el logo de la empresa en la barra lateral
@@ -61,7 +74,7 @@ if "edit_mode" not in st.session_state:
     st.session_state.edit_mode = False
 
 # ============
-# Barra lateral: Navegación y lista de preguntas
+# Barra lateral: Navegación e índice
 # ============
 st.sidebar.subheader("Navegación de Preguntas")
 lista_indices = list(range(1, len(preguntas) + 1))
@@ -135,7 +148,7 @@ else:
     st.write("**Opciones:**")
     if current_question["opciones"]:
         letras = "abcdefghijklmnopqrstuvwxyz"
-        correct_answers = [r.strip() for r in current_question.get("respuesta_correcta", [])]
+        correct_answers = [op.strip() for op in current_question.get("respuesta_correcta", [])]
         for idx, opcion in enumerate(current_question["opciones"]):
             letra = letras[idx] if idx < len(letras) else f"{idx+1}"
             marker = " ✅" if opcion.strip() in correct_answers else ""
