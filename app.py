@@ -6,6 +6,57 @@ import json
 from utils import cargar_json, guardar_json
 
 # ============
+# Autenticación
+# ============
+
+# Define las credenciales directamente en el código 
+USUARIOS = {
+    "marievapaula@gmail.com": "vascular33",
+    "ciclosporina2@hotmail.com": "vascular33",
+}
+
+def check_password():
+    """
+    Retorna `True` si el usuario ingresó la contraseña correcta.
+    """
+
+    def password_entered():
+        """Valida la contraseña."""
+        if (
+            st.session_state["username"] in USUARIOS
+            and st.session_state["password"]
+            == USUARIOS[st.session_state["username"]]
+        ):
+            st.session_state["password_correct"] = True
+            del st.session_state["password"]  # no almacena la contraseña
+            del st.session_state["username"]
+        else:
+            st.session_state["password_correct"] = False
+
+    if "password_correct" not in st.session_state:
+        st.session_state["password_correct"] = False
+
+    if not st.session_state["password_correct"]:
+        # Mostrar formulario de inicio de sesión
+        with st.form("login"):
+            st.text_input("Correo", key="username")
+            st.text_input(
+                "Contraseña", type="password", key="password"
+            )
+            st.form_submit_button("Ingresar", on_click=password_entered)
+
+        if st.session_state["password_correct"]:
+            # Borrar formulario de inicio de sesión
+            st.experimental_rerun()
+        else:
+            st.error("😕 Correo/contraseña incorrectos")
+
+        # Detener la ejecución si la contraseña no es correcta
+        return False
+    else:
+        return True
+
+# ============
 # Funciones Utilitarias
 # ============
 
@@ -87,6 +138,9 @@ def generar_txt(preguntas):  # Recibe la lista de preguntas completa
 # ============
 # Interfaz Streamlit
 # ============
+
+if not check_password():
+    st.stop()  # No ejecutar el resto de la app si la contraseña es incorrecta
 
 # Mostrar el logo de la empresa en la barra lateral
 st.sidebar.image("assets/logo empresa.PNG", width=200)
@@ -224,8 +278,9 @@ if st.button("Agregar Nueva Pregunta"):
     st.session_state.edit_mode = True  # Activar la edición de inmediato
     st.info("Nueva pregunta añadida. Edítala a continuación.")
 
+# Eliminar el botón para guardar todas las preguntas
 # ============
 # Botón para guardar todas las preguntas en el archivo JSON
 # ============
-if st.button("Guardar Todas las Preguntas"):
-    guardar_json(preguntas)
+# if st.button("Guardar Todas las Preguntas"):
+#    guardar_json(preguntas)
