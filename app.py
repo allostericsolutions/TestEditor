@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import unicodedata
 import json
-from utils import cargar_json, generar_txt # Importa generar_txt desde utils
+from utils import cargar_json, generar_txt
 
 # ============
 # Autenticación
@@ -106,6 +106,8 @@ current_question = preguntas[st.session_state.indice]
 col1, col2, col3, col4 = st.columns(4)
 with col1:
     if st.button("Previo"):
+        # Guardar la pregunta actual en el estado de la sesión ANTES de cambiar el índice
+        st.session_state.preguntas[st.session_state.indice] = current_question
         st.session_state.indice = max(0, st.session_state.indice - 1)
 with col2:
     if st.button("Editar"):
@@ -115,10 +117,14 @@ with col3:
         if current_question["enunciado"].strip() == "":
             st.error("El enunciado no puede estar vacío.")
         else:
+            # Guardar la pregunta actual en el estado de la sesión ANTES de salir del modo edición
+            st.session_state.preguntas[st.session_state.indice] = current_question
             st.success("Cambios preparados. Descarga el TXT para guardar la pregunta.")
         st.session_state.edit_mode = False
 with col4:
     if st.button("Siguiente"):
+        # Guardar la pregunta actual en el estado de la sesión ANTES de cambiar el índice
+        st.session_state.preguntas[st.session_state.indice] = current_question
         st.session_state.indice = min(len(preguntas) - 1, st.session_state.indice + 1)
 
 # ============
@@ -145,8 +151,10 @@ if st.session_state.edit_mode:
             current_question["explicacion_openai"] = explicacion.strip()
             preguntas[st.session_state.indice] = current_question
 
-            st.success("Cambios aplicados (solo en memoria).")  # Mensaje de éxito
+            st.success("Cambios aplicados (solo en memoria).")
             st.session_state.edit_mode = False
+            # Guardar la pregunta actual en el estado de la sesión DESPUÉS de aplicar los cambios
+            st.session_state.preguntas[st.session_state.indice] = current_question
 
 else:
     st.subheader("Vista de la Pregunta")
@@ -174,7 +182,7 @@ else:
 # ============
 # Botón para generar y descargar el TXT
 # ============
-txt_bytes = generar_txt(preguntas)  # Pasa la lista completa de preguntas
+txt_bytes = generar_txt(preguntas)
 st.download_button(
     label="Descargar TXT de la Pregunta",
     data=txt_bytes,
@@ -200,5 +208,5 @@ if st.button("Agregar Nueva Pregunta"):
     }
     preguntas.append(nueva_pregunta)
     st.session_state.indice = len(preguntas) - 1
-    st.session_state.edit_mode = True  # Activar la edición de inmediato
+    st.session_state.edit_mode = True
     st.info("Nueva pregunta añadida. Edítala a continuación.")
