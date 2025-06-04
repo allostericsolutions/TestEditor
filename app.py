@@ -73,13 +73,12 @@ def generar_txt(pregunta):
 #         st.error(f"Error: El archivo JSON '{filename}' está corrupto o no es válido.")
 #         return []
 
-# def guardar_json(data, filename="preguntas.json"):
-#     try:
-#         with open(filename, "w", encoding="utf-8") as f:
-#             json.dump(data, f, ensure_ascii=False, indent=4)
-#         st.success(f"Preguntas guardadas en '{filename}'") # feedback visual
-#     except Exception as e:
-#         st.error(f"Error al guardar el archivo JSON: {e}")
+# def guardar_json(data):
+#     """
+#     Guarda la lista de preguntas en el archivo JSON.
+#     """
+#     with open(FILE_PATH, "w", encoding="utf-8") as file:
+#         json.dump(data, file, indent=4, ensure_ascii=False)
 
 # ============
 # Interfaz Streamlit
@@ -163,7 +162,12 @@ if st.session_state.edit_mode:
             current_question["concept_to_study"] = concepto.strip()
             current_question["explicacion_openai"] = explicacion.strip()
             preguntas[st.session_state.indice] = current_question
-            st.success("Cambios aplicados. Presiona OK para preparar el TXT.")
+
+            # Eliminar la llamada a guardar_json()
+            # guardar_json(preguntas)
+
+            st.success("Cambios aplicados.")  # Mensaje de éxito
+
 else:
     st.subheader("Vista de la Pregunta")
     enunciado_display = current_question["enunciado"].strip() or "<Vacío>"
