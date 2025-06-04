@@ -37,6 +37,9 @@ def check_password():
         st.session_state["password_correct"] = False
 
     if not st.session_state["password_correct"]:
+        # Mostrar el logo en la pantalla de autenticación
+        st.image("assets/logo empresa.PNG", width=200)  # Reemplaza con la ruta correcta
+
         # Mostrar formulario de inicio de sesión
         with st.form("login"):
             st.text_input("Correo", key="username")
@@ -48,8 +51,8 @@ def check_password():
         if st.session_state["password_correct"]:
             # Borrar formulario de inicio de sesión
             st.experimental_rerun()
-        else:
-            st.error("😕 Correo/contraseña incorrectos")
+        #else:
+        #    st.error("😕 Correo/contraseña incorrectos") # Eliminar el mensaje de error
 
         # Detener la ejecución si la contraseña no es correcta
         return False
@@ -65,6 +68,9 @@ if not check_password():
 
 # Mostrar el logo de la empresa en la barra lateral
 st.sidebar.image("assets/logo empresa.PNG", width=200)
+
+# Reducir el tamaño de la fuente del título en la barra lateral
+st.sidebar.markdown("<p style='font-size: 12px;'>Revisión y Edición de Preguntas proyecto RVT</p>", unsafe_allow_html=True)
 
 # Cargar las preguntas desde el JSON (SOLO UNA VEZ al inicio)
 if "preguntas" not in st.session_state:
