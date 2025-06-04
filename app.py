@@ -8,7 +8,53 @@ from utils import cargar_json, generar_txt
 # ============
 # Autenticación
 # ============
-# ... (código de autenticación) ...
+
+# Define las credenciales directamente en el código
+USUARIOS = {
+    "marievapaula@gmail.com": "vascular33",
+    "ciclosporina2@hotmail.com": "vascular33",
+}
+
+def check_password():
+    """
+    Retorna `True` si el usuario ingresó la contraseña correcta.
+    """
+
+    def password_entered():
+        """Valida la contraseña."""
+        if (
+            st.session_state["username"] in USUARIOS
+            and st.session_state["password"]
+            == USUARIOS[st.session_state["username"]]
+        ):
+            st.session_state["password_correct"] = True
+            del st.session_state["password"]  # no almacena la contraseña
+            del st.session_state["username"]
+        else:
+            st.session_state["password_correct"] = False
+
+    if "password_correct" not in st.session_state:
+        st.session_state["password_correct"] = False
+
+    if not st.session_state["password_correct"]:
+        # Mostrar formulario de inicio de sesión
+        with st.form("login"):
+            st.text_input("Correo", key="username")
+            st.text_input(
+                "Contraseña", type="password", key="password"
+            )
+            st.form_submit_button("Ingresar", on_click=password_entered)
+
+        if st.session_state["password_correct"]:
+            # Borrar formulario de inicio de sesión
+            st.experimental_rerun()
+        else:
+            st.error("😕 Correo/contraseña incorrectos")
+
+        # Detener la ejecución si la contraseña no es correcta
+        return False
+    else:
+        return True
 
 # ============
 # Interfaz Streamlit
