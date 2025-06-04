@@ -8,53 +8,7 @@ from utils import cargar_json, generar_txt
 # ============
 # Autenticación
 # ============
-
-# Define las credenciales directamente en el código
-USUARIOS = {
-    "marievapaula@gmail.com": "vascular33",
-    "ciclosporina2@hotmail.com": "vascular33",
-}
-
-def check_password():
-    """
-    Retorna `True` si el usuario ingresó la contraseña correcta.
-    """
-
-    def password_entered():
-        """Valida la contraseña."""
-        if (
-            st.session_state["username"] in USUARIOS
-            and st.session_state["password"]
-            == USUARIOS[st.session_state["username"]]
-        ):
-            st.session_state["password_correct"] = True
-            del st.session_state["password"]  # no almacena la contraseña
-            del st.session_state["username"]
-        else:
-            st.session_state["password_correct"] = False
-
-    if "password_correct" not in st.session_state:
-        st.session_state["password_correct"] = False
-
-    if not st.session_state["password_correct"]:
-        # Mostrar formulario de inicio de sesión
-        with st.form("login"):
-            st.text_input("Correo", key="username")
-            st.text_input(
-                "Contraseña", type="password", key="password"
-            )
-            st.form_submit_button("Ingresar", on_click=password_entered)
-
-        if st.session_state["password_correct"]:
-            # Borrar formulario de inicio de sesión
-            st.experimental_rerun()
-        else:
-            st.error("😕 Correo/contraseña incorrectos")
-
-        # Detener la ejecución si la contraseña no es correcta
-        return False
-    else:
-        return True
+# ... (código de autenticación) ...
 
 # ============
 # Interfaz Streamlit
@@ -72,19 +26,31 @@ if "preguntas" not in st.session_state:
 
 preguntas = st.session_state.preguntas  # Usar la lista del estado de sesión
 
-# Inicializar variables de sesión para el índice y el modo edición
+# Inicializar variables de sesión para el índice, el modo edición y el conjunto de preguntas editadas
 if "indice" not in st.session_state:
     st.session_state.indice = 0
 if "edit_mode" not in st.session_state:
     st.session_state.edit_mode = False
+if "preguntas_editadas" not in st.session_state:
+    st.session_state.preguntas_editadas = set()  # Conjunto para rastrear las preguntas editadas
 
 # ============
 # Barra lateral: Navegación e índice
 # ============
 st.sidebar.subheader("Navegación de Preguntas")
-lista_indices = list(range(1, len(preguntas) + 1))
-selected_index = st.sidebar.selectbox("Selecciona la pregunta:", lista_indices, index=st.session_state.indice)
-st.session_state.indice = selected_index - 1
+
+# Crear la lista de opciones para el selectbox con un indicador para las preguntas editadas
+lista_indices = []
+for i, pregunta in enumerate(preguntas):
+    num = i + 1
+    enunciado = pregunta.get("enunciado", "").strip() or "<Vacío>"
+    if i in st.session_state.preguntas_editadas:
+        lista_indices.append(f"{num}: {enunciado} (Editada)")  # Indicador visual
+    else:
+        lista_indices.append(f"{num}: {enunciado}")
+
+selected_index_str = st.sidebar.selectbox("Selecciona la pregunta:", lista_indices, index=st.session_state.indice)
+st.session_state.indice = int(selected_index_str.split(":")[0]) - 1
 
 if st.sidebar.checkbox("Mostrar índice general", value=True):
     resumen = []
@@ -155,6 +121,8 @@ if st.session_state.edit_mode:
             st.session_state.edit_mode = False
             # Guardar la pregunta actual en el estado de la sesión DESPUÉS de aplicar los cambios
             st.session_state.preguntas[st.session_state.indice] = current_question
+            # Agregar el índice de la pregunta al conjunto de preguntas editadas
+            st.session_state.preguntas_editadas.add(st.session_state.indice)
 
 else:
     st.subheader("Vista de la Pregunta")
