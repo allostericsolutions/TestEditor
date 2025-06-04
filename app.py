@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 import unicodedata
-from fpdf2 import FPDF  # Importar desde fpdf2
+from fpdf import FPDF
 import json
 from utils import cargar_json, guardar_json
 
@@ -12,23 +12,17 @@ from utils import cargar_json, guardar_json
 
 def limpiar_texto(text):
     """
-    Normaliza el texto Unicode para mejorar la consistencia.
-    Elimina caracteres de control y normaliza la forma de los caracteres.
+    Normaliza el texto y elimina los caracteres que no se puedan codificar en Latin-1.
     """
     if not text:
         return ""
-
-    # Normalización NFKD para descomponer caracteres compuestos
-    text = unicodedata.normalize("NFKD", text)
-
-    # Eliminar caracteres de control
-    text = ''.join(ch for ch in text if unicodedata.category(ch)[0] != 'C')
-
-    return text.strip()
+    # Normaliza el texto (NFKD) y elimina los caracteres que no sean codificables en Latin-1.
+    return unicodedata.normalize("NFKD", text).encode("latin1", errors="ignore").decode("latin1")
 
 def generar_pdf(pregunta):
     """
     Genera un PDF con la información de la pregunta.
+    Se aplican transformaciones para que todo el texto pueda codificarse en Latin-1.
     """
     pdf = FPDF()
     pdf.add_page()
@@ -47,6 +41,7 @@ def generar_pdf(pregunta):
     # Opciones
     pdf.cell(0, 10, txt="Opciones:", ln=True)
     letras = "abcdefghijklmnopqrstuvwxyz"
+    # Se limpian las respuestas correctas para compararlas de forma segura
     correct_answers = [limpiar_texto(r.strip()) for r in pregunta.get("respuesta_correcta", [])]
     if pregunta.get("opciones"):
         for idx, opc in enumerate(pregunta["opciones"]):
@@ -67,9 +62,8 @@ def generar_pdf(pregunta):
     explicacion = limpiar_texto(pregunta.get("explicacion_openai", "").strip() or "<Vacío>")
     pdf.multi_cell(0, 10, txt=f"Explicación OpenAI: {explicacion}")
 
-    # Generar los bytes del PDF (UTF-8)
-    pdf_bytes = pdf.output(dest="S").encode("utf-8")
-    # pdf_bytes = pdf.output(dest="S") # Probar sin encode
+    # Generar los bytes del PDF (ahora ya se garantiza que el contenido sea Latin-1)
+    pdf_bytes = pdf.output(dest="S").encode("latin1")
     return pdf_bytes
 
 # ============
