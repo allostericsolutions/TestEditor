@@ -2,9 +2,9 @@
 import streamlit as st
 import pandas as pd
 import unicodedata
-from fpdf import FPDF
-import json  # Importar json aquí
-from utils import cargar_json, guardar_json  # Asegúrate de que utils.py exista
+from fpdf2 import FPDF  # Importar desde fpdf2
+import json
+from utils import cargar_json, guardar_json
 
 # ============
 # Funciones Utilitarias
@@ -69,6 +69,7 @@ def generar_pdf(pregunta):
 
     # Generar los bytes del PDF (UTF-8)
     pdf_bytes = pdf.output(dest="S").encode("utf-8")
+    # pdf_bytes = pdf.output(dest="S") # Probar sin encode
     return pdf_bytes
 
 # ============
