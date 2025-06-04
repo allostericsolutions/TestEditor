@@ -36,7 +36,7 @@ st.title("Revisión y Edición de Preguntas")
 st.write(f"**Pregunta {st.session_state.indice + 1} de {len(preguntas)}**")
 current_question = preguntas[st.session_state.indice]
 
-# Sección de botones de navegación y acciones
+# Botones de navegación y acciones
 col1, col2, col3, col4 = st.columns(4)
 with col1:
     if st.button("Previo"):
@@ -61,10 +61,8 @@ with col4:
 # ============
 if st.session_state.edit_mode:
     st.subheader("Modo Edición")
-    # Campos de edición para enunciado y opciones
     enunciado = st.text_input("Enunciado:", value=current_question["enunciado"])
     opciones_text = st.text_area("Opciones (una por línea):", value="\n".join(current_question["opciones"]))
-    # Nuevos campos para concept y explicación openai
     concepto = st.text_input("Concepto a Estudiar:", value=current_question.get("concept_to_study", ""))
     explicacion = st.text_area("Explicación OpenAI:", value=current_question.get("explicacion_openai", ""))
     
@@ -78,7 +76,6 @@ if st.session_state.edit_mode:
                 current_question["opciones"] = opciones
             else:
                 st.error("Las opciones no pueden estar vacías.")
-            # Actualizar los nuevos campos
             current_question["concept_to_study"] = concepto.strip()
             current_question["explicacion_openai"] = explicacion.strip()
             preguntas[st.session_state.indice] = current_question
@@ -87,14 +84,21 @@ else:
     st.subheader("Vista de la Pregunta")
     enunciado_display = current_question["enunciado"].strip() or "<Vacío>"
     st.write(f"**Enunciado:** {enunciado_display}")
+    
     st.write("**Opciones:**")
     if current_question["opciones"]:
-        for opcion in current_question["opciones"]:
-            st.write(f"- {opcion}")
+        letras = "abcdefghijklmnopqrstuvwxyz"
+        # Vamos a obtener la lista de respuestas correctas (se asume que es una lista de strings)
+        correct_answers = [resp.strip() for resp in current_question.get("respuesta_correcta", [])]
+        for idx, opcion in enumerate(current_question["opciones"]):
+            letra = letras[idx] if idx < len(letras) else f"{idx+1}"
+            # Se compara la opción actual con las respuestas correctas de forma sensible a espacios
+            marker = " ✅" if opcion.strip() in correct_answers else ""
+            st.write(f"{letra}) {opcion}{marker}")
     else:
         st.write("- <Vacío>")
     
-    # Desplegar los campos adicionales
+    # Mostrar campos adicionales
     concepto_display = current_question.get("concept_to_study", "").strip() or "<Vacío>"
     explicacion_display = current_question.get("explicacion_openai", "").strip() or "<Vacío>"
     st.write("**Concepto a Estudiar:**")
@@ -120,6 +124,6 @@ if st.button("Agregar Nueva Pregunta"):
     }
     preguntas.append(nueva_pregunta)
     st.session_state.indice = len(preguntas) - 1
-    st.session_state.edit_mode = True
+    st.session_state.edit_mode = True  # Activar la edición de inmediato
     guardar_json(preguntas)
     st.info("Nueva pregunta añadida. Edítala a continuación.")
