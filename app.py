@@ -3,13 +3,13 @@ import streamlit as st
 import pandas as pd
 import unicodedata
 import json
-from utils import cargar_json, guardar_json
+from utils import cargar_json, generar_txt # Importa generar_txt desde utils
 
 # ============
 # Autenticación
 # ============
 
-# Define las credenciales directamente en el código 
+# Define las credenciales directamente en el código
 USUARIOS = {
     "marievapaula@gmail.com": "vascular33",
     "ciclosporina2@hotmail.com": "vascular33",
@@ -57,85 +57,6 @@ def check_password():
         return True
 
 # ============
-# Funciones Utilitarias
-# ============
-
-def limpiar_texto(text):
-    """
-    Normaliza el texto y elimina los caracteres que no se puedan codificar en Latin-1.
-    """
-    if not text:
-        return ""
-    # Normaliza el texto (NFKD) y elimina los caracteres que no sean codificables en Latin-1.
-    return unicodedata.normalize("NFKD", text).encode("latin1", errors="ignore").decode("latin1")
-
-def generar_txt(preguntas):  # Recibe la lista de preguntas completa
-    """
-    Genera un archivo de texto con la información de todas las preguntas.
-    """
-    texto = ""
-    for i, pregunta in enumerate(preguntas):
-        texto += f"==== Pregunta {i+1} ====\n"
-
-        # Título
-        titulo = "Pregunta Editada\n"
-        texto += titulo
-
-        # Enunciado
-        enunciado = limpiar_texto(pregunta.get("enunciado", "").strip() or "<Vacío>")
-        texto += f"Enunciado: {enunciado}\n"
-
-        # Opciones
-        texto += "Opciones:\n"
-        letras = "abcdefghijklmnopqrstuvwxyz"
-        # Se limpian las respuestas correctas para compararlas de forma segura
-        correct_answers = [limpiar_texto(r.strip()) for r in pregunta.get("respuesta_correcta", [])]
-        if pregunta.get("opciones"):
-            for idx, opc in enumerate(pregunta["opciones"]):
-                opcion = limpiar_texto(opc)
-                letra = letras[idx] if idx < len(letras) else f"{idx+1}"
-                marker = " ✅" if opcion in correct_answers else ""
-                texto += f"{letra}) {opcion}{marker}\n"
-        else:
-            texto += "- <Vacío>\n"
-
-        # Concepto a Estudiar
-        concepto = limpiar_texto(pregunta.get("concept_to_study", "").strip() or "<Vacío>")
-        texto += f"Concepto a Estudiar: {concepto}\n"
-
-        # Explicación OpenAI
-        explicacion = limpiar_texto(pregunta.get("explicacion_openai", "").strip() or "<Vacío>")
-        texto += f"Explicación OpenAI: {explicacion}\n"
-        texto += "\n"  # Separador entre preguntas
-
-    return texto.encode('utf-8')  # Codificar a UTF-8 para manejar Unicode
-
-
-# ============
-# Funciones de Carga/Guardado (en utils.py)
-# ============
-
-# utils.py (ejemplo)
-# import json
-
-# def cargar_json(filename="preguntas.json"):
-#     try:
-#         with open(filename, "r", encoding="utf-8") as f:
-#             return json.load(f)
-#     except FileNotFoundError:
-#         return []  # Retorna una lista vacía si el archivo no existe
-#     except json.JSONDecodeError:
-#         st.error(f"Error: El archivo JSON '{filename}' está corrupto o no es válido.")
-#         return []
-
-# def guardar_json(data):
-#     """
-#     Guarda la lista de preguntas en el archivo JSON.
-#     """
-#     with open(FILE_PATH, "w", encoding="utf-8") as file:
-#         json.dump(data, file, indent=4, ensure_ascii=False)
-
-# ============
 # Interfaz Streamlit
 # ============
 
@@ -145,8 +66,11 @@ if not check_password():
 # Mostrar el logo de la empresa en la barra lateral
 st.sidebar.image("assets/logo empresa.PNG", width=200)
 
-# Cargar las preguntas desde el JSON
-preguntas = cargar_json()
+# Cargar las preguntas desde el JSON (SOLO UNA VEZ al inicio)
+if "preguntas" not in st.session_state:
+    st.session_state.preguntas = cargar_json()
+
+preguntas = st.session_state.preguntas  # Usar la lista del estado de sesión
 
 # Inicializar variables de sesión para el índice y el modo edición
 if "indice" not in st.session_state:
@@ -221,7 +145,8 @@ if st.session_state.edit_mode:
             current_question["explicacion_openai"] = explicacion.strip()
             preguntas[st.session_state.indice] = current_question
 
-            st.success("Cambios aplicados.")  # Mensaje de éxito
+            st.success("Cambios aplicados (solo en memoria).")  # Mensaje de éxito
+            st.session_state.edit_mode = False
 
 else:
     st.subheader("Vista de la Pregunta")
@@ -277,10 +202,3 @@ if st.button("Agregar Nueva Pregunta"):
     st.session_state.indice = len(preguntas) - 1
     st.session_state.edit_mode = True  # Activar la edición de inmediato
     st.info("Nueva pregunta añadida. Edítala a continuación.")
-
-# Eliminar el botón para guardar todas las preguntas
-# ============
-# Botón para guardar todas las preguntas en el archivo JSON
-# ============
-# if st.button("Guardar Todas las Preguntas"):
-#    guardar_json(preguntas)
