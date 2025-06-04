@@ -22,6 +22,281 @@
         "clasificacion": "Normal Anatomy,Perfusion and Function",
         "grupo": 1,
         "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following statements is correct regarding the great saphenous vein?",
+        "opciones": [
+            "It originates along the medial dorsum of the foot",
+            "It passes anterior to the medial malleolus",
+            "It is accompanied by the saphenous nerve",
+            "It receives tributaries from all surfaces of the lower extremity",
+            "Every option is correct"
+        ],
+        "respuesta_correcta": [
+            "Every option is correct"
+        ],
+        "concept_to_study": "Great saphenous vein anatomy",
+        "explicacion_openai": "Each statement describes a true anatomical feature of the great saphenous vein, so the final option is correct.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy,Perfusion and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following statements is NOT correct regarding the great saphenous vein?",
+        "opciones": [
+            "It passes laterally over the knee",
+            "It ascends along the medial aspect of the thigh",
+            "It drains into the common femoral vein",
+            "It extends to the dorsum of the foot",
+            "It has a greater number of valves in the calf than in the thigh"
+        ],
+        "respuesta_correcta": [
+            "It passes laterally over the knee"
+        ],
+        "concept_to_study": "Great saphenous vein characteristics",
+        "explicacion_openai": "Because the great saphenous vein ascends medially, stating that it passes laterally over the knee is incorrect.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy,Perfusion and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "What is the primary function of the great saphenous vein?",
+        "opciones": [
+            "To drain blood from the foot",
+            "To drain blood from the calf",
+            "To drain blood from the thigh",
+            "To drain blood from the entire lower extremity"
+        ],
+        "respuesta_correcta": [
+            "To drain blood from the entire lower extremity"
+        ],
+        "concept_to_study": "Function of the great saphenous vein",
+        "explicacion_openai": "The great saphenous vein collects superficial venous blood from the entire lower extremity, making it vital for overall venous return.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy,Perfusion and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following veins is considered a major perforating vein in the distal calf?",
+        "opciones": [
+            "Small saphenous vein",
+            "Posterior accessory vein",
+            "Peroneal vein",
+            "Perforator trunk vein",
+            "Medial malleolar vein"
+        ],
+        "respuesta_correcta": [
+            "Perforator trunk vein"
+        ],
+        "concept_to_study": "Perforator veins in the distal calf",
+        "explicacion_openai": "The perforator trunk vein is one of the main perforating veins that facilitate drainage between the superficial and deep venous systems in the distal calf.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy,Perfusion and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Where are the paratibial perforating veins (formerly known as Boyd’s perforators) located?",
+        "opciones": [
+            "In the lower calf",
+            "In the distal thigh",
+            "In the proximal thigh",
+            "On the dorsum of the foot",
+            "Below the knee"
+        ],
+        "respuesta_correcta": [
+            "In the lower calf"
+        ],
+        "concept_to_study": "Location of paratibial perforating veins",
+        "explicacion_openai": "These perforating veins are predominantly located in the lower calf, facilitating the drainage from the superficial to the deep venous system.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy,Perfusion and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which superficial vein supplies flow to the three main perforating veins of the distal calf?",
+        "opciones": [
+            "Small saphenous vein",
+            "Posterior accessory vein",
+            "Peroneal vein",
+            "Perforator trunk vein",
+            "Medial malleolar vein"
+        ],
+        "respuesta_correcta": [
+            "Small saphenous vein"
+        ],
+        "concept_to_study": "Superficial venous drainage of the distal calf",
+        "explicacion_openai": "The small saphenous vein is the key vessel that supplies blood to the principal perforating veins in the distal calf.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy,Perfusion and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which diagnostic technique is most commonly used to evaluate venous reflux in the lower extremities?",
+        "opciones": [
+            "Duplex Doppler ultrasound",
+            "Computed tomography",
+            "Magnetic resonance imaging",
+            "Phlebography"
+        ],
+        "respuesta_correcta": [
+            "Duplex Doppler ultrasound"
+        ],
+        "concept_to_study": "Diagnosis of venous reflux",
+        "explicacion_openai": "Duplex Doppler ultrasound is the technique of choice for evaluating venous reflux and valve competence in the lower extremities, due to its high efficacy and widespread availability.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy,Perfusion and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "What is the essential function of venous valves in the lower extremities?",
+        "opciones": [
+            "To facilitate venous return to the heart",
+            "To prevent venous reflux",
+            "To regulate arterial blood pressure",
+            "To increase arterial flow"
+        ],
+        "respuesta_correcta": [
+            "To prevent venous reflux"
+        ],
+        "concept_to_study": "Function of venous valves",
+        "explicacion_openai": "Venous valves prevent the backward flow of blood, ensuring proper directional venous return to the heart.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy,Perfusion and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which vein is most commonly used as a conduit in coronary or peripheral bypass procedures?",
+        "opciones": [
+            "Great saphenous vein",
+            "Small saphenous vein",
+            "Deep femoral vein",
+            "Popliteal vein"
+        ],
+        "respuesta_correcta": [
+            "Great saphenous vein"
+        ],
+        "concept_to_study": "Surgical applications of the great saphenous vein",
+        "explicacion_openai": "Due to its length and suitable caliber, the great saphenous vein is frequently harvested as a graft in coronary and peripheral bypass operations.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy,Perfusion and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "What is the typical anatomical pathway of the great saphenous vein in the lower extremity?",
+        "opciones": [
+            "It courses along the lateral side of the leg",
+            "It is located along the medial aspect of the lower extremity",
+            "It runs on the dorsum of the foot",
+            "It is found in the lateral thigh"
+        ],
+        "respuesta_correcta": [
+            "It is located along the medial aspect of the lower extremity"
+        ],
+        "concept_to_study": "Anatomical course of the great saphenous vein",
+        "explicacion_openai": "The great saphenous vein follows a medial course along the lower extremity, serving as a crucial channel for superficial venous return.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy,Perfusion and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Regarding the perforating veins of the calf, which of the following statements is correct?",
+        "opciones": [
+            "They connect the superficial veins with the deep veins",
+            "They exclusively drain the flow of the great saphenous vein",
+            "They are located only in the proximal region of the calf",
+            "They have no relevance in venous reflux"
+        ],
+        "respuesta_correcta": [
+            "They connect the superficial veins with the deep veins"
+        ],
+        "concept_to_study": "Function of perforating veins",
+        "explicacion_openai": "Perforating veins serve as channels connecting the superficial venous system to the deep system, facilitating efficient venous drainage.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy,Perfusion and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following factors is most commonly associated with chronic venous insufficiency?",
+        "opciones": [
+            "Hypertension",
+            "Incompetence of venous valves",
+            "Hyperbilirubinemia",
+            "Increased cardiac output"
+        ],
+        "respuesta_correcta": [
+            "Incompetence of venous valves"
+        ],
+        "concept_to_study": "Chronic venous insufficiency",
+        "explicacion_openai": "Valve incompetence leads to venous reflux and is one of the primary factors associated with chronic venous insufficiency.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy,Perfusion and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which imaging modality is most commonly used in the diagnosis of deep vein thrombosis in the lower extremities?",
+        "opciones": [
+            "Duplex Doppler ultrasound",
+            "Computed tomography",
+            "Magnetic resonance imaging",
+            "Phlebography"
+        ],
+        "respuesta_correcta": [
+            "Duplex Doppler ultrasound"
+        ],
+        "concept_to_study": "Diagnosis of deep vein thrombosis",
+        "explicacion_openai": "Duplex Doppler ultrasound is the preferred modality for detecting deep vein thrombosis due to its high sensitivity and safety.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy,Perfusion and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "What is the main physiological function of the deep venous system in the lower extremities?",
+        "opciones": [
+            "To store blood",
+            "To efficiently return blood to the heart",
+            "To regulate systemic blood pressure",
+            "To distribute oxygen to tissues"
+        ],
+        "respuesta_correcta": [
+            "To efficiently return blood to the heart"
+        ],
+        "concept_to_study": "Deep venous system",
+        "explicacion_openai": "The deep venous system plays an essential role in returning blood from the lower extremities to the heart, working in conjunction with the muscle pump.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy,Perfusion and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which therapeutic method is commonly used to treat reflux in an incompetent great saphenous vein?",
+        "opciones": [
+            "Endovenous laser ablation",
+            "Arterial bypass surgery",
+            "Coronary angioplasty",
+            "Phlebectomy"
+        ],
+        "respuesta_correcta": [
+            "Endovenous laser ablation"
+        ],
+        "concept_to_study": "Treatment of venous reflux",
+        "explicacion_openai": "Endovenous laser ablation is a minimally invasive technique used to close an incompetent great saphenous vein and correct venous reflux.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy,Perfusion and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
         "enunciado": "The common carotid artery usually divides into internal and external carotid arteries at the level of the upper border of which structure?",
         "image": "",
         "opciones": [
