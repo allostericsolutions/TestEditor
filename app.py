@@ -2,7 +2,6 @@
 import streamlit as st
 import pandas as pd
 import unicodedata
-from fpdf import FPDF
 import json
 from utils import cargar_json, guardar_json
 
@@ -19,27 +18,22 @@ def limpiar_texto(text):
     # Normaliza el texto (NFKD) y elimina los caracteres que no sean codificables en Latin-1.
     return unicodedata.normalize("NFKD", text).encode("latin1", errors="ignore").decode("latin1")
 
-def generar_pdf(pregunta):
+def generar_txt(pregunta):
     """
-    Genera un PDF con la información de la pregunta.
-    Se aplican transformaciones para que todo el texto pueda codificarse en Latin-1.
+    Genera un archivo de texto con la información de la pregunta.
     """
-    pdf = FPDF()
-    pdf.add_page()
-    pdf.set_font("Arial", size=12)
+    texto = ""
 
     # Título
-    titulo = "Pregunta Editada"
-    pdf.cell(200, 10, txt=limpiar_texto(titulo), ln=True, align='C')
-    pdf.ln(10)
+    titulo = "Pregunta Editada\n"
+    texto += titulo
 
     # Enunciado
     enunciado = limpiar_texto(pregunta.get("enunciado", "").strip() or "<Vacío>")
-    pdf.multi_cell(0, 10, txt=f"Enunciado: {enunciado}")
-    pdf.ln(5)
+    texto += f"Enunciado: {enunciado}\n"
 
     # Opciones
-    pdf.cell(0, 10, txt="Opciones:", ln=True)
+    texto += "Opciones:\n"
     letras = "abcdefghijklmnopqrstuvwxyz"
     # Se limpian las respuestas correctas para compararlas de forma segura
     correct_answers = [limpiar_texto(r.strip()) for r in pregunta.get("respuesta_correcta", [])]
@@ -48,23 +42,19 @@ def generar_pdf(pregunta):
             opcion = limpiar_texto(opc)
             letra = letras[idx] if idx < len(letras) else f"{idx+1}"
             marker = " ✅" if opcion in correct_answers else ""
-            pdf.multi_cell(0, 10, txt=f"{letra}) {opcion}{marker}")
+            texto += f"{letra}) {opcion}{marker}\n"
     else:
-        pdf.cell(0, 10, txt="- <Vacío>", ln=True)
-    pdf.ln(5)
+        texto += "- <Vacío>\n"
 
     # Concepto a Estudiar
     concepto = limpiar_texto(pregunta.get("concept_to_study", "").strip() or "<Vacío>")
-    pdf.multi_cell(0, 10, txt=f"Concepto a Estudiar: {concepto}")
-    pdf.ln(5)
+    texto += f"Concepto a Estudiar: {concepto}\n"
 
     # Explicación OpenAI
     explicacion = limpiar_texto(pregunta.get("explicacion_openai", "").strip() or "<Vacío>")
-    pdf.multi_cell(0, 10, txt=f"Explicación OpenAI: {explicacion}")
+    texto += f"Explicación OpenAI: {explicacion}\n"
 
-    # Generar los bytes del PDF (ahora ya se garantiza que el contenido sea Latin-1)
-    pdf_bytes = pdf.output(dest="S").encode("latin1")
-    return pdf_bytes
+    return texto.encode('utf-8')  # Codificar a UTF-8 para manejar Unicode
 
 # ============
 # Funciones de Carga/Guardado (en utils.py)
@@ -144,7 +134,7 @@ with col3:
         if current_question["enunciado"].strip() == "":
             st.error("El enunciado no puede estar vacío.")
         else:
-            st.success("Cambios preparados. Descarga el PDF para guardar la pregunta.")
+            st.success("Cambios preparados. Descarga el TXT para guardar la pregunta.")
         st.session_state.edit_mode = False
 with col4:
     if st.button("Siguiente"):
@@ -173,7 +163,7 @@ if st.session_state.edit_mode:
             current_question["concept_to_study"] = concepto.strip()
             current_question["explicacion_openai"] = explicacion.strip()
             preguntas[st.session_state.indice] = current_question
-            st.success("Cambios aplicados. Presiona OK para preparar el PDF.")
+            st.success("Cambios aplicados. Presiona OK para preparar el TXT.")
 else:
     st.subheader("Vista de la Pregunta")
     enunciado_display = current_question["enunciado"].strip() or "<Vacío>"
@@ -198,14 +188,14 @@ else:
     st.write(explicacion_display)
 
 # ============
-# Botón para generar y descargar el PDF
+# Botón para generar y descargar el TXT
 # ============
-pdf_bytes = generar_pdf(current_question)
+txt_bytes = generar_txt(current_question)
 st.download_button(
-    label="Descargar PDF de la Pregunta",
-    data=pdf_bytes,
-    file_name=f"pregunta_{st.session_state.indice + 1}.pdf",
-    mime="application/pdf"
+    label="Descargar TXT de la Pregunta",
+    data=txt_bytes,
+    file_name=f"pregunta_{st.session_state.indice + 1}.txt",
+    mime="text/plain"
 )
 
 # ============
