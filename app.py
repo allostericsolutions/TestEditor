@@ -18,43 +18,47 @@ def limpiar_texto(text):
     # Normaliza el texto (NFKD) y elimina los caracteres que no sean codificables en Latin-1.
     return unicodedata.normalize("NFKD", text).encode("latin1", errors="ignore").decode("latin1")
 
-def generar_txt(pregunta):
+def generar_txt(preguntas):  # Recibe la lista de preguntas completa
     """
-    Genera un archivo de texto con la información de la pregunta.
+    Genera un archivo de texto con la información de todas las preguntas.
     """
     texto = ""
+    for i, pregunta in enumerate(preguntas):
+        texto += f"==== Pregunta {i+1} ====\n"
 
-    # Título
-    titulo = "Pregunta Editada\n"
-    texto += titulo
+        # Título
+        titulo = "Pregunta Editada\n"
+        texto += titulo
 
-    # Enunciado
-    enunciado = limpiar_texto(pregunta.get("enunciado", "").strip() or "<Vacío>")
-    texto += f"Enunciado: {enunciado}\n"
+        # Enunciado
+        enunciado = limpiar_texto(pregunta.get("enunciado", "").strip() or "<Vacío>")
+        texto += f"Enunciado: {enunciado}\n"
 
-    # Opciones
-    texto += "Opciones:\n"
-    letras = "abcdefghijklmnopqrstuvwxyz"
-    # Se limpian las respuestas correctas para compararlas de forma segura
-    correct_answers = [limpiar_texto(r.strip()) for r in pregunta.get("respuesta_correcta", [])]
-    if pregunta.get("opciones"):
-        for idx, opc in enumerate(pregunta["opciones"]):
-            opcion = limpiar_texto(opc)
-            letra = letras[idx] if idx < len(letras) else f"{idx+1}"
-            marker = " ✅" if opcion in correct_answers else ""
-            texto += f"{letra}) {opcion}{marker}\n"
-    else:
-        texto += "- <Vacío>\n"
+        # Opciones
+        texto += "Opciones:\n"
+        letras = "abcdefghijklmnopqrstuvwxyz"
+        # Se limpian las respuestas correctas para compararlas de forma segura
+        correct_answers = [limpiar_texto(r.strip()) for r in pregunta.get("respuesta_correcta", [])]
+        if pregunta.get("opciones"):
+            for idx, opc in enumerate(pregunta["opciones"]):
+                opcion = limpiar_texto(opc)
+                letra = letras[idx] if idx < len(letras) else f"{idx+1}"
+                marker = " ✅" if opcion in correct_answers else ""
+                texto += f"{letra}) {opcion}{marker}\n"
+        else:
+            texto += "- <Vacío>\n"
 
-    # Concepto a Estudiar
-    concepto = limpiar_texto(pregunta.get("concept_to_study", "").strip() or "<Vacío>")
-    texto += f"Concepto a Estudiar: {concepto}\n"
+        # Concepto a Estudiar
+        concepto = limpiar_texto(pregunta.get("concept_to_study", "").strip() or "<Vacío>")
+        texto += f"Concepto a Estudiar: {concepto}\n"
 
-    # Explicación OpenAI
-    explicacion = limpiar_texto(pregunta.get("explicacion_openai", "").strip() or "<Vacío>")
-    texto += f"Explicación OpenAI: {explicacion}\n"
+        # Explicación OpenAI
+        explicacion = limpiar_texto(pregunta.get("explicacion_openai", "").strip() or "<Vacío>")
+        texto += f"Explicación OpenAI: {explicacion}\n"
+        texto += "\n"  # Separador entre preguntas
 
     return texto.encode('utf-8')  # Codificar a UTF-8 para manejar Unicode
+
 
 # ============
 # Funciones de Carga/Guardado (en utils.py)
@@ -163,9 +167,6 @@ if st.session_state.edit_mode:
             current_question["explicacion_openai"] = explicacion.strip()
             preguntas[st.session_state.indice] = current_question
 
-            # Eliminar la llamada a guardar_json()
-            # guardar_json(preguntas)
-
             st.success("Cambios aplicados.")  # Mensaje de éxito
 
 else:
@@ -194,11 +195,11 @@ else:
 # ============
 # Botón para generar y descargar el TXT
 # ============
-txt_bytes = generar_txt(current_question)
+txt_bytes = generar_txt(preguntas)  # Pasa la lista completa de preguntas
 st.download_button(
     label="Descargar TXT de la Pregunta",
     data=txt_bytes,
-    file_name=f"pregunta_{st.session_state.indice + 1}.txt",
+    file_name=f"preguntas.txt",
     mime="text/plain"
 )
 
