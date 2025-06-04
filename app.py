@@ -1,7 +1,54 @@
 # app.py
 import streamlit as st
 import pandas as pd
+import io
+from fpdf import FPDF
 from utils import cargar_json, guardar_json
+
+# Función para generar el PDF de la pregunta actual
+def generar_pdf(pregunta):
+    """Genera un PDF con la información de la pregunta."""
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Arial", size=12)
+
+    # Título
+    pdf.cell(200, 10, txt="Pregunta Editada", ln=True, align='C')
+    pdf.ln(10)
+
+    # Enunciado
+    enunciado = pregunta.get("enunciado", "").strip() or "<Vacío>"
+    pdf.multi_cell(0, 10, txt=f"Enunciado: {enunciado}")
+    pdf.ln(5)
+
+    # Opciones
+    pdf.cell(0, 10, txt="Opciones:", ln=True)
+    letras = "abcdefghijklmnopqrstuvwxyz"
+    correct_answers = [r.strip() for r in pregunta.get("respuesta_correcta", [])]
+    if pregunta.get("opciones"):
+        for idx, opcion in enumerate(pregunta["opciones"]):
+            letra = letras[idx] if idx < len(letras) else f"{idx+1}"
+            marker = " ✅" if opcion.strip() in correct_answers else ""
+            pdf.multi_cell(0, 10, txt=f"{letra}) {opcion}{marker}")
+    else:
+        pdf.cell(0, 10, txt="- <Vacío>", ln=True)
+    pdf.ln(5)
+
+    # Concepto a Estudiar
+    concepto = pregunta.get("concept_to_study", "").strip() or "<Vacío>"
+    pdf.multi_cell(0, 10, txt=f"Concepto a Estudiar: {concepto}")
+    pdf.ln(5)
+
+    # Explicación OpenAI
+    explicacion = pregunta.get("explicacion_openai", "").strip() or "<Vacío>"
+    pdf.multi_cell(0, 10, txt=f"Explicación OpenAI: {explicacion}")
+
+    # Convertir el PDF a bytes
+    pdf_bytes = pdf.output(dest="S").encode("latin-1")
+    return pdf_bytes
+
+# Mostrar el logo de la empresa
+st.image("assets/logo empresa.PNG", width=200)
 
 # Cargar las preguntas desde el JSON
 preguntas = cargar_json()
@@ -13,7 +60,7 @@ if "edit_mode" not in st.session_state:
     st.session_state.edit_mode = False
 
 # ============
-# Barra lateral: Navegación y listado de índices
+# Barra lateral: Navegación e índice
 # ============
 st.sidebar.subheader("Navegación de Preguntas")
 lista_indices = list(range(1, len(preguntas) + 1))
@@ -49,8 +96,7 @@ with col3:
         if current_question["enunciado"].strip() == "":
             st.error("El enunciado no puede estar vacío.")
         else:
-            guardar_json(preguntas)
-            st.success("¡Cambios guardados!")
+            st.success("Cambios preparados. Descarga el PDF para guardar la pregunta.")
             st.session_state.edit_mode = False
 with col4:
     if st.button("Siguiente"):
@@ -79,7 +125,7 @@ if st.session_state.edit_mode:
             current_question["concept_to_study"] = concepto.strip()
             current_question["explicacion_openai"] = explicacion.strip()
             preguntas[st.session_state.indice] = current_question
-            st.success("Cambios aplicados. Presiona OK para guardar en el JSON.")
+            st.success("Cambios aplicados. Presiona OK para preparar el PDF.")
 else:
     st.subheader("Vista de la Pregunta")
     enunciado_display = current_question["enunciado"].strip() or "<Vacío>"
@@ -88,23 +134,31 @@ else:
     st.write("**Opciones:**")
     if current_question["opciones"]:
         letras = "abcdefghijklmnopqrstuvwxyz"
-        # Vamos a obtener la lista de respuestas correctas (se asume que es una lista de strings)
-        correct_answers = [resp.strip() for resp in current_question.get("respuesta_correcta", [])]
+        correct_answers = [r.strip() for r in current_question.get("respuesta_correcta", [])]
         for idx, opcion in enumerate(current_question["opciones"]):
             letra = letras[idx] if idx < len(letras) else f"{idx+1}"
-            # Se compara la opción actual con las respuestas correctas de forma sensible a espacios
             marker = " ✅" if opcion.strip() in correct_answers else ""
             st.write(f"{letra}) {opcion}{marker}")
     else:
         st.write("- <Vacío>")
     
-    # Mostrar campos adicionales
     concepto_display = current_question.get("concept_to_study", "").strip() or "<Vacío>"
     explicacion_display = current_question.get("explicacion_openai", "").strip() or "<Vacío>"
     st.write("**Concepto a Estudiar:**")
     st.write(concepto_display)
     st.write("**Explicación OpenAI:**")
     st.write(explicacion_display)
+
+# ============
+# Botón para generar y descargar el PDF
+# ============
+pdf_bytes = generar_pdf(current_question)
+st.download_button(
+    label="Descargar PDF de la Pregunta",
+    data=pdf_bytes,
+    file_name=f"pregunta_{st.session_state.indice + 1}.pdf",
+    mime="application/pdf"
+)
 
 # ============
 # Botón para agregar una nueva pregunta
@@ -125,5 +179,4 @@ if st.button("Agregar Nueva Pregunta"):
     preguntas.append(nueva_pregunta)
     st.session_state.indice = len(preguntas) - 1
     st.session_state.edit_mode = True  # Activar la edición de inmediato
-    guardar_json(preguntas)
     st.info("Nueva pregunta añadida. Edítala a continuación.")
