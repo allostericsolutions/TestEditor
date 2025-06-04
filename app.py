@@ -1,13 +1,14 @@
 # app.py
 import streamlit as st
 import pandas as pd
-import io
 from fpdf import FPDF
 from utils import cargar_json, guardar_json
 
-# Función para generar el PDF de la pregunta actual
 def generar_pdf(pregunta):
-    """Genera un PDF con la información de la pregunta."""
+    """
+    Genera un PDF con la información de la pregunta.
+    Se usa Latin-1 para la codificación, reemplazando caracteres problemáticos.
+    """
     pdf = FPDF()
     pdf.add_page()
     pdf.set_font("Arial", size=12)
@@ -43,12 +44,12 @@ def generar_pdf(pregunta):
     explicacion = pregunta.get("explicacion_openai", "").strip() or "<Vacío>"
     pdf.multi_cell(0, 10, txt=f"Explicación OpenAI: {explicacion}")
 
-    # Convertir el PDF a bytes
-    pdf_bytes = pdf.output(dest="S").encode("latin-1")
+    # Generar los bytes del PDF usando Latin-1 y reemplazando caracteres que no se puedan codificar
+    pdf_bytes = pdf.output(dest="S").encode("latin-1", errors="replace")
     return pdf_bytes
 
-# Mostrar el logo de la empresa
-st.image("assets/logo empresa.PNG", width=200)
+# Mostrar el logo de la empresa en la barra lateral
+st.sidebar.image("assets/logo empresa.PNG", width=200)
 
 # Cargar las preguntas desde el JSON
 preguntas = cargar_json()
@@ -60,7 +61,7 @@ if "edit_mode" not in st.session_state:
     st.session_state.edit_mode = False
 
 # ============
-# Barra lateral: Navegación e índice
+# Barra lateral: Navegación y lista de preguntas
 # ============
 st.sidebar.subheader("Navegación de Preguntas")
 lista_indices = list(range(1, len(preguntas) + 1))
