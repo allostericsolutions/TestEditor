@@ -3,21 +3,32 @@ import streamlit as st
 import pandas as pd
 import unicodedata
 from fpdf import FPDF
-from utils import cargar_json, guardar_json
+import json  # Importar json aquí
+from utils import cargar_json, guardar_json  # Asegúrate de que utils.py exista
+
+# ============
+# Funciones Utilitarias
+# ============
 
 def limpiar_texto(text):
     """
-    Normaliza el texto y elimina los caracteres que no se puedan codificar en Latin-1.
+    Normaliza el texto Unicode para mejorar la consistencia.
+    Elimina caracteres de control y normaliza la forma de los caracteres.
     """
     if not text:
         return ""
-    # Normaliza el texto (NFKD) y elimina los caracteres que no sean codificables en Latin-1.
-    return unicodedata.normalize("NFKD", text).encode("latin1", errors="ignore").decode("latin1")
+
+    # Normalización NFKD para descomponer caracteres compuestos
+    text = unicodedata.normalize("NFKD", text)
+
+    # Eliminar caracteres de control
+    text = ''.join(ch for ch in text if unicodedata.category(ch)[0] != 'C')
+
+    return text.strip()
 
 def generar_pdf(pregunta):
     """
     Genera un PDF con la información de la pregunta.
-    Se aplican transformaciones para que todo el texto pueda codificarse en Latin-1.
     """
     pdf = FPDF()
     pdf.add_page()
@@ -36,7 +47,6 @@ def generar_pdf(pregunta):
     # Opciones
     pdf.cell(0, 10, txt="Opciones:", ln=True)
     letras = "abcdefghijklmnopqrstuvwxyz"
-    # Se limpian las respuestas correctas para compararlas de forma segura
     correct_answers = [limpiar_texto(r.strip()) for r in pregunta.get("respuesta_correcta", [])]
     if pregunta.get("opciones"):
         for idx, opc in enumerate(pregunta["opciones"]):
@@ -57,9 +67,38 @@ def generar_pdf(pregunta):
     explicacion = limpiar_texto(pregunta.get("explicacion_openai", "").strip() or "<Vacío>")
     pdf.multi_cell(0, 10, txt=f"Explicación OpenAI: {explicacion}")
 
-    # Generar los bytes del PDF (ahora ya se garantiza que el contenido sea Latin-1)
-    pdf_bytes = pdf.output(dest="S").encode("latin1")
+    # Generar los bytes del PDF (UTF-8)
+    pdf_bytes = pdf.output(dest="S").encode("utf-8")
     return pdf_bytes
+
+# ============
+# Funciones de Carga/Guardado (en utils.py)
+# ============
+
+# utils.py (ejemplo)
+# import json
+
+# def cargar_json(filename="preguntas.json"):
+#     try:
+#         with open(filename, "r", encoding="utf-8") as f:
+#             return json.load(f)
+#     except FileNotFoundError:
+#         return []  # Retorna una lista vacía si el archivo no existe
+#     except json.JSONDecodeError:
+#         st.error(f"Error: El archivo JSON '{filename}' está corrupto o no es válido.")
+#         return []
+
+# def guardar_json(data, filename="preguntas.json"):
+#     try:
+#         with open(filename, "w", encoding="utf-8") as f:
+#             json.dump(data, f, ensure_ascii=False, indent=4)
+#         st.success(f"Preguntas guardadas en '{filename}'") # feedback visual
+#     except Exception as e:
+#         st.error(f"Error al guardar el archivo JSON: {e}")
+
+# ============
+# Interfaz Streamlit
+# ============
 
 # Mostrar el logo de la empresa en la barra lateral
 st.sidebar.image("assets/logo empresa.PNG", width=200)
@@ -111,7 +150,7 @@ with col3:
             st.error("El enunciado no puede estar vacío.")
         else:
             st.success("Cambios preparados. Descarga el PDF para guardar la pregunta.")
-            st.session_state.edit_mode = False
+        st.session_state.edit_mode = False
 with col4:
     if st.button("Siguiente"):
         st.session_state.indice = min(len(preguntas) - 1, st.session_state.indice + 1)
@@ -125,7 +164,7 @@ if st.session_state.edit_mode:
     opciones_text = st.text_area("Opciones (una por línea):", value="\n".join(current_question["opciones"]))
     concepto = st.text_input("Concepto a Estudiar:", value=current_question.get("concept_to_study", ""))
     explicacion = st.text_area("Explicación OpenAI:", value=current_question.get("explicacion_openai", ""))
-    
+
     if st.button("Aplicar Cambios"):
         if enunciado.strip() == "":
             st.error("El enunciado no puede estar vacío.")
@@ -144,7 +183,7 @@ else:
     st.subheader("Vista de la Pregunta")
     enunciado_display = current_question["enunciado"].strip() or "<Vacío>"
     st.write(f"**Enunciado:** {enunciado_display}")
-    
+
     st.write("**Opciones:**")
     if current_question["opciones"]:
         letras = "abcdefghijklmnopqrstuvwxyz"
@@ -155,7 +194,7 @@ else:
             st.write(f"{letra}) {opcion}{marker}")
     else:
         st.write("- <Vacío>")
-    
+
     concepto_display = current_question.get("concept_to_study", "").strip() or "<Vacío>"
     explicacion_display = current_question.get("explicacion_openai", "").strip() or "<Vacío>"
     st.write("**Concepto a Estudiar:**")
@@ -194,3 +233,9 @@ if st.button("Agregar Nueva Pregunta"):
     st.session_state.indice = len(preguntas) - 1
     st.session_state.edit_mode = True  # Activar la edición de inmediato
     st.info("Nueva pregunta añadida. Edítala a continuación.")
+
+# ============
+# Botón para guardar todas las preguntas en el archivo JSON
+# ============
+if st.button("Guardar Todas las Preguntas"):
+    guardar_json(preguntas)
