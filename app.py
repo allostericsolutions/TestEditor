@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import unicodedata
 import json
-from utils import cargar_json, generar_txt
+from utils import cargar_json, generar_txt, limpiar_texto
 
 # ============
 # Autenticación
@@ -78,13 +78,15 @@ if "preguntas" not in st.session_state:
 
 preguntas = st.session_state.preguntas  # Usar la lista del estado de sesión
 
-# Inicializar variables de sesión para el índice, el modo edición y el conjunto de preguntas editadas
+# Inicializar variables de sesión
 if "indice" not in st.session_state:
     st.session_state.indice = 0
 if "edit_mode" not in st.session_state:
     st.session_state.edit_mode = False
 if "preguntas_editadas" not in st.session_state:
-    st.session_state.preguntas_editadas = set()  # Conjunto para rastrear las preguntas editadas
+    st.session_state.preguntas_editadas = set()
+if "nuevas_preguntas" not in st.session_state:
+    st.session_state.nuevas_preguntas = []
 
 # ============
 # Lista de Clasificación
@@ -98,47 +100,6 @@ lista_clasificaciones = [
     "6 Quality Assurance, Safety, and Physical Principles",
     "7 Preparation, Documentation, and Communication"
 ]
-
-# ============
-# Función para el Formulario de Creación de Preguntas
-# ============
-def crear_formulario_pregunta():
-    with st.form("nueva_pregunta_form"):
-        clasificacion = st.selectbox("Clasificación", lista_clasificaciones)
-        enunciado = st.text_input("Enunciado")
-        opcion1 = st.text_input("Opción 1")
-        opcion2 = st.text_input("Opción 2")
-        opcion3 = st.text_input("Opción 3")
-        opcion4 = st.text_input("Opción 4")
-        respuesta_correcta1 = st.checkbox("Correcta", key="rc1")
-        respuesta_correcta2 = st.checkbox("Correcta", key="rc2")
-        respuesta_correcta3 = st.checkbox("Correcta", key="rc3")
-        respuesta_correcta4 = st.checkbox("Correcta", key="rc4")
-        concepto = st.text_input("Concepto a Estudiar")
-        explicacion_openai = st.text_area("Explicación OpenAI")
-        explicacion_imagen = st.text_input("Explicación de la Imagen (URL)")
-
-        submitted = st.form_submit_button("Crear Pregunta")
-
-        if submitted:
-            nueva_pregunta = {
-                "clasificacion": clasificacion,
-                "enunciado": enunciado,
-                "opciones": [opcion1, opcion2, opcion3, opcion4],
-                "respuesta_correcta": [
-                    opcion1 if respuesta_correcta1 else None,
-                    opcion2 if respuesta_correcta2 else None,
-                    opcion3 if respuesta_correcta3 else None,
-                    opcion4 if respuesta_correcta4 else None,
-                ],
-                "concept_to_study": concepto,
-                "explicacion_openai": explicacion_openai,
-                "image_explanation": explicacion_imagen,
-            }
-            # Eliminar las opciones 'None' de respuesta_correcta
-            nueva_pregunta["respuesta_correcta"] = [opc for opc in nueva_pregunta["respuesta_correcta"] if opc is not None]
-            return nueva_pregunta
-    return None
 
 # ============
 # Barra lateral: Navegación e índice
@@ -292,20 +253,91 @@ with tab1:
         st.info("Nueva pregunta añadida. Edítala a continuación.")
 
 with tab2:
+    # ============
+    # Función para el Formulario de Creación de Preguntas
+    # ============
+    def crear_formulario_pregunta():
+        with st.form("nueva_pregunta_form"):
+            clasificacion = st.selectbox("Clasificación", lista_clasificaciones)
+            enunciado = st.text_input("Enunciado")
+            opcion1 = st.text_input("Opción 1")
+            opcion2 = st.text_input("Opción 2")
+            opcion3 = st.text_input("Opción 3")
+            opcion4 = st.text_input("Opción 4")
+            respuesta_correcta1 = st.checkbox("Correcta", key="rc1")
+            respuesta_correcta2 = st.checkbox("Correcta", key="rc2")
+            respuesta_correcta3 = st.checkbox("Correcta", key="rc3")
+            respuesta_correcta4 = st.checkbox("Correcta", key="rc4")
+            concepto = st.text_input("Concepto a Estudiar")
+            explicacion_openai = st.text_area("Explicación OpenAI")
+            explicacion_imagen = st.text_input("Explicación de la Imagen (URL)")
+
+            submitted = st.form_submit_button("Guardar Pregunta")
+
+            if submitted:
+                nueva_pregunta = {
+                    "clasificacion": clasificacion,
+                    "enunciado": enunciado,
+                    "opciones": [opcion1, opcion2, opcion3, opcion4],
+                    "respuesta_correcta": [
+                        opcion1 if respuesta_correcta1 else None,
+                        opcion2 if respuesta_correcta2 else None,
+                        opcion3 if respuesta_correcta3 else None,
+                        opcion4 if respuesta_correcta4 else None,
+                    ],
+                    "concept_to_study": concepto,
+                    "explicacion_openai": explicacion_openai,
+                    "image_explanation": explicacion_imagen,
+                }
+                # Eliminar las opciones 'None' de respuesta_correcta
+                nueva_pregunta["respuesta_correcta"] = [opc for opc in nueva_pregunta["respuesta_correcta"] if opc is not None]
+                st.session_state.nuevas_preguntas.append(nueva_pregunta)
+                st.success("Pregunta guardada!")
+                # Limpiar el formulario
+                for key in st.session_state.keys():
+                    if key.startswith('rc'):
+                        st.session_state[key] = False
+
     st.header("Creación de Preguntas")
-    nueva_pregunta = crear_formulario_pregunta()
+    crear_formulario_pregunta()
 
-    if nueva_pregunta:
-        #st.write("Nueva pregunta creada:", nueva_pregunta)  # Mostrar la pregunta creada(Borrar cuando este bien visualmente)
-        #st.session_state.nuevas_preguntas = st.session_state.get("nuevas_preguntas", []) + [nueva_pregunta] # para multiples preguntas creadas
-        st.session_state.nueva_pregunta = nueva_pregunta # Para crear solo 1
+    # ============
+    # Vista previa de las preguntas creadas
+    # ============
+    st.subheader("Preguntas Creadas")
+    for i, pregunta in enumerate(st.session_state.nuevas_preguntas):
+        with st.expander(f"Pregunta {i+1}: {pregunta['enunciado'][:50] + '...' if len(pregunta['enunciado']) > 50 else pregunta['enunciado']}"): # Vista previa del Enunciado
 
-        # ============
-        # Botón para generar y descargar el TXT de las preguntas creadas
-        # ============
-        def generar_txt_nueva_pregunta(pregunta):
-            """Genera un archivo de texto con la información de una sola pregunta."""
-            texto = ""
+            # Botones de Editar y Eliminar
+            col1, col2 = st.columns([1,10])
+            with col1:
+                if st.button("Editar", key=f"editar_{i}"):
+                    # Implementar la lógica de edición aquí
+                    pass
+            with col2:
+                if st.button("Eliminar", key=f"eliminar_{i}"):
+                    del st.session_state.nuevas_preguntas[i]
+                    st.experimental_rerun()
+
+            # Vista previa de la pregunta
+            st.write(f"**Clasificación:** {pregunta['clasificacion'].split(' ', 1)[1] if ' ' in pregunta['clasificacion'] else pregunta['clasificacion']}")
+            st.write(f"**Enunciado:** {pregunta['enunciado']}")
+            st.write("**Opciones:**")
+            for i, opcion in enumerate(pregunta['opciones']):
+                marker = "✅ " if opcion in pregunta['respuesta_correcta'] else ""
+                st.write(f"  {i+1}) {opcion} {marker}")
+            st.write(f"**Concepto a Estudiar:** {pregunta['concept_to_study']}")
+            st.write(f"**Explicación OpenAI:** {pregunta['explicacion_openai']}")
+            st.write(f"**Explicación de la Imagen:** {pregunta['image_explanation']}")
+
+    # ============
+    # Botón para generar y descargar el TXT de las preguntas creadas
+    # ============
+    def generar_txt_nuevas_preguntas(preguntas):
+        """Genera un archivo de texto con la información de las preguntas."""
+        texto = ""
+        for i, pregunta in enumerate(preguntas):
+            texto += f"==== Pregunta {i+1} ====\n"
 
             # Título
             titulo = "Pregunta Nueva\n"
@@ -343,17 +375,17 @@ with tab2:
             # Explicación de la Imagen
             explicacion_imagen = pregunta.get("image_explanation", "").strip() or "<Vacío>"
             texto += f"Explicación de la Imagen: {explicacion_imagen}\n"
+            texto += "\n"
+        return texto.encode('utf-8')
 
-            return texto.encode('utf-8')
-
-        if "nueva_pregunta" in st.session_state:
-            txt_bytes = generar_txt_nueva_pregunta(st.session_state.nueva_pregunta)
-            st.download_button(
-                label="Descargar Pregunta Creada",
-                data=txt_bytes,
-                file_name="nueva_pregunta.txt",
-                mime="text/plain",
-            )
+    if st.session_state.nuevas_preguntas:
+        txt_bytes = generar_txt_nuevas_preguntas(st.session_state.nuevas_preguntas)
+        st.download_button(
+            label="Descargar TXT de Preguntas Creadas",
+            data=txt_bytes,
+            file_name="nuevas_preguntas.txt",
+            mime="text/plain",
+        )
 
 with tab3:
     st.header("ARDMS Content Outline")
