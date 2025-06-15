@@ -4,26 +4,31 @@ import pandas as pd
 import unicodedata
 import json
 from utils import cargar_json, generar_txt, limpiar_texto
-import time
-import os
 
 # ============
 # Autenticación
 # ============
+
+# Define las credenciales directamente en el código
 USUARIOS = {
     "marievapaula@gmail.com": "vascular33",
     "ciclosporina2@hotmail.com": "vascular33",
 }
 
 def check_password():
+    """
+    Retorna `True` si el usuario ingresó la contraseña correcta.
+    """
+
     def password_entered():
+        """Valida la contraseña."""
         if (
             st.session_state["username"] in USUARIOS
             and st.session_state["password"]
             == USUARIOS[st.session_state["username"]]
         ):
             st.session_state["password_correct"] = True
-            del st.session_state["password"]
+            del st.session_state["password"]  # no almacena la contraseña
             del st.session_state["username"]
         else:
             st.session_state["password_correct"] = False
@@ -32,13 +37,24 @@ def check_password():
         st.session_state["password_correct"] = False
 
     if not st.session_state["password_correct"]:
-        st.image("assets/logo empresa.PNG", width=200)
+        # Mostrar el logo en la pantalla de autenticación
+        st.image("assets/logo empresa.PNG", width=200)  # Reemplaza con la ruta correcta
+
+        # Mostrar formulario de inicio de sesión
         with st.form("login"):
             st.text_input("Correo", key="username")
-            st.text_input("Contraseña", type="password", key="password")
+            st.text_input(
+                "Contraseña", type="password", key="password"
+            )
             st.form_submit_button("Ingresar", on_click=password_entered)
+
         if st.session_state["password_correct"]:
+            # Borrar formulario de inicio de sesión
             st.experimental_rerun()
+        #else:
+        #   st.error("😕 Correo/contraseña incorrectos") # Eliminar el mensaje de error
+
+        # Detener la ejecución si la contraseña no es correcta
         return False
     else:
         return True
@@ -46,75 +62,21 @@ def check_password():
 # ============
 # Interfaz Streamlit
 # ============
+
 if not check_password():
-    st.stop()
+    st.stop()  # No ejecutar el resto de la app si la contraseña es incorrecta
 
-# Sidebar
+# Mostrar el logo de la empresa en la barra lateral
 st.sidebar.image("assets/logo empresa.PNG", width=200)
+
+# Reducir el tamaño de la fuente del título en la barra lateral
 st.sidebar.markdown("<p style='font-size: 12px;'>Revisión y Edición de Preguntas proyecto RVT</p>", unsafe_allow_html=True)
-
-# Recuperación del borrador
-def cargar_borrador(filepath="data/borrador_preguntas.txt"):
-    try:
-        with open(filepath, "r", encoding="utf-8") as f:
-            # Leer el contenido del archivo
-            contenido = f.read()
-
-            # Dividir el contenido en preguntas
-            preguntas = contenido.split("==== Pregunta ")[1:]
-
-            # Procesar cada pregunta
-            nuevas_preguntas = []
-            for pregunta in preguntas:
-                # Dividir la pregunta en líneas
-                lineas = pregunta.split("\n")
-
-                # Extraer el Enunciado
-                enunciado = lineas[2].split(": ")[1]
-
-                # Extraer las Opciones
-                opciones = []
-                respuesta_correcta = []
-                for linea in lineas[4:8]:
-                    if linea.startswith(("a) ", "b) ", "c) ", "d) ")):
-                        opcion = linea[3:].split(" ✅")[0]
-                        opciones.append(opcion)
-                        if "✅" in linea:
-                            respuesta_correcta.append(opcion)
-
-                # Extraer Concepto, Explicación OpenAI e Imagen
-                concepto = lineas[9].split(": ")[1]
-                explicacion_openai = lineas[10].split(": ")[1]
-                image_explanation = lineas[11].split(": ")[1]
-
-                # Crear el diccionario de la pregunta
-                nueva_pregunta = {
-                    "clasificacion": "",
-                    "enunciado": enunciado,
-                    "opciones": opciones,
-                    "respuesta_correcta": respuesta_correcta,
-                    "concept_to_study": concepto,
-                    "explicacion_openai": explicacion_openai,
-                    "image_explanation": image_explanation,
-                }
-                nuevas_preguntas.append(nueva_pregunta)
-            return nuevas_preguntas
-    except FileNotFoundError:
-        st.warning("No se encontró el archivo borrador.")
-        return []
-    except Exception as e:
-        st.error(f"Error al cargar el borrador: {e}")
-        return []
-
-if st.sidebar.button("Cargar Borrador"):
-    st.session_state.nuevas_preguntas = cargar_borrador()
-    st.experimental_rerun()
 
 # Cargar las preguntas desde el JSON (SOLO UNA VEZ al inicio)
 if "preguntas" not in st.session_state:
     st.session_state.preguntas = cargar_json()
 
-preguntas = st.session_state.preguntas
+preguntas = st.session_state.preguntas  # Usar la lista del estado de sesión
 
 # Inicializar variables de sesión
 if "indice" not in st.session_state:
@@ -126,9 +88,9 @@ if "preguntas_editadas" not in st.session_state:
 if "nuevas_preguntas" not in st.session_state:
     st.session_state.nuevas_preguntas = []
 
-st.sidebar.subheader("Navegación de Preguntas")
-
+# ============
 # Lista de Clasificación
+# ============
 lista_clasificaciones = [
     "1 Normal Anatomy, Perfusion, and Function",
     "2 Pathology, Perfusion, and Function",
@@ -139,13 +101,18 @@ lista_clasificaciones = [
     "7 Preparation, Documentation, and Communication"
 ]
 
+# ============
+# Barra lateral: Navegación e índice
+# ============
+st.sidebar.subheader("Navegación de Preguntas")
+
 # Crear la lista de opciones para el selectbox con un indicador para las preguntas editadas
 lista_indices = []
 for i, pregunta in enumerate(preguntas):
     num = i + 1
     enunciado = pregunta.get("enunciado", "").strip() or "<Vacío>"
     if i in st.session_state.preguntas_editadas:
-        lista_indices.append(f"{num}: {enunciado} (Editada)")
+        lista_indices.append(f"{num}: {enunciado} (Editada)")  # Indicador visual
     else:
         lista_indices.append(f"{num}: {enunciado}")
 
@@ -167,13 +134,18 @@ if st.sidebar.checkbox("Mostrar índice general", value=True):
 tab1, tab2, tab3 = st.tabs(["Revisión y Edición de Preguntas", "Creación de Preguntas", "ARDMS Content Outline"])
 
 with tab1:
+    # ============
+    # Página Principal
+    # ============
     st.title("Revisión y Edición de Preguntas")
     st.write(f"**Pregunta {st.session_state.indice + 1} de {len(preguntas)}**")
     current_question = preguntas[st.session_state.indice]
 
+    # Botones de navegación y acciones
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         if st.button("Previo"):
+            # Guardar la pregunta actual en el estado de la sesión ANTES de cambiar el índice
             st.session_state.preguntas[st.session_state.indice] = current_question
             st.session_state.indice = max(0, st.session_state.indice - 1)
     with col2:
@@ -184,14 +156,19 @@ with tab1:
             if current_question["enunciado"].strip() == "":
                 st.error("El enunciado no puede estar vacío.")
             else:
+                # Guardar la pregunta actual en el estado de la sesión ANTES de salir del modo edición
                 st.session_state.preguntas[st.session_state.indice] = current_question
                 st.success("Cambios preparados. Descarga el TXT para guardar la pregunta.")
             st.session_state.edit_mode = False
     with col4:
         if st.button("Siguiente"):
+            # Guardar la pregunta actual en el estado de la sesión ANTES de cambiar el índice
             st.session_state.preguntas[st.session_state.indice] = current_question
             st.session_state.indice = min(len(preguntas) - 1, st.session_state.indice + 1)
 
+    # ============
+    # Área de Visualización / Edición de la Pregunta
+    # ============
     if st.session_state.edit_mode:
         st.subheader("Modo Edición")
         enunciado = st.text_input("Enunciado:", value=current_question["enunciado"])
@@ -210,12 +187,14 @@ with tab1:
                 else:
                     st.error("Las opciones no pueden estar vacías.")
                 current_question["concept_to_study"] = concepto.strip()
-                explicacion = explicacion.strip()
+                current_question["explicacion_openai"] = explicacion.strip()
                 preguntas[st.session_state.indice] = current_question
 
                 st.success("Cambios aplicados (solo en memoria).")
                 st.session_state.edit_mode = False
+                # Guardar la pregunta actual en el estado de la sesión DESPUÉS de aplicar los cambios
                 st.session_state.preguntas[st.session_state.indice] = current_question
+                # Agregar el índice de la pregunta al conjunto de preguntas editadas
                 st.session_state.preguntas_editadas.add(st.session_state.indice)
 
     else:
@@ -241,6 +220,9 @@ with tab1:
         st.write("**Explicación OpenAI:**")
         st.write(explicacion_display)
 
+    # ============
+    # Botón para generar y descargar el TXT
+    # ============
     txt_bytes = generar_txt(preguntas)
     st.download_button(
         label="Descarga documento de la Preguntas editadas",
@@ -249,6 +231,9 @@ with tab1:
         mime="text/plain"
     )
 
+    # ============
+    # Botón para agregar una nueva pregunta
+    # ============
     if st.button("Agregar Nueva Pregunta"):
         nueva_pregunta = {
             "clasificacion": "",
@@ -268,8 +253,10 @@ with tab1:
         st.info("Nueva pregunta añadida. Edítala a continuación.")
 
 with tab2:
+    # ============
     # Formulario de Creación de Preguntas
-    with st.form("nueva_pregunta_form", clear_on_submit=False):
+    # ============
+    with st.form("nueva_pregunta_form", clear_on_submit=True):
         clasificacion = st.selectbox("Clasificación", lista_clasificaciones)
         enunciado = st.text_input("Enunciado")
 
@@ -299,7 +286,7 @@ with tab2:
 
         concepto = st.text_input("Concepto a Estudiar")
         explicacion_openai = st.text_area("Explicación OpenAI")
-        image_explanation = st.text_input("Explicación de la Imagen (URL)")
+        explicacion_imagen = st.text_input("Explicación de la Imagen (URL)")
 
         submitted = st.form_submit_button("Guardar Pregunta")
 
@@ -316,20 +303,25 @@ with tab2:
                 ],
                 "concept_to_study": concepto,
                 "explicacion_openai": explicacion_openai,
-                "image_explanation": image_explanation,
+                "image_explanation": explicacion_imagen,
             }
+            # Eliminar las opciones 'None' de respuesta_correcta
             nueva_pregunta["respuesta_correcta"] = [opc for opc in nueva_pregunta["respuesta_correcta"] if opc is not None]
             st.session_state.nuevas_preguntas.append(nueva_pregunta)
             st.success("Pregunta guardada!")
 
+    # ============
     # Vista previa de las preguntas creadas
+    # ============
     st.subheader("Preguntas Creadas")
     for i, pregunta in enumerate(st.session_state.nuevas_preguntas):
-        with st.expander(f"Pregunta {i+1}: {pregunta['enunciado'][:50] + '...' if len(pregunta['enunciado']) > 50 else pregunta['enunciado']}"):
+        with st.expander(f"Pregunta {i+1}: {pregunta['enunciado'][:50] + '...' if len(pregunta['enunciado']) > 50 else pregunta['enunciado']}"): # Vista previa del Enunciado
 
+            # Botones de Editar y Eliminar
             col1, col2 = st.columns([1,10])
             with col1:
                 if st.button("Editar", key=f"editar_{i}"):
+                    # Implementar la lógica de edición aquí
                     pass
             with col2:
                 if st.button("Eliminar", key=f"eliminar_{i}"):
@@ -347,16 +339,28 @@ with tab2:
             st.write(f"**Explicación OpenAI:** {pregunta['explicacion_openai']}")
             st.write(f"**Explicación de la Imagen:** {pregunta['image_explanation']}")
 
+    # ============
+    # Botón para generar y descargar el TXT de las preguntas creadas
+    # ============
     def generar_txt_nuevas_preguntas(preguntas):
+        """Genera un archivo de texto con la información de las preguntas."""
         texto = ""
         for i, pregunta in enumerate(preguntas):
             texto += f"==== Pregunta {i+1} ====\n"
+
+            # Título
             titulo = "Pregunta Nueva\n"
             texto += titulo
+
+            # Clasificación
             clasificacion = pregunta.get("clasificacion", "")
             texto += f"Clasificación: {clasificacion.split(' ', 1)[1] if ' ' in clasificacion else clasificacion}\n"
+
+            # Enunciado
             enunciado = pregunta.get("enunciado", "").strip() or "<Vacío>"
             texto += f"Enunciado: {enunciado}\n"
+
+            # Opciones
             texto += "Opciones:\n"
             letras = "abcdefghijklmnopqrstuvwxyz"
             correct_answers = [op.strip() for op in pregunta.get("respuesta_correcta", [])]
@@ -368,10 +372,16 @@ with tab2:
                     texto += f"{letra}) {opcion}{marker}\n"
             else:
                 texto += "- <Vacío>\n"
+
+            # Concepto a Estudiar
             concepto = pregunta.get("concept_to_study", "").strip() or "<Vacío>"
             texto += f"Concepto a Estudiar: {concepto}\n"
+
+            # Explicación OpenAI
             explicacion = pregunta.get("explicacion_openai", "").strip() or "<Vacío>"
             texto += f"Explicación OpenAI: {explicacion}\n"
+
+            # Explicación de la Imagen
             explicacion_imagen = pregunta.get("image_explanation", "").strip() or "<Vacío>"
             texto += f"Explicación de la Imagen: {explicacion_imagen}\n"
             texto += "\n"
@@ -385,47 +395,6 @@ with tab2:
             file_name="nuevas_preguntas.txt",
             mime="text/plain",
         )
-
-    def guardar_borrador(preguntas, filepath="data/borrador_preguntas.txt"):
-        try:
-            with open(filepath, "w", encoding="utf-8") as f:
-                for i, pregunta in enumerate(preguntas):
-                    f.write(f"==== Pregunta {i+1} ====\n")
-                    titulo = "Pregunta Nueva\n"
-                    f.write(titulo)
-                    clasificacion = pregunta.get("clasificacion", "")
-                    f.write(f"Clasificación: {clasificacion}\n")
-                    enunciado = pregunta.get("enunciado", "").strip() or "<Vacío>"
-                    f.write(f"Enunciado: {enunciado}\n")
-                    texto += "Opciones:\n"
-                    letras = "abcdefghijklmnopqrstuvwxyz"
-                    correct_answers = [op.strip() for op in pregunta.get("respuesta_correcta", [])]
-                    if pregunta.get("opciones"):
-                        for idx, opc in enumerate(pregunta["opciones"]):
-                            opcion = opc
-                            letra = letras[idx] if idx < len(letras) else f"{idx+1}"
-                            marker = " ✅" if opcion in correct_answers else ""
-                            f.write(f"{letra}) {opcion}{marker}\n")
-                    else:
-                        f.write("- <Vacío>\n")
-                    concepto = pregunta.get("concept_to_study", "").strip() or "<Vacío>"
-                    f.write(f"Concepto a Estudiar: {concepto}\n")
-                    explicacion = pregunta.get("explicacion_openai", "").strip() or "<Vacío>"
-                    explicacion_imagen = pregunta.get("image_explanation", "").strip() or "<Vacío>"
-                    f.write(f"Explicación de la Imagen: {explicacion_imagen}\n")
-                    f.write("\n")
-        except Exception as e:
-            st.error(f"Error al guardar el borrador: {e}")
-
-    # Inicializar la variable de sesión para el último guardado
-    if "ultimo_guardado" not in st.session_state:
-        st.session_state.ultimo_guardado = time.time()
-
-    # Guardar el borrador automáticamente cada 120 segundos (2 minutos)
-    if time.time() - st.session_state.ultimo_guardado > 120:
-        guardar_borrador(st.session_state.nuevas_preguntas)
-        st.session_state.ultimo_guardado = time.time()
-    st.info("Borrador guardado automaticamente.")
 
 with tab3:
     st.header("ARDMS Content Outline")
