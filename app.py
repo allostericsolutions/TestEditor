@@ -254,52 +254,44 @@ with tab1:
 
 with tab2:
     # ============
-    # Función para el Formulario de Creación de Preguntas
+    # Formulario de Creación de Preguntas
     # ============
-    def crear_formulario_pregunta():
-        with st.form("nueva_pregunta_form"):
-            clasificacion = st.selectbox("Clasificación", lista_clasificaciones)
-            enunciado = st.text_input("Enunciado")
-            opcion1 = st.text_input("Opción 1")
-            opcion2 = st.text_input("Opción 2")
-            opcion3 = st.text_input("Opción 3")
-            opcion4 = st.text_input("Opción 4")
-            respuesta_correcta1 = st.checkbox("Correcta", key="rc1")
-            respuesta_correcta2 = st.checkbox("Correcta", key="rc2")
-            respuesta_correcta3 = st.checkbox("Correcta", key="rc3")
-            respuesta_correcta4 = st.checkbox("Correcta", key="rc4")
-            concepto = st.text_input("Concepto a Estudiar")
-            explicacion_openai = st.text_area("Explicación OpenAI")
-            explicacion_imagen = st.text_input("Explicación de la Imagen (URL)")
+    with st.form("nueva_pregunta_form", clear_on_submit=True):
+        clasificacion = st.selectbox("Clasificación", lista_clasificaciones)
+        enunciado = st.text_input("Enunciado")
+        opcion1 = st.text_input("Opción 1")
+        opcion2 = st.text_input("Opción 2")
+        opcion3 = st.text_input("Opción 3")
+        opcion4 = st.text_input("Opción 4")
+        respuesta_correcta1 = st.checkbox("Correcta", key="rc1")
+        respuesta_correcta2 = st.checkbox("Correcta", key="rc2")
+        respuesta_correcta3 = st.checkbox("Correcta", key="rc3")
+        respuesta_correcta4 = st.checkbox("Correcta", key="rc4")
+        concepto = st.text_input("Concepto a Estudiar")
+        explicacion_openai = st.text_area("Explicación OpenAI")
+        explicacion_imagen = st.text_input("Explicación de la Imagen (URL)")
 
-            submitted = st.form_submit_button("Guardar Pregunta")
+        submitted = st.form_submit_button("Guardar Pregunta")
 
-            if submitted:
-                nueva_pregunta = {
-                    "clasificacion": clasificacion,
-                    "enunciado": enunciado,
-                    "opciones": [opcion1, opcion2, opcion3, opcion4],
-                    "respuesta_correcta": [
-                        opcion1 if respuesta_correcta1 else None,
-                        opcion2 if respuesta_correcta2 else None,
-                        opcion3 if respuesta_correcta3 else None,
-                        opcion4 if respuesta_correcta4 else None,
-                    ],
-                    "concept_to_study": concepto,
-                    "explicacion_openai": explicacion_openai,
-                    "image_explanation": explicacion_imagen,
-                }
-                # Eliminar las opciones 'None' de respuesta_correcta
-                nueva_pregunta["respuesta_correcta"] = [opc for opc in nueva_pregunta["respuesta_correcta"] if opc is not None]
-                st.session_state.nuevas_preguntas.append(nueva_pregunta)
-                st.success("Pregunta guardada!")
-                # Limpiar el formulario
-                for key in st.session_state.keys():
-                    if key.startswith('rc'):
-                        st.session_state[key] = False
-
-    st.header("Creación de Preguntas")
-    crear_formulario_pregunta()
+        if submitted:
+            nueva_pregunta = {
+                "clasificacion": clasificacion,
+                "enunciado": enunciado,
+                "opciones": [opcion1, opcion2, opcion3, opcion4],
+                "respuesta_correcta": [
+                    opcion1 if respuesta_correcta1 else None,
+                    opcion2 if respuesta_correcta2 else None,
+                    opcion3 if respuesta_correcta3 else None,
+                    opcion4 if respuesta_correcta4 else None,
+                ],
+                "concept_to_study": concepto,
+                "explicacion_openai": explicacion_openai,
+                "image_explanation": explicacion_imagen,
+            }
+            # Eliminar las opciones 'None' de respuesta_correcta
+            nueva_pregunta["respuesta_correcta"] = [opc for opc in nueva_pregunta["respuesta_correcta"] if opc is not None]
+            st.session_state.nuevas_preguntas.append(nueva_pregunta)
+            st.success("Pregunta guardada!")
 
     # ============
     # Vista previa de las preguntas creadas
