@@ -259,14 +259,31 @@ with tab2:
     with st.form("nueva_pregunta_form", clear_on_submit=True):
         clasificacion = st.selectbox("Clasificación", lista_clasificaciones)
         enunciado = st.text_input("Enunciado")
-        opcion1 = st.text_input("Opción 1")
-        opcion2 = st.text_input("Opción 2")
-        opcion3 = st.text_input("Opción 3")
-        opcion4 = st.text_input("Opción 4")
-        respuesta_correcta1 = st.checkbox("Correcta", key="rc1")
-        respuesta_correcta2 = st.checkbox("Correcta", key="rc2")
-        respuesta_correcta3 = st.checkbox("Correcta", key="rc3")
-        respuesta_correcta4 = st.checkbox("Correcta", key="rc4")
+
+        opcion1_col, correct1_col = st.columns([3, 1])
+        with opcion1_col:
+            opcion1 = st.text_input("Opción 1")
+        with correct1_col:
+            respuesta_correcta1 = st.checkbox("Correcta", key="rc1")
+
+        opcion2_col, correct2_col = st.columns([3, 1])
+        with opcion2_col:
+            opcion2 = st.text_input("Opción 2")
+        with correct2_col:
+            respuesta_correcta2 = st.checkbox("Correcta", key="rc2")
+
+        opcion3_col, correct3_col = st.columns([3, 1])
+        with opcion3_col:
+            opcion3 = st.text_input("Opción 3")
+        with correct3_col:
+            respuesta_correcta3 = st.checkbox("Correcta", key="rc3")
+
+        opcion4_col, correct4_col = st.columns([3, 1])
+        with opcion4_col:
+            opcion4 = st.text_input("Opción 4")
+        with correct4_col:
+            respuesta_correcta4 = st.checkbox("Correcta", key="rc4")
+
         concepto = st.text_input("Concepto a Estudiar")
         explicacion_openai = st.text_area("Explicación OpenAI")
         explicacion_imagen = st.text_input("Explicación de la Imagen (URL)")
