@@ -701,7 +701,7 @@
             "increased, decreased"
         ],
         "concept_to_study": "Acceleration time (AT)",
-        "explicacion_openai": "A hemodynamically significant arterial stenosis forces downstream arterioles to vasodilate in compensation, lowering resistance. That reduced resistance slows systolic upstroke, so the AT measured distal to the stenosis increases as resistance decreases.",
+        "explicacion_openai": "A hemodynamically significant arterial stenosis forces downstream arterioles to vasodilate in compensation, lowering resistance. That reduced resistance slows systolic upstroke, so the AT measured distal to the stenosis increases as resistance decreases.",
         "image_explanation": ""
     },
     {
@@ -2332,6 +2332,310 @@
         ],
         "concept_to_study": "Great saphenous vein characteristics",
         "explicacion_openai": "The inaccurate statement is that the vein courses laterally at the knee, although it actually ascends medially along the thigh.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusión and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The velocity ratio is calculated by:",
+        "image": "",
+        "opciones": [
+            "PSV divided by EDV in the same proximal segment",
+            "PSV in the proximal segment divided by PSV at the stenosis site",
+            "PSV multiplied by PSV in the distal segment",
+            "PSV at the stenosis site divided by PSV in the normal proximal segment"
+        ],
+        "respuesta_correcta": [
+            "PSV at the stenosis site divided by PSV in the normal proximal segment"
+        ],
+        "concept_to_study": "Velocity ratio",
+        "explicacion_openai": "The velocity ratio is derived by dividing the peak systolic velocity (PSV) at the site of stenosis by the PSV in a normal, adjacent proximal segment. This ratio helps determine the degree of stenosis in a vessel.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusión and Function",
+        "grupo": 2,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "A velocity ratio > 2 is consistent with:",
+        "image": "",
+        "opciones": [
+            "Normal ratio",
+            "> 10% stenosis",
+            "≥ 50% stenosis",
+            "> 80% stenosis"
+        ],
+        "respuesta_correcta": [
+            "≥ 50% stenosis"
+        ],
+        "concept_to_study": "Velocity ratio",
+        "explicacion_openai": "A velocity ratio greater than 2 typically indicates a stenosis of 50% or more, suggesting significant narrowing of the vessel.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusión and Function",
+        "grupo": 3,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "A velocity ratio > 4 suggests:",
+        "image": "",
+        "opciones": [
+            "Normal ratio",
+            "> 20% stenosis",
+            "> 50% stenosis",
+            "> 80% stenosis"
+        ],
+        "respuesta_correcta": [
+            "> 80% stenosis"
+        ],
+        "concept_to_study": "Velocity ratio",
+        "explicacion_openai": "A velocity ratio exceeding 4 often indicates a severe stenosis, generally greater than 80%, reflecting a critical reduction in vessel diameter.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusión and Function",
+        "grupo": 4,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following is characteristic of a Reversed Saphenous Vein Graft (RSVG)?",
+        "image": "",
+        "opciones": [
+            "Vein valves stay open due to arterial flow pressure.",
+            "The smaller end of the vein is positioned proximally.",
+            "The procedure requires mobilization of the saphenous vein.",
+            "Valves remain open due to arterial pressure AND the smaller end is positioned proximally AND the vein must be completely mobilized."
+        ],
+        "respuesta_correcta": [
+            "Valves remain open due to arterial pressure AND the smaller end is positioned proximally AND the vein must be completely mobilized."
+        ],
+        "concept_to_study": "Reversed Saphenous Vein Graft (RSVG)",
+        "explicacion_openai": "A reversed saphenous vein graft (RSVG) involves harvesting the saphenous vein, reversing its orientation, and implanting it to bypass a blockage. Key characteristics include: the valves remaining open due to arterial pressure, the smaller end being proximal, and the necessity of completely mobilizing the vein.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusión and Function",
+        "grupo": 5,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "In the Reversed Saphenous Vein Graft (RSVG):",
+        "image": "",
+        "opciones": [
+            "The valves break",
+            "The smaller end is positioned distally",
+            "The valves remain functional",
+            "Branches are not ligated"
+        ],
+        "respuesta_correcta": [
+            "The valves remain functional"
+        ],
+        "concept_to_study": "Reversed Saphenous Vein Graft (RSVG)",
+        "explicacion_openai": "In an RSVG, the valves remain functional, allowing for unidirectional flow despite the reversed orientation of the vein. It is crucial that the valves are not broken.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusión and Function",
+        "grupo": 6,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following is characteristic of an In-situ Vein Graft?",
+        "image": "",
+        "opciones": [
+            "The larger end of the vein is positioned proximally.",
+            "The smaller end of the vein is positioned distally.",
+            "The valves are rendered non-functional.",
+            "The larger end is positioned proximally AND the smaller end is positioned distally AND the valves are rendered non-functional."
+        ],
+        "respuesta_correcta": [
+            "The larger end is positioned proximally AND the smaller end is positioned distally AND the valves are rendered non-functional."
+        ],
+        "concept_to_study": "In-situ Vein Graft",
+        "explicacion_openai": "An in-situ vein graft is characterized by maintaining the vein in its original anatomical location, with the larger end proximal, the smaller end distal, and the valves inactivated to allow arterial flow.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusión and Function",
+        "grupo": 7,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "A low PSV observed within a graft suggests the presence of:",
+        "image": "",
+        "opciones": [
+            "Outflow disease",
+            "Inflow disease",
+            "Anastomotic stenosis",
+            "Partially thrombosed graft"
+        ],
+        "respuesta_correcta": [
+            "Inflow disease"
+        ],
+        "concept_to_study": "Bypass grafts",
+        "explicacion_openai": "A persistently low peak systolic velocity (PSV) within a bypass graft is most likely indicative of inflow disease, suggesting a proximal obstruction limiting blood supply to the graft.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusión and Function",
+        "grupo": 8,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following statements accurately describes an endoleak?",
+        "image": "",
+        "opciones": [
+            "It involves blood leaking outside a stent graft and into an aneurysm sac.",
+            "It is a complication that can occur following EVAR.",
+            "They are classified based on the source of vessels causing inflow into the aneurysm sac.",
+            "All options are correct."
+        ],
+        "respuesta_correcta": [
+            "All options are correct."
+        ],
+        "concept_to_study": "Endoleak",
+        "explicacion_openai": "An endoleak, a potential complication after EVAR, is characterized by blood leaking outside the stent graft and into the aneurysm sac. Endoleaks are classified based on the source of blood flow into the sac.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusión and Function",
+        "grupo": 9,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Renal to Aortic Ratio (RAR):",
+        "image": "",
+        "opciones": [
+            "Highest renal artery PSV divided by aortic EDV",
+            "Highest renal artery EDV divided by aortic PSV",
+            "Highest renal artery PSV divided by lower renal artery PSV",
+            "Highest renal artery PSV divided by aortic PSV"
+        ],
+        "respuesta_correcta": [
+            "Highest renal artery PSV divided by aortic PSV"
+        ],
+        "concept_to_study": "Renal to Aortic Ratio (RAR)",
+        "explicacion_openai": "The Renal-to-Aortic Ratio (RAR) is calculated by dividing the peak systolic velocity (PSV) of the renal artery by the PSV of the aorta, typically at the level of the renal arteries.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusión and Function",
+        "grupo": 10,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following statements is correct regarding the Renal to Aortic Ratio (RAR)?",
+        "image": "",
+        "opciones": [
+            "≥ 3.5 suggests ≥ 60% diameter reduction",
+            "It is not useful if an AAA is detected",
+            "< 3.5 is normal",
+            "≥ 3.5 suggests ≥ 60% diameter reduction, AND it is not useful if an AAA is detected, AND ratios < 3.5 are normal."
+        ],
+        "respuesta_correcta": [
+            "≥ 3.5 suggests ≥ 60% diameter reduction, AND it is not useful if an AAA is detected, AND ratios < 3.5 are normal."
+        ],
+        "concept_to_study": "Renal to Aortic Ratio (RAR)",
+        "explicacion_openai": "A Renal-to-Aortic Ratio (RAR) ≥ 3.5 suggests a diameter reduction of 60% or greater. The RAR is unreliable in the presence of an AAA, and a ratio < 3.5 is generally considered normal.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusión and Function",
+        "grupo": 11,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "In a mesenteric artery, the normal post-prandial response is a change to a low-resistance waveform. If a pre-prandial high-resistance waveform persists post-prandially, this suggests:",
+        "image": "",
+        "opciones": [
+            "Distal mesenteric disease",
+            "Proximal mesenteric disease",
+            "Normal finding",
+            "Blood flow unaffected by eating"
+        ],
+        "respuesta_correcta": [
+            "Distal mesenteric disease"
+        ],
+        "concept_to_study": "Mesenteric artery ischemia syndrome",
+        "explicacion_openai": "In the setting of mesenteric artery evaluation, the persistence of a high-resistance waveform post-prandially suggests underlying distal mesenteric disease.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusión and Function",
+        "grupo": 12,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following arteries typically demonstrates blood flow unaffected by eating?",
+        "image": "",
+        "opciones": [
+            "Superior mesenteric artery (SMA)",
+            "Inferior mesenteric artery (IMA)",
+            "Celiac artery",
+            "None of the above"
+        ],
+        "respuesta_correcta": [
+            "Celiac artery"
+        ],
+        "concept_to_study": "Celiac artery",
+        "explicacion_openai": "The celiac artery is the primary source of vascular supply for the upper abdominal digestive organs; its blood flow remains consistent and unaffected by eating.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusión and Function",
+        "grupo": 13,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following is characteristic of Celiac band syndrome?",
+        "image": "",
+        "opciones": [
+            "High-velocity signals improve with deep inspiration",
+            "Stenosis occurs during expiration",
+            "Extrinsic compression of the celiac artery origin can be seen",
+            "High-velocity signals improve with deep inspiration AND stenosis occurs during expiration AND extrinsic compression of the celiac artery origin can be seen."
+        ],
+        "respuesta_correcta": [
+            "High-velocity signals improve with deep inspiration AND stenosis occurs during expiration AND extrinsic compression of the celiac artery origin can be seen."
+        ],
+        "concept_to_study": "Celiac band syndrome",
+        "explicacion_openai": "Celiac band syndrome is characterized by extrinsic compression of the celiac artery origin, with the stenosis worsening during expiration and improving with deep inspiration.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusión and Function",
+        "grupo": 14,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "In a liver transplant, the most common transient hepatic arterial waveform abnormality seen in the immediate postoperative period is:",
+        "image": "",
+        "opciones": [
+            "A low-resistance waveform",
+            "Monophasic waveform",
+            "Decreased hepatic arterial RI",
+            "Increased hepatic arterial RI"
+        ],
+        "respuesta_correcta": [
+            "Increased hepatic arterial RI"
+        ],
+        "concept_to_study": "Liver transplant",
+        "explicacion_openai": "The most common transient hepatic arterial waveform abnormality seen immediately after liver transplantation is an increased hepatic arterial resistance index (RI), which typically improves spontaneously.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusión and Function",
+        "grupo": 15,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "In a renal transplant stenosis, which of the following is typically NOT present?",
+        "image": "",
+        "opciones": [
+            "2 : 1 peak systolic velocity ratio",
+            "Spectral broadening",
+            "Peak systolic velocity > 200 cm/s",
+            "Low-resistance waveforms in the main renal artery"
+        ],
+        "respuesta_correcta": [
+            "Low-resistance waveforms in the main renal artery"
+        ],
+        "concept_to_study": "Renal transplant",
+        "explicacion_openai": "All of the following findings are consistent with renal transplant stenosis EXCEPT for low-resistance waveforms in the main renal artery.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusión and Function",
+        "grupo": 16,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following statements accurately describes the watershed area?",
+        "image": "",
+        "opciones": [
+            "Smaller branches of the superior and inferior epigastric arteries anastomose",
+            "Located approximately midway in the abdominal wall",
+            "Deep superior epigastric artery is a terminal branch of the internal mammary artery",
+            "All options are correct."
+        ],
+        "respuesta_correcta": [
+            "All options are correct."
+        ],
+        "concept_to_study": "Water-shed area",
+        "explicacion_openai": "The watershed area is located approximately midway in the abdominal wall, where the smaller branches of the superior and inferior epigastric arteries anastomose, and the deep superior epigastric artery arises as a terminal branch of the internal mammary artery.",
         "image_explanation": ""
     }
 ]
