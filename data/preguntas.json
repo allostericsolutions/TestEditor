@@ -3018,99 +3018,99 @@
         "explicacion_openai": "The inaccurate statement is that the vein courses laterally at the knee, although it actually ascends medially along the thigh.",
         "image_explanation": ""
     },
-   {
-    "clasificacion": "Surgically Altered Anatomy and Pathology",
-    "grupo": 80,
-    "tipo_pregunta": "opcion_multiple",
-    "enunciado": "Which flap uses tissue from the rectus abdominis muscle and adjacent soft tissue for reconstruction?",
-    "image": "",
-    "opciones": [
-      "DIEP",
-      "TOS",
-      "TRAM",
-      "None of the options are correct"
-    ],
-    "respuesta_correcta": [
-      "TRAM"
-    ],
-    "concept_to_study": "TRAM flap",
-    "explicacion_openai": "A TRAM flap (transverse rectus abdominis myocutaneous flap) involves transferring skin, fat, and the rectus abdominis muscle from the lower abdomen to reconstruct the breast after mastectomy.",
-    "image_explanation": ""
-  },
-  {
-    "clasificacion": "Surgically Altered Anatomy and Pathology",
-    "grupo": 80,
-    "tipo_pregunta": "opcion_multiple",
-    "enunciado": "Which flap spares the abdominal muscle, relying only on skin, fat, and perforating vessels?",
-    "image": "",
-    "opciones": [
-      "TRAM",
-      "TOS",
-      "DIEP",
-      "AVM"
-    ],
-    "respuesta_correcta": [
-      "DIEP"
-    ],
-    "concept_to_study": "DIEP flap",
-    "explicacion_openai": "The DIEP flap (deep inferior epigastric perforator flap) preserves the rectus abdominis muscle by harvesting skin and fat supplied by perforator vessels from the deep inferior epigastric artery.",
-    "image_explanation": ""
-  },
-  {
-    "clasificacion": "Pathology, Perfusion, and Function",
-    "grupo": 80,
-    "tipo_pregunta": "opcion_multiple",
-    "enunciado": "Which of the following is not characteristic of cystic adventitial disease?",
-    "image": "",
-    "opciones": [
-      "Predominantly affects peripheral arteries",
-      "The femoral artery is most commonly affected",
-      "May produce a “scimitar sign” on imaging",
-      "Presents as one or more anechoic or hypoechoic cysts within the arterial adventitia"
-    ],
-    "respuesta_correcta": [
-      "The femoral artery is most commonly affected"
-    ],
-    "concept_to_study": "Cystic adventitial disease (CAD)",
-    "explicacion_openai": "CAD most often involves the popliteal artery, shows eccentric adventitial cysts on ultrasound or angiography, and may display the scimitar sign; the femoral artery is rarely the primary site.",
-    "image_explanation": ""
-  },
-  {
-    "clasificacion": "Pathology, Perfusion, and Function",
-    "grupo": 80,
-    "tipo_pregunta": "opcion_multiple",
-    "enunciado": "What is the most common type of thoracic outlet syndrome?",
-    "image": "",
-    "opciones": [
-      "Venous",
-      "Arterial",
-      "Neurogenic",
-      "Adson maneuver"
-    ],
-    "respuesta_correcta": [
-      "Neurogenic"
-    ],
-    "concept_to_study": "Thoracic outlet syndrome (TOS)",
-    "explicacion_openai": "Neurogenic TOS, resulting from brachial plexus compression, accounts for over 90% of cases; arterial and venous forms are far less frequent, and the Adson maneuver is a provocative test, not a syndrome type.",
-    "image_explanation": ""
-  },
-  {
-    "clasificacion": "Pathology, Perfusion, and Function",
-    "grupo": 80,
-    "tipo_pregunta": "opcion_multiple",
-    "enunciado": "Which of the following structures is not compressed in thoracic outlet syndrome?",
-    "image": "",
-    "opciones": [
-      "Subclavian artery",
-      "Brachial plexus",
-      "Subclavian vein",
-      "Vertebral artery"
-    ],
-    "respuesta_correcta": [
-      "Vertebral artery"
-    ],
-    "concept_to_study": "Thoracic outlet syndrome (TOS)",
-    "explicacion_openai": "In TOS, the brachial plexus, subclavian artery, or subclavian vein may be compressed as they traverse the thoracic outlet; the vertebral artery is not typically involved.",
-    "image_explanation": ""
-  }
+    {
+        "clasificacion": "Surgically Altered Anatomy and Pathology",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which flap uses tissue from the rectus abdominis muscle and adjacent soft tissue for reconstruction?",
+        "image": "",
+        "opciones": [
+            "DIEP",
+            "TOS",
+            "TRAM",
+            "None of the options are correct"
+        ],
+        "respuesta_correcta": [
+            "TRAM"
+        ],
+        "concept_to_study": "TRAM flap",
+        "explicacion_openai": "A TRAM flap (transverse rectus abdominis myocutaneous flap) involves transferring skin, fat, and the rectus abdominis muscle from the lower abdomen to reconstruct the breast after mastectomy.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Surgically Altered Anatomy and Pathology",
+        "grupo": 2,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which flap spares the abdominal muscle, relying only on skin, fat, and perforating vessels?",
+        "image": "",
+        "opciones": [
+            "TRAM",
+            "TOS",
+            "DIEP",
+            "AVM"
+        ],
+        "respuesta_correcta": [
+            "DIEP"
+        ],
+        "concept_to_study": "DIEP flap",
+        "explicacion_openai": "The DIEP flap (deep inferior epigastric perforator flap) preserves the rectus abdominis muscle by harvesting skin and fat supplied by perforator vessels from the deep inferior epigastric artery.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Pathology, Perfusion, and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following is not characteristic of cystic adventitial disease?",
+        "image": "",
+        "opciones": [
+            "Predominantly affects peripheral arteries",
+            "The femoral artery is most commonly affected",
+            "May produce a “scimitar sign” on imaging",
+            "Presents as one or more anechoic or hypoechoic cysts within the arterial adventitia"
+        ],
+        "respuesta_correcta": [
+            "The femoral artery is most commonly affected"
+        ],
+        "concept_to_study": "Cystic adventitial disease (CAD)",
+        "explicacion_openai": "CAD most often involves the popliteal artery, shows eccentric adventitial cysts on ultrasound or angiography, and may display the scimitar sign; the femoral artery is rarely the primary site.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Pathology, Perfusion, and Function",
+        "grupo": 2,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "What is the most common type of thoracic outlet syndrome?",
+        "image": "",
+        "opciones": [
+            "Venous",
+            "Arterial",
+            "Neurogenic",
+            "Adson maneuver"
+        ],
+        "respuesta_correcta": [
+            "Neurogenic"
+        ],
+        "concept_to_study": "Thoracic outlet syndrome (TOS)",
+        "explicacion_openai": "Neurogenic TOS, resulting from brachial plexus compression, accounts for over 90% of cases; arterial and venous forms are far less frequent, and the Adson maneuver is a provocative test, not a syndrome type.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Pathology, Perfusion, and Function",
+        "grupo": 3,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following structures is not compressed in thoracic outlet syndrome?",
+        "image": "",
+        "opciones": [
+            "Subclavian artery",
+            "Brachial plexus",
+            "Subclavian vein",
+            "Vertebral artery"
+        ],
+        "respuesta_correcta": [
+            "Vertebral artery"
+        ],
+        "concept_to_study": "Thoracic outlet syndrome (TOS)",
+        "explicacion_openai": "In TOS, the brachial plexus, subclavian artery, or subclavian vein may be compressed as they traverse the thoracic outlet; the vertebral artery is not typically involved.",
+        "image_explanation": ""
+    }
 ]
