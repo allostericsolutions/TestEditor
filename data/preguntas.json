@@ -7498,5 +7498,291 @@
     "concept_to_study": "Triphasic waveform",
     "explanation_openai": "A normal triphasic waveform is laminar, with minimal spectral broadening, high resistance, and is routinely seen in peripheral arteries at rest.",
     "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. What is the defining feature of the waveform’s systolic phase?",
+    "image": "onda_trifasica.png",
+    "options": [
+      "Steep upstroke with high peak velocity",
+      "Prolonged acceleration time",
+      "Blunted peak with spectral broadening",
+      "Elevated diastolic baseline"
+    ],
+    "correct_answer": [
+      "Steep upstroke with high peak velocity"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "The sharp systolic upstroke and high peak velocity reflect strong ventricular contraction and low proximal resistance.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. Which portion corresponds to elastic recoil of the arterial wall?",
+    "image": "onda_trifasica.png",
+    "options": [
+      "Late diastolic forward component",
+      "Early diastolic reversal",
+      "Systolic peak",
+      "Baseline spectral broadening"
+    ],
+    "correct_answer": [
+      "Late diastolic forward component"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "The late diastolic forward flow arises from elastic recoil of the vessel wall after systole.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. What does the brief reverse flow suggest about downstream impedance?",
+    "image": "onda_trifasica.png",
+    "options": [
+      "High peripheral resistance",
+      "Low downstream impedance",
+      "Venous hypertension",
+      "Cardiac arrhythmia"
+    ],
+    "correct_answer": [
+      "High peripheral resistance"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "The early diastolic reversal occurs because the high-resistance muscular bed briefly reflects flow backward.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. In which vessel would this pattern be abnormal at rest?",
+    "image": "onda_trifasica.png",
+    "options": [
+      "Internal carotid artery",
+      "Femoral artery",
+      "Renal artery",
+      "Popliteal artery"
+    ],
+    "correct_answer": [
+      "Internal carotid artery"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "Low-resistance beds like the internal carotid normally show continuous forward diastolic flow, not reversal.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. How would a proximal stenosis alter this waveform?",
+    "image": "onda_trifasica.png",
+    "options": [
+      "Decrease peak systolic velocity and loss of reversal",
+      "Increase diastolic reversal",
+      "Sharpen systolic upstroke",
+      "Elevate end-diastolic velocity"
+    ],
+    "correct_answer": [
+      "Decrease peak systolic velocity and loss of reversal"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "Upstream narrowing attenuates systolic flow and dampens the diastolic reversal component.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. Which change indicates increased distal resistance?",
+    "image": "onda_trifasica.png",
+    "options": [
+      "Augmented early diastolic reversal",
+      "Elevated diastolic forward flow",
+      "Broad systolic plateau",
+      "Monophasic pattern"
+    ],
+    "correct_answer": [
+      "Augmented early diastolic reversal"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "Greater reverse flow in early diastole signals a rise in downstream impedance.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. After exercise, which transformation is expected?",
+    "image": "onda_trifasica.png",
+    "options": [
+      "Monophasic flow with elevated diastolic forward flow",
+      "Increased reverse flow",
+      "Sharpened systolic peak",
+      "Persistent triphasic pattern"
+    ],
+    "correct_answer": [
+      "Monophasic flow with elevated diastolic forward flow"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "Exercise-induced vasodilation lowers resistance, abolishing the reverse component and sustaining diastolic flow.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. What does loss of the reverse component indicate clinically?",
+    "image": "onda_trifasica.png",
+    "options": [
+      "Proximal arterial occlusion",
+      "Distal arteriolar constriction",
+      "Venous insufficiency",
+      "Enhanced cardiac output"
+    ],
+    "correct_answer": [
+      "Proximal arterial occlusion"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "An upstream occlusion diminishes systolic energy and eliminates the diastolic reversal.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. Which physiological mechanism generates the late diastolic forward flow?",
+    "image": "onda_trifasica.png",
+    "options": [
+      "Elastic recoil of arterial wall",
+      "Peripheral vascular steal",
+      "Cardiac atrial kick",
+      "Reflected pulse wave"
+    ],
+    "correct_answer": [
+      "Elastic recoil of arterial wall"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "Elastic recoil after systole propels the late diastolic forward component.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. How would significant calcification modify the upstroke?",
+    "image": "onda_trifasica.png",
+    "options": [
+      "Blunted systolic upstroke",
+      "Sharper upstroke",
+      "Enhanced reverse flow",
+      "Elevated diastolic baseline"
+    ],
+    "correct_answer": [
+      "Blunted systolic upstroke"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "Calcification reduces vessel compliance and slows systolic acceleration.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. Which intervention most rapidly restores the baseline pattern after reactive hyperemia?",
+    "image": "onda_trifasica.png",
+    "options": [
+      "Allowing rest and recovery",
+      "Applying a cold compress",
+      "Administering a vasodilator",
+      "Increasing probe Doppler angle"
+    ],
+    "correct_answer": [
+      "Allowing rest and recovery"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "Returning to baseline muscle tone and distal resistance restores the triphasic pattern.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. What does the sharp systolic peak most directly reflect?",
+    "image": "onda_trifasica.png",
+    "options": [
+      "Strong ventricular contraction",
+      "High downstream resistance",
+      "Elastic recoil",
+      "Collateral flow"
+    ],
+    "correct_answer": [
+      "Strong ventricular contraction"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "A steep upstroke is generated by a powerful ventricular ejection into a low-resistance bed.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. Which condition would blunt both the systolic peak and reverse flow?",
+    "image": "onda_trifasica.png",
+    "options": [
+      "Proximal arterial occlusion",
+      "Distal vasodilation",
+      "Normal aging",
+      "Hyperthyroidism"
+    ],
+    "correct_answer": [
+      "Proximal arterial occlusion"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "An upstream occlusion dampens energy delivery and abolishes diastolic reversal.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. Which finding distinguishes this pattern from low-resistance flow?",
+    "image": "onda_trifasica.png",
+    "options": [
+      "Presence of early diastolic reversal",
+      "Elevated diastolic forward flow",
+      "Monophasic shape",
+      "Broad systolic peak"
+    ],
+    "correct_answer": [
+      "Presence of early diastolic reversal"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "Low-resistance beds do not exhibit a reverse flow phase in early diastole.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. Which parameter best confirms high-resistance peripheral circulation?",
+    "image": "onda_trifasica.png",
+    "options": [
+      "Brief reverse diastolic component",
+      "Elevated end-diastolic velocity",
+      "Blunted systolic upstroke",
+      "Continuous forward flow"
+    ],
+    "correct_answer": [
+      "Brief reverse diastolic component"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "The early diastolic reversal is the hallmark of a high-resistance vascular bed.",
+    "image_explanation": ""
   }
 ]
+
