@@ -7403,5 +7403,100 @@
         "concept_to_study": "Wall Filter",
         "explicacion_openai": "The wall filter is used to eliminate low frequency signals caused by tissue motion, thus reducing clutter in the Doppler signal.",
         "image_explanation": ""
-    }
+    },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Based on the spectral Doppler tracing shown, which of the following most accurately describes its vascular resistance profile?",
+    "image": "onda_trifasica.png",
+    "options": [
+      "High resistance",
+      "Low resistance",
+      "Probably seen in abnormal organ supply",
+      "Seen in stenotic areas"
+    ],
+    "correct_answer": [
+      "High resistance"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "A triphasic waveform demonstrates high-resistance flow, evident as a sharp systolic upstroke, brief diastolic reversal, and late-diastolic forward component.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. The first component of this waveform corresponds with:",
+    "image": "onda_trifasica.png",
+    "options": [
+      "Recoil",
+      "Peripheral vascular resistance",
+      "Diastole",
+      "Ventricular contraction"
+    ],
+    "correct_answer": [
+      "Ventricular contraction"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "The initial sharp upstroke reflects ventricular contraction generating forward systolic flow.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. The second component of this waveform corresponds with:",
+    "image": "onda_trifasica.png",
+    "options": [
+      "Wall elasticity",
+      "Systole",
+      "Diastole",
+      "Peripheral vascular resistance"
+    ],
+    "correct_answer": [
+      "Peripheral vascular resistance"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "The early diastolic reversal is caused by high peripheral resistance reflecting a brief backward flow.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. The third component of this waveform corresponds with:",
+    "image": "onda_trifasica.png",
+    "options": [
+      "Wall elasticity",
+      "Systole",
+      "Diastole",
+      "Peripheral vascular resistance"
+    ],
+    "correct_answer": [
+      "Wall elasticity"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "The late diastolic forward flow arises from elastic recoil of the arterial wall after systole.",
+    "image_explanation": ""
+  },
+  {
+    "classification": "Pathology, Perfusion and Function",
+    "group": 301,
+    "question_type": "multiple_choice",
+    "statement": "Refer to the image. All are correct about this waveform, except:",
+    "image": "onda_trifasica.png",
+    "options": [
+      "High resistance",
+      "Spectral broadening",
+      "Laminar flow",
+      "Seen in normal peripheral arteries"
+    ],
+    "correct_answer": [
+      "Spectral broadening"
+    ],
+    "concept_to_study": "Triphasic waveform",
+    "explanation_openai": "A normal triphasic waveform is laminar, with minimal spectral broadening, high resistance, and is routinely seen in peripheral arteries at rest.",
+    "image_explanation": ""
+  }
 ]
