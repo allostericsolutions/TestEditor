@@ -8714,5 +8714,518 @@
         "concept_to_study": "Total Patient Count",
         "explicacion_openai": "The total number of patients in the study is the sum of all categories: (Pathology by US and CT) + (Pathology by US but no CT) + (No pathology by US and CT) + (No pathology by US but by CT) = 40 + 10 + 45 + 5 = 100 patients.",
         "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "A **False Negative** result in a diagnostic test means that the:",
+        "image": "",
+        "opciones": [
+            "test indicates normal, but the test is incorrect.",
+            "test indicates disease, and the test is correct.",
+            "test indicates disease, but the test is incorrect.",
+            "test indicates normal, and the test is correct."
+        ],
+        "respuesta_correcta": [
+            "test indicates normal, but the test is incorrect."
+        ],
+        "concept_to_study": "False Negative Definition",
+        "explicacion_openai": "A False Negative occurs when a diagnostic test incorrectly suggests the absence of a condition (indicates normal) when the condition is actually present.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "A **False Positive** result in a diagnostic test means that the:",
+        "image": "",
+        "opciones": [
+            "test indicates normal, but the test is incorrect.",
+            "test indicates disease, and the test is correct.",
+            "test indicates disease, but the test is incorrect.",
+            "test indicates normal, and the test is correct."
+        ],
+        "respuesta_correcta": [
+            "test indicates disease, but the test is incorrect."
+        ],
+        "concept_to_study": "False Positive Definition",
+        "explicacion_openai": "A False Positive occurs when a diagnostic test incorrectly suggests the presence of a condition (indicates disease) when the condition is actually absent.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "A **True Negative** result in a diagnostic test means that the:",
+        "image": "",
+        "opciones": [
+            "test indicates normal, but the test is incorrect.",
+            "test indicates disease, and the test is correct.",
+            "test indicates disease, but the test is incorrect.",
+            "test indicates normal, and the test is correct."
+        ],
+        "respuesta_correcta": [
+            "test indicates normal, and the test is correct."
+        ],
+        "concept_to_study": "True Negative Definition",
+        "explicacion_openai": "A True Negative occurs when a diagnostic test correctly suggests the absence of a condition (indicates normal) when the condition is actually absent.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The ability of a diagnostic test to correctly identify normalcy (the absence of disease) is defined as:",
+        "image": "",
+        "opciones": [
+            "Sensitivity",
+            "Specificity",
+            "Positive Predictive Value",
+            "Negative Predictive Value"
+        ],
+        "respuesta_correcta": [
+            "Specificity"
+        ],
+        "concept_to_study": "Specificity Definition",
+        "explicacion_openai": "Specificity measures the proportion of true negatives that are correctly identified by the test among all individuals without the condition.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The ability of a diagnostic test to correctly detect the presence of disease is known as:",
+        "image": "",
+        "opciones": [
+            "Sensitivity",
+            "Specificity",
+            "Positive Predictive Value",
+            "Negative Predictive Value"
+        ],
+        "respuesta_correcta": [
+            "Sensitivity"
+        ],
+        "concept_to_study": "Sensitivity Definition",
+        "explicacion_openai": "Sensitivity measures the proportion of true positives that are correctly identified by the test among all individuals with the condition.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The measure that indicates how often a positive diagnostic study result is genuinely correct is the:",
+        "image": "",
+        "opciones": [
+            "Sensitivity",
+            "Specificity",
+            "Positive Predictive Value",
+            "Negative Predictive Value"
+        ],
+        "respuesta_correcta": [
+            "Positive Predictive Value"
+        ],
+        "concept_to_study": "Positive Predictive Value Definition",
+        "explicacion_openai": "Positive Predictive Value (PPV) is the probability that subjects with a positive screening test actually have the disease.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The measure that indicates how often a negative diagnostic study result is genuinely correct is the:",
+        "image": "",
+        "opciones": [
+            "Sensitivity",
+            "Specificity",
+            "Positive Predictive Value",
+            "Negative Predictive Value"
+        ],
+        "respuesta_correcta": [
+            "Negative Predictive Value"
+        ],
+        "concept_to_study": "Negative Predictive Value Definition",
+        "explicacion_openai": "Negative Predictive Value (NPV) is the probability that subjects with a negative screening test truly do not have the disease.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The overall correctness of a diagnostic test, representing the proportion of all correct results (both positive and negative) among the total number of cases examined, is known as:",
+        "image": "",
+        "opciones": [
+            "Sensitivity",
+            "Specificity",
+            "Positive Predictive Value",
+            "Accuracy"
+        ],
+        "respuesta_correcta": [
+            "Accuracy"
+        ],
+        "concept_to_study": "Accuracy Definition",
+        "explicacion_openai": "Accuracy is the measure of the total proportion of correct results (true positives and true negatives) from all individuals tested.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "When a diagnostic test mistakenly indicates the presence of a disease in a healthy individual, this outcome is classified as a:",
+        "image": "",
+        "opciones": [
+            "True Positive",
+            "True Negative",
+            "False Positive",
+            "False Negative"
+        ],
+        "respuesta_correcta": [
+            "False Positive"
+        ],
+        "concept_to_study": "False Positive Definition",
+        "explicacion_openai": "A False Positive (Type I error) occurs when a test result is positive, but the individual does not actually have the condition.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "If a diagnostic test fails to detect a disease in an individual who actually has it, this result is termed a:",
+        "image": "",
+        "opciones": [
+            "True Positive",
+            "True Negative",
+            "False Positive",
+            "False Negative"
+        ],
+        "respuesta_correcta": [
+            "False Negative"
+        ],
+        "concept_to_study": "False Negative Definition",
+        "explicacion_openai": "A False Negative (Type II error) occurs when a test result is negative, but the individual actually has the condition.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "A correctly identified disease-free individual by a diagnostic test is termed a:",
+        "image": "",
+        "opciones": [
+            "True Positive",
+            "True Negative",
+            "False Positive",
+            "False Negative"
+        ],
+        "respuesta_correcta": [
+            "True Negative"
+        ],
+        "concept_to_study": "True Negative Definition",
+        "explicacion_openai": "A True Negative occurs when a test result is negative, and the individual does not have the condition.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which statistical measure reflects the proportion of actual positive cases that are correctly identified by a test?",
+        "image": "",
+        "opciones": [
+            "Specificity",
+            "Positive Predictive Value",
+            "Sensitivity",
+            "Accuracy"
+        ],
+        "respuesta_correcta": [
+            "Sensitivity"
+        ],
+        "concept_to_study": "Sensitivity Definition",
+        "explicacion_openai": "Sensitivity measures the ability of a test to correctly identify those with the disease (true positive rate).",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which statistical measure reflects the proportion of actual negative cases that are correctly identified by a test?",
+        "image": "",
+        "opciones": [
+            "Sensitivity",
+            "Negative Predictive Value",
+            "Specificity",
+            "Accuracy"
+        ],
+        "respuesta_correcta": [
+            "Specificity"
+        ],
+        "concept_to_study": "Specificity Definition",
+        "explicacion_openai": "Specificity measures the ability of a test to correctly identify those without the disease (true negative rate).",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "If a patient receives a positive result from a diagnostic test, which value tells us the probability that this patient actually has the disease?",
+        "image": "",
+        "opciones": [
+            "Sensitivity",
+            "Specificity",
+            "Positive Predictive Value",
+            "Negative Predictive Value"
+        ],
+        "respuesta_correcta": [
+            "Positive Predictive Value"
+        ],
+        "concept_to_study": "Positive Predictive Value Definition",
+        "explicacion_openai": "Positive Predictive Value (PPV) is the probability that a patient with a positive test result actually has the disease.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "If a patient receives a negative result from a diagnostic test, which value tells us the probability that this patient truly does not have the disease?",
+        "image": "",
+        "opciones": [
+            "Sensitivity",
+            "Specificity",
+            "Positive Predictive Value",
+            "Negative Predictive Value"
+        ],
+        "respuesta_correcta": [
+            "Negative Predictive Value"
+        ],
+        "concept_to_study": "Negative Predictive Value Definition",
+        "explicacion_openai": "Negative Predictive Value (NPV) is the probability that a patient with a negative test result truly does not have the disease.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which single metric best summarizes the overall performance of a diagnostic test by considering both true positives and true negatives?",
+        "image": "",
+        "opciones": [
+            "Sensitivity",
+            "Specificity",
+            "Prevalence",
+            "Accuracy"
+        ],
+        "respuesta_correcta": [
+            "Accuracy"
+        ],
+        "concept_to_study": "Accuracy Definition",
+        "explicacion_openai": "Accuracy provides a holistic view of the test's performance by considering all correct classifications relative to the total number of cases.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "In the context of diagnostic testing, a 'Type I error' is analogous to a:",
+        "image": "",
+        "opciones": [
+            "True Positive",
+            "True Negative",
+            "False Positive",
+            "False Negative"
+        ],
+        "respuesta_correcta": [
+            "False Positive"
+        ],
+        "concept_to_study": "Type I Error",
+        "explicacion_openai": "A Type I error occurs when a null hypothesis is incorrectly rejected, which in diagnostic testing is equivalent to a False Positive (claiming disease when there is none).",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "In the context of diagnostic testing, a 'Type II error' is analogous to a:",
+        "image": "",
+        "opciones": [
+            "True Positive",
+            "True Negative",
+            "False Positive",
+            "False Negative"
+        ],
+        "respuesta_correcta": [
+            "False Negative"
+        ],
+        "concept_to_study": "Type II Error",
+        "explicacion_openai": "A Type II error occurs when a null hypothesis is incorrectly accepted, which in diagnostic testing is equivalent to a False Negative (failing to detect disease when it is present).",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which term describes the probability of a patient having the disease given that their test result is positive?",
+        "image": "",
+        "opciones": [
+            "Prevalence",
+            "Incidence",
+            "Positive Predictive Value",
+            "Sensitivity"
+        ],
+        "respuesta_correcta": [
+            "Positive Predictive Value"
+        ],
+        "concept_to_study": "Positive Predictive Value Definition",
+        "explicacion_openai": "The Positive Predictive Value (PPV) answers the question: 'Given a positive test result, what is the probability that the patient actually has the disease?'",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which term describes the probability of a patient not having the disease given that their test result is negative?",
+        "image": "",
+        "opciones": [
+            "Prevalence",
+            "Incidence",
+            "Negative Predictive Value",
+            "Specificity"
+        ],
+        "respuesta_correcta": [
+            "Negative Predictive Value"
+        ],
+        "concept_to_study": "Negative Predictive Value Definition",
+        "explicacion_openai": "The Negative Predictive Value (NPV) answers the question: 'Given a negative test result, what is the probability that the patient truly does not have the disease?'",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "A test with high **sensitivity** is most useful when the goal is to:",
+        "image": "",
+        "opciones": [
+            "confirm a diagnosis after a positive screening test.",
+            "rule out a disease, especially when the disease is serious and treatable.",
+            "identify healthy individuals accurately.",
+            "reduce the number of false positive results."
+        ],
+        "respuesta_correcta": [
+            "rule out a disease, especially when the disease is serious and treatable."
+        ],
+        "concept_to_study": "Application of Sensitivity",
+        "explicacion_openai": "A highly sensitive test is good at identifying true positives. If a sensitive test is negative, it's very likely the person doesn't have the disease (SNOUT - Sensitivity Negative, OUT the disease). This is critical for serious, treatable diseases.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "A test with high **specificity** is most useful when the goal is to:",
+        "image": "",
+        "opciones": [
+            "screen for a rare but serious disease in a large population.",
+            "rule out a disease, especially when the disease is serious and treatable.",
+            "confirm a diagnosis after a positive screening test.",
+            "minimize the number of false negative results."
+        ],
+        "respuesta_correcta": [
+            "confirm a diagnosis after a positive screening test."
+        ],
+        "concept_to_study": "Application of Specificity",
+        "explicacion_openai": "A highly specific test is good at identifying true negatives. If a specific test is positive, it's very likely the person has the disease (SPIN - Specificity Positive, IN the disease). This is useful for confirming diagnoses to avoid unnecessary treatments or anxiety.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following is most affected by the prevalence of a disease in the population?",
+        "image": "",
+        "opciones": [
+            "Sensitivity",
+            "Specificity",
+            "Positive Predictive Value",
+            "True Negative Rate"
+        ],
+        "respuesta_correcta": [
+            "Positive Predictive Value"
+        ],
+        "concept_to_study": "Prevalence and Predictive Values",
+        "explicacion_openai": "Predictive values (PPV and NPV) are heavily influenced by the prevalence of the disease in the population, whereas sensitivity and specificity are inherent properties of the test itself and are less affected by prevalence.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "When interpreting diagnostic test results, a high **Negative Predictive Value (NPV)** is crucial for:",
+        "image": "",
+        "opciones": [
+            "minimizing the number of individuals unnecessarily subjected to further invasive procedures.",
+            "ensuring that all truly diseased individuals are identified.",
+            "avoiding misdiagnosis of healthy individuals as having the disease.",
+            "confirming a diagnosis in symptomatic patients."
+        ],
+        "respuesta_correcta": [
+            "minimizing the number of individuals unnecessarily subjected to further invasive procedures."
+        ],
+        "concept_to_study": "Importance of NPV",
+        "explicacion_openai": "A high NPV means that a negative test result is very reliable in ruling out the disease, thus preventing unnecessary further investigation or treatment for those who are healthy.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "When interpreting diagnostic test results, a high **Positive Predictive Value (PPV)** is crucial for:",
+        "image": "",
+        "opciones": [
+            "minimizing the risk of missing a treatable disease.",
+            "ensuring that individuals who receive a positive result are very likely to have the disease.",
+            "reducing the number of false negative results.",
+            "identifying the absence of disease in asymptomatic individuals."
+        ],
+        "respuesta_correcta": [
+            "ensuring that individuals who receive a positive result are very likely to have the disease."
+        ],
+        "concept_to_study": "Importance of PPV",
+        "explicacion_openai": "A high PPV means that a positive test result is very reliable, assuring clinicians that individuals testing positive are indeed likely to have the condition, which guides appropriate treatment decisions.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a disease with very low prevalence. A test with high sensitivity but moderate specificity is likely to yield a relatively high number of:",
+        "image": "",
+        "opciones": [
+            "True Positives",
+            "True Negatives",
+            "False Positives",
+            "False Negatives"
+        ],
+        "respuesta_correcta": [
+            "False Positives"
+        ],
+        "concept_to_study": "Impact of Prevalence on Test Performance",
+        "explicacion_openai": "In a low prevalence setting, even a moderately specific test can produce a large number of false positives because there are many more healthy individuals than diseased ones. A high sensitivity will correctly catch most true cases, but the 'noise' from false positives will be more prominent.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following concepts refers to the proportion of individuals in a population who have a particular disease at a specific point in time?",
+        "image": "",
+        "opciones": [
+            "Incidence",
+            "Prevalence",
+            "Sensitivity",
+            "Specificity"
+        ],
+        "respuesta_correcta": [
+            "Prevalence"
+        ],
+        "concept_to_study": "Prevalence Definition",
+        "explicacion_openai": "Prevalence is the proportion of a particular population found to be affected by a medical condition at a specific time.",
+        "image_explanation": ""
     }
 ]
