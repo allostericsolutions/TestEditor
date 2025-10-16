@@ -8429,5 +8429,290 @@
         "concept_to_study": "Accuracy of Diagnostic Tests",
         "explicacion_openai": "Accuracy is calculated as (True Positives + True Negatives) / Total Patients. From the table, True Positives = 80, True Negatives = 5, and Total Patients = 100. So, Accuracy = (80 + 5) / 100 = 85/100.",
         "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "A study evaluated 200 patients for Superficial Femoral Artery (SFA) stenosis using Ultrasound (US) and Computed Tomography (CT). The results were:\n- 80 patients had SFA stenosis by both US and CT.\n- 40 patients had SFA stenosis by US but NO stenosis by CT.\n- 50 patients had no significant SFA stenosis by neither US nor CT.\n- 30 patients had no significant stenosis by US but did have a significant stenosis by CT.\n\nWhat is the number of **False Positives** for the Ultrasound (US) when considering CT as the gold standard?",
+        "image": "",
+        "opciones": [
+            "80",
+            "40",
+            "50",
+            "30"
+        ],
+        "respuesta_correcta": [
+            "40"
+        ],
+        "concept_to_study": "False Positives in Diagnostic Tests",
+        "explicacion_openai": "A false positive occurs when the Ultrasound (US) indicates a stenosis (positive), but the gold standard (CT) does not confirm it (negative). In this case, 40 patients showed stenosis by US but not by CT, representing the false positives for US.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "In a study of 150 patients comparing Ultrasound (US) and CT for the detection of Deep Vein Thrombosis (DVT):\n- 60 patients had DVT by both US and CT.\n- 20 patients had DVT by US but NO DVT by CT.\n- 50 patients had no DVT by neither US nor CT.\n- 20 patients had no DVT by US but did have DVT by CT.\n\nWhat is the **Sensitivity** of the Ultrasound (US) for detecting DVT, with CT as the gold standard?",
+        "image": "",
+        "opciones": [
+            "60/80",
+            "60/90",
+            "20/80",
+            "50/70"
+        ],
+        "respuesta_correcta": [
+            "60/80"
+        ],
+        "concept_to_study": "Sensitivity of Diagnostic Tests",
+        "explicacion_openai": "Sensitivity is calculated as True Positives / (True Positives + False Negatives). True Positives are 60 (DVT by US and CT). False Negatives are 20 (no DVT by US but DVT by CT). So, Sensitivity = 60 / (60 + 20) = 60/80.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "A study on 160 patients evaluated Ultrasound (US) and CT for detecting kidney stones:\n- 70 patients had kidney stones by both US and CT.\n- 10 patients had kidney stones by US but NO stones by CT.\n- 70 patients had no kidney stones by neither US nor CT.\n- 10 patients had no kidney stones by US but did have stones by CT.\n\nWhat is the **Specificity** of the Ultrasound (US) for detecting kidney stones, with CT as the gold standard?",
+        "image": "",
+        "opciones": [
+            "70/80",
+            "70/90",
+            "10/80",
+            "10/90"
+        ],
+        "respuesta_correcta": [
+            "70/80"
+        ],
+        "concept_to_study": "Specificity of Diagnostic Tests",
+        "explicacion_openai": "Specificity is calculated as True Negatives / (True Negatives + False Positives). True Negatives are 70 (no stones by US and CT). False Positives are 10 (stones by US but no stones by CT). So, Specificity = 70 / (70 + 10) = 70/80.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Out of 120 patients suspected of appendicitis, US and CT results were:\n- 50 patients had appendicitis by both US and CT.\n- 10 patients had appendicitis by US but NO appendicitis by CT.\n- 50 patients had no appendicitis by neither US nor CT.\n- 10 patients had no appendicitis by US but did have appendicitis by CT.\n\nWhat is the **Positive Predictive Value (PPV)** of the Ultrasound (US), with CT as the gold standard?",
+        "image": "",
+        "opciones": [
+            "50/60",
+            "50/70",
+            "10/60",
+            "10/70"
+        ],
+        "respuesta_correcta": [
+            "50/60"
+        ],
+        "concept_to_study": "Positive Predictive Value (PPV)",
+        "explicacion_openai": "Positive Predictive Value (PPV) is calculated as True Positives / (True Positives + False Positives). True Positives are 50 (appendicitis by US and CT). False Positives are 10 (appendicitis by US but no appendicitis by CT). So, PPV = 50 / (50 + 10) = 50/60.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "A total of 140 patients underwent US and CT for detecting cholelithiasis. The results were:\n- 70 patients had cholelithiasis by both US and CT.\n- 10 patients had cholelithiasis by US but NO cholelithiasis by CT.\n- 50 patients had no cholelithiasis by neither US nor CT.\n- 10 patients had no cholelithiasis by US but did have cholelithiasis by CT.\n\nWhat is the **Negative Predictive Value (NPV)** of the Ultrasound (US), with CT as the gold standard?",
+        "image": "",
+        "opciones": [
+            "70/80",
+            "50/60",
+            "10/60",
+            "10/80"
+        ],
+        "respuesta_correcta": [
+            "50/60"
+        ],
+        "concept_to_study": "Negative Predictive Value (NPV)",
+        "explicacion_openai": "Negative Predictive Value (NPV) is calculated as True Negatives / (True Negatives + False Negatives). True Negatives are 50 (no cholelithiasis by US and CT). False Negatives are 10 (no cholelithiasis by US but cholelithiasis by CT). So, NPV = 50 / (50 + 10) = 50/60.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "In a group of 100 patients, Ultrasound (US) and CT were compared for detecting aortic aneurysms. The results were:\n- 35 patients had an aneurysm by both US and CT.\n- 5 patients had an aneurysm by US but NO aneurysm by CT.\n- 55 patients had no aneurysm by neither US nor CT.\n- 5 patients had no aneurysm by US but did have an aneurysm by CT.\n\nWhat is the overall **Accuracy** of the Ultrasound (US) in detecting aortic aneurysms, with CT as the gold standard?",
+        "image": "",
+        "opciones": [
+            "35/40",
+            "55/60",
+            "90/100",
+            "5/10"
+        ],
+        "respuesta_correcta": [
+            "90/100"
+        ],
+        "concept_to_study": "Accuracy of Diagnostic Tests",
+        "explicacion_openai": "Accuracy is calculated as (True Positives + True Negatives) / Total Patients. True Positives are 35, True Negatives are 55, and Total Patients are 100. So, Accuracy = (35 + 55) / 100 = 90/100.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "A study was conducted on 250 patients to diagnose acute pancreatitis using Ultrasound (US) and CT. The results were:\n- 100 patients had pancreatitis by both US and CT.\n- 30 patients had pancreatitis by US but NO pancreatitis by CT.\n- 100 patients had no pancreatitis by neither US nor CT.\n- 20 patients had no pancreatitis by US but did have pancreatitis by CT.\n\nWhat is the **Prevalence** of acute pancreatitis in this population, according to CT (gold standard)?",
+        "image": "",
+        "opciones": [
+            "100/250",
+            "120/250",
+            "130/250",
+            "150/250"
+        ],
+        "respuesta_correcta": [
+            "120/250"
+        ],
+        "concept_to_study": "Prevalence of Disease",
+        "explicacion_openai": "The prevalence of the disease, according to the gold standard (CT), is calculated as the total number of patients with the disease (CT positive) divided by the total number of patients. In this case, patients with pancreatitis by CT are 100 (US+ and CT+) + 20 (US- and CT+) = 120. The total patients are 250. Therefore, prevalence is 120/250.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "In a study with 90 patients for detecting thyroid nodules, Ultrasound (US) and CT findings were:\n- 30 patients had nodules by both US and CT.\n- 10 patients had nodules by US but NO nodules by CT.\n- 40 patients had no nodules by neither US nor CT.\n- 10 patients had no nodules by US but did have nodules by CT.\n\nWhat is the number of **False Negatives** for the Ultrasound (US), with CT as the gold standard?",
+        "image": "",
+        "opciones": [
+            "30",
+            "10",
+            "40",
+            "20"
+        ],
+        "respuesta_correcta": [
+            "10"
+        ],
+        "concept_to_study": "False Negatives",
+        "explicacion_openai": "False negatives occur when the Ultrasound (US) fails to detect the condition (negative), but the gold standard (CT) does detect it (positive). In this case, 10 patients had no nodules by US but did have nodules by CT, which are the false negatives.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "For detecting biliary obstruction, US and CT results were compared in 130 patients:\n- 60 patients had obstruction by both US and CT.\n- 20 patients had obstruction by US but NO obstruction by CT.\n- 40 patients had no obstruction by neither US nor CT.\n- 10 patients had no obstruction by US but did have obstruction by CT.\n\nWhat is the **number of True Positives** for Ultrasound (US) in this scenario?",
+        "image": "",
+        "opciones": [
+            "60",
+            "20",
+            "40",
+            "10"
+        ],
+        "respuesta_correcta": [
+            "60"
+        ],
+        "concept_to_study": "True Positives",
+        "explicacion_openai": "True Positives are the cases where both the Ultrasound (US) and the CT (gold standard) correctly identify the presence of the condition. In this case, 60 patients had obstruction by both US and CT.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "A study on 110 patients suspected of pulmonary embolism compared lower extremity Ultrasound (US) with Pulmonary CT Angiography (CTPA). The results were:\n- 45 patients had embolism by both US and CT.\n- 15 patients had embolism by US but NO embolism by CT.\n- 40 patients had no embolism by neither US nor CT.\n- 10 patients had no embolism by US but did have embolism by CT.\n\nWhat is the number of **True Negatives** for Ultrasound (US) in this study?",
+        "image": "",
+        "opciones": [
+            "45",
+            "15",
+            "40",
+            "10"
+        ],
+        "respuesta_correcta": [
+            "40"
+        ],
+        "concept_to_study": "True Negatives",
+        "explicacion_openai": "True Negatives are the cases where both the Ultrasound (US) and the CT (gold standard) correctly identify the absence of the condition. In this case, 40 patients had no embolism by neither US nor CT.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "In a study of 190 patients to detect liver lesions, Ultrasound (US) and CT were used. The findings were:\n- 90 patients had lesions by both US and CT.\n- 20 patients had lesions by US but NO lesions by CT.\n- 70 patients had no lesions by neither US nor CT.\n- 10 patients had no lesions by US but did have lesions by CT.\n\nWhat is the **total number of patients who actually have liver lesions** (according to CT)?",
+        "image": "",
+        "opciones": [
+            "90",
+            "110",
+            "120",
+            "100"
+        ],
+        "respuesta_correcta": [
+            "100"
+        ],
+        "concept_to_study": "Disease Prevalence (from gold standard)",
+        "explicacion_openai": "The total number of patients who actually have liver lesions (according to CT, the gold standard) includes those with lesions by both US and CT (True Positives) and those with lesions by CT but not by US (False Negatives for US). So, 90 + 10 = 100 patients.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Biliary calculi detection was investigated in 170 patients using Ultrasound (US) and CT, yielding the following results:\n- 75 patients had calculi by both US and CT.\n- 25 patients had calculi by US but NO calculi by CT.\n- 60 patients had no calculi by neither US nor CT.\n- 10 patients had no calculi by US but did have calculi by CT.\n\nWhat is the **total number of patients who do NOT have biliary calculi** (according to CT)?",
+        "image": "",
+        "opciones": [
+            "75",
+            "85",
+            "60",
+            "70"
+        ],
+        "respuesta_correcta": [
+            "85"
+        ],
+        "concept_to_study": "Total Non-Diseased (from gold standard)",
+        "explicacion_openai": "The total number of patients who do NOT have biliary calculi (according to CT, the gold standard) includes those with no calculi by both US and CT (True Negatives) and those with no calculi by CT but positive by US (False Positives for US). So, 60 + 25 = 85 patients.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "In a study with 160 patients to diagnose coronary artery disease, intravascular ultrasound (US) and coronary CT angiography (CT) were compared. The data was:\n- 60 patients had disease by both US and CT.\n- 10 patients had disease by US but NO disease by CT.\n- 80 patients had no disease by neither US nor CT.\n- 10 patients had no disease by US but did have disease by CT.\n\nWhat is the **number of patients that tested positive by US**?",
+        "image": "",
+        "opciones": [
+            "60",
+            "70",
+            "80",
+            "90"
+        ],
+        "respuesta_correcta": [
+            "70"
+        ],
+        "concept_to_study": "Total Positives by Test",
+        "explicacion_openai": "The number of patients that tested positive by US includes those with disease by both US and CT (True Positives) and those with disease by US but no disease by CT (False Positives). So, 60 + 10 = 70 patients.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "A study on 220 patients to detect carotid stenosis used Doppler Ultrasound (US) and CT. The results were:\n- 90 patients had stenosis by both US and CT.\n- 30 patients had stenosis by US but NO stenosis by CT.\n- 80 patients had no stenosis by neither US nor CT.\n- 20 patients had no stenosis by US but did have stenosis by CT.\n\nWhat is the **total number of patients that tested negative by US**?",
+        "image": "",
+        "opciones": [
+            "90",
+            "110",
+            "100",
+            "80"
+        ],
+        "respuesta_correcta": [
+            "100"
+        ],
+        "concept_to_study": "Total Negatives by Test",
+        "explicacion_openai": "The total number of patients that tested negative by US includes those with no stenosis by neither US nor CT (True Negatives) and those with no stenosis by US but did have stenosis by CT (False Negatives). So, 80 + 20 = 100 patients.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "In a study of 100 patients to detect biliary pathology using Ultrasound (US) and CT, the following data was obtained:\n- 40 patients had pathology by both US and CT.\n- 10 patients had pathology by US but NO pathology by CT.\n- 45 patients had no pathology by neither US nor CT.\n- 5 patients had no pathology by US but did have pathology by CT.\n\nWhat is the **total number of patients in the study**?",
+        "image": "",
+        "opciones": [
+            "90",
+            "100",
+            "80",
+            "110"
+        ],
+        "respuesta_correcta": [
+            "100"
+        ],
+        "concept_to_study": "Total Patient Count",
+        "explicacion_openai": "The total number of patients in the study is the sum of all categories: (Pathology by US and CT) + (Pathology by US but no CT) + (No pathology by US and CT) + (No pathology by US but by CT) = 40 + 10 + 45 + 5 = 100 patients.",
+        "image_explanation": ""
     }
 ]
