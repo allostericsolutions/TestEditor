@@ -12,7 +12,7 @@ from utils import cargar_json, generar_txt, limpiar_texto
 # Define las credenciales directamente en el código
 USUARIOS = {
     "marievapaula@gmail.com": "vascular33",
-    "ciclosporina2@hotmail.com": "vascular33",
+    "ciclosporina2@hotmail.com": "3QJY8qx37jHErc8",
 }
 
 def check_password():
