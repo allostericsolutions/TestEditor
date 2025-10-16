@@ -8049,5 +8049,385 @@
         "concept_to_study": "False Negatives in Vascular Diagnostic Tests (Transcranial Doppler vs. MRA)",
         "explicacion_openai": "False Negatives (FN) occur when the TCD is negative for vertebral artery stenosis, but the MRA (gold standard) is positive. From the table, 20 patients had no stenosis by TCD but did by MRA.",
         "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Disease X. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Sensitivity** of this test?",
+        "image": "",
+        "opciones": [
+            "80/90",
+            "80/85",
+            "5/10",
+            "5/15"
+        ],
+        "respuesta_correcta": [
+            "80/85"
+        ],
+        "concept_to_study": "Sensitivity of Diagnostic Tests",
+        "explicacion_openai": "Sensitivity (True Positive Rate) is calculated as True Positives / (True Positives + False Negatives). From the table, True Positives = 80 and False Negatives = 5. So, Sensitivity = 80 / (80 + 5) = 80/85.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Disease Y. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Sensitivity** of this test?",
+        "image": "",
+        "opciones": [
+            "10/90",
+            "5/15",
+            "80/85",
+            "5/10"
+        ],
+        "respuesta_correcta": [
+            "80/85"
+        ],
+        "concept_to_study": "Sensitivity of Diagnostic Tests",
+        "explicacion_openai": "Sensitivity (True Positive Rate) is calculated as True Positives / (True Positives + False Negatives). From the table, True Positives = 80 and False Negatives = 5. So, Sensitivity = 80 / (80 + 5) = 80/85.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Disease Z. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Sensitivity** of this test?",
+        "image": "",
+        "opciones": [
+            "80/90",
+            "5/10",
+            "80/85",
+            "10/15"
+        ],
+        "respuesta_correcta": [
+            "80/85"
+        ],
+        "concept_to_study": "Sensitivity of Diagnostic Tests",
+        "explicacion_openai": "Sensitivity (True Positive Rate) is calculated as True Positives / (True Positives + False Negatives). From the table, True Positives = 80 and False Negatives = 5. So, Sensitivity = 80 / (80 + 5) = 80/85.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Condition A. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Sensitivity** of this test?",
+        "image": "",
+        "opciones": [
+            "5/15",
+            "80/85",
+            "10/90",
+            "5/10"
+        ],
+        "respuesta_correcta": [
+            "80/85"
+        ],
+        "concept_to_study": "Sensitivity of Diagnostic Tests",
+        "explicacion_openai": "Sensitivity (True Positive Rate) is calculated as True Positives / (True Positives + False Negatives). From the table, True Positives = 80 and False Negatives = 5. So, Sensitivity = 80 / (80 + 5) = 80/85.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Disease B. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Specificity** of this test?",
+        "image": "",
+        "opciones": [
+            "5/10",
+            "10/90",
+            "5/15",
+            "80/85"
+        ],
+        "respuesta_correcta": [
+            "5/15"
+        ],
+        "concept_to_study": "Specificity of Diagnostic Tests",
+        "explicacion_openai": "Specificity (True Negative Rate) is calculated as True Negatives / (False Positives + True Negatives). From the table, True Negatives = 5 and False Positives = 10. So, Specificity = 5 / (10 + 5) = 5/15.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Disease C. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Specificity** of this test?",
+        "image": "",
+        "opciones": [
+            "80/85",
+            "5/15",
+            "10/90",
+            "5/10"
+        ],
+        "respuesta_correcta": [
+            "5/15"
+        ],
+        "concept_to_study": "Specificity of Diagnostic Tests",
+        "explicacion_openai": "Specificity (True Negative Rate) is calculated as True Negatives / (False Positives + True Negatives). From the table, True Negatives = 5 and False Positives = 10. So, Specificity = 5 / (10 + 5) = 5/15.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Disease D. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Specificity** of this test?",
+        "image": "",
+        "opciones": [
+            "80/90",
+            "5/15",
+            "5/10",
+            "10/15"
+        ],
+        "respuesta_correcta": [
+            "5/15"
+        ],
+        "concept_to_study": "Specificity of Diagnostic Tests",
+        "explicacion_openai": "Specificity (True Negative Rate) is calculated as True Negatives / (False Positives + True Negatives). From the table, True Negatives = 5 and False Positives = 10. So, Specificity = 5 / (10 + 5) = 5/15.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Condition E. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Specificity** of this test?",
+        "image": "",
+        "opciones": [
+            "80/85",
+            "5/15",
+            "10/15",
+            "5/10"
+        ],
+        "respuesta_correcta": [
+            "5/15"
+        ],
+        "concept_to_study": "Specificity of Diagnostic Tests",
+        "explicacion_openai": "Specificity (True Negative Rate) is calculated as True Negatives / (False Positives + True Negatives). From the table, True Negatives = 5 and False Positives = 10. So, Specificity = 5 / (10 + 5) = 5/15.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Disease F. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Positive Predictive Value (PPV)** of this test?",
+        "image": "",
+        "opciones": [
+            "80/85",
+            "10/15",
+            "80/90",
+            "5/10"
+        ],
+        "respuesta_correcta": [
+            "80/90"
+        ],
+        "concept_to_study": "Positive Predictive Value (PPV) of Diagnostic Tests",
+        "explicacion_openai": "Positive Predictive Value (PPV) is calculated as True Positives / (True Positives + False Positives). From the table, True Positives = 80 and False Positives = 10. So, PPV = 80 / (80 + 10) = 80/90.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Disease G. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Positive Predictive Value (PPV)** of this test?",
+        "image": "",
+        "opciones": [
+            "5/10",
+            "80/90",
+            "10/15",
+            "80/85"
+        ],
+        "respuesta_correcta": [
+            "80/90"
+        ],
+        "concept_to_study": "Positive Predictive Value (PPV) of Diagnostic Tests",
+        "explicacion_openai": "Positive Predictive Value (PPV) is calculated as True Positives / (True Positives + False Positives). From the table, True Positives = 80 and False Positives = 10. So, PPV = 80 / (80 + 10) = 80/90.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Disease H. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Positive Predictive Value (PPV)** of this test?",
+        "image": "",
+        "opciones": [
+            "80/85",
+            "10/90",
+            "80/90",
+            "5/15"
+        ],
+        "respuesta_correcta": [
+            "80/90"
+        ],
+        "concept_to_study": "Positive Predictive Value (PPV) of Diagnostic Tests",
+        "explicacion_openai": "Positive Predictive Value (PPV) is calculated as True Positives / (True Positives + False Positives). From the table, True Positives = 80 and False Positives = 10. So, PPV = 80 / (80 + 10) = 80/90.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Condition I. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Positive Predictive Value (PPV)** of this test?",
+        "image": "",
+        "opciones": [
+            "5/15",
+            "80/90",
+            "5/10",
+            "80/85"
+        ],
+        "respuesta_correcta": [
+            "80/90"
+        ],
+        "concept_to_study": "Positive Predictive Value (PPV) of Diagnostic Tests",
+        "explicacion_openai": "Positive Predictive Value (PPV) is calculated as True Positives / (True Positives + False Positives). From the table, True Positives = 80 and False Positives = 10. So, PPV = 80 / (80 + 10) = 80/90.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Disease J. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Negative Predictive Value (NPV)** of this test?",
+        "image": "",
+        "opciones": [
+            "80/90",
+            "5/10",
+            "5/15",
+            "80/85"
+        ],
+        "respuesta_correcta": [
+            "5/10"
+        ],
+        "concept_to_study": "Negative Predictive Value (NPV) of Diagnostic Tests",
+        "explicacion_openai": "Negative Predictive Value (NPV) is calculated as True Negatives / (False Negatives + True Negatives). From the table, True Negatives = 5 and False Negatives = 5. So, NPV = 5 / (5 + 5) = 5/10.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Disease K. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Negative Predictive Value (NPV)** of this test?",
+        "image": "",
+        "opciones": [
+            "80/85",
+            "5/10",
+            "10/90",
+            "5/15"
+        ],
+        "respuesta_correcta": [
+            "5/10"
+        ],
+        "concept_to_study": "Negative Predictive Value (NPV) of Diagnostic Tests",
+        "explicacion_openai": "Negative Predictive Value (NPV) is calculated as True Negatives / (False Negatives + True Negatives). From the table, True Negatives = 5 and False Negatives = 5. So, NPV = 5 / (5 + 5) = 5/10.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Disease L. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Negative Predictive Value (NPV)** of this test?",
+        "image": "",
+        "opciones": [
+            "80/90",
+            "5/15",
+            "5/10",
+            "10/90"
+        ],
+        "respuesta_correcta": [
+            "5/10"
+        ],
+        "concept_to_study": "Negative Predictive Value (NPV) of Diagnostic Tests",
+        "explicacion_openai": "Negative Predictive Value (NPV) is calculated as True Negatives / (False Negatives + True Negatives). From the table, True Negatives = 5 and False Negatives = 5. So, NPV = 5 / (5 + 5) = 5/10.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Condition M. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Negative Predictive Value (NPV)** of this test?",
+        "image": "",
+        "opciones": [
+            "80/85",
+            "5/10",
+            "10/15",
+            "80/90"
+        ],
+        "respuesta_correcta": [
+            "5/10"
+        ],
+        "concept_to_study": "Negative Predictive Value (NPV) of Diagnostic Tests",
+        "explicacion_openai": "Negative Predictive Value (NPV) is calculated as True Negatives / (False Negatives + True Negatives). From the table, True Negatives = 5 and False Negatives = 5. So, NPV = 5 / (5 + 5) = 5/10.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Disease N. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Accuracy** of this test?",
+        "image": "",
+        "opciones": [
+            "80/90",
+            "85/100",
+            "5/10",
+            "90/100"
+        ],
+        "respuesta_correcta": [
+            "85/100"
+        ],
+        "concept_to_study": "Accuracy of Diagnostic Tests",
+        "explicacion_openai": "Accuracy is calculated as (True Positives + True Negatives) / Total Patients. From the table, True Positives = 80, True Negatives = 5, and Total Patients = 100. So, Accuracy = (80 + 5) / 100 = 85/100.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Disease O. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Accuracy** of this test?",
+        "image": "",
+        "opciones": [
+            "80/85",
+            "85/100",
+            "10/15",
+            "5/10"
+        ],
+        "respuesta_correcta": [
+            "85/100"
+        ],
+        "concept_to_study": "Accuracy of Diagnostic Tests",
+        "explicacion_openai": "Accuracy is calculated as (True Positives + True Negatives) / Total Patients. From the table, True Positives = 80, True Negatives = 5, and Total Patients = 100. So, Accuracy = (80 + 5) / 100 = 85/100.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Disease P. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Accuracy** of this test?",
+        "image": "",
+        "opciones": [
+            "90/100",
+            "85/100",
+            "80/90",
+            "5/15"
+        ],
+        "respuesta_correcta": [
+            "85/100"
+        ],
+        "concept_to_study": "Accuracy of Diagnostic Tests",
+        "explicacion_openai": "Accuracy is calculated as (True Positives + True Negatives) / Total Patients. From the table, True Positives = 80, True Negatives = 5, and Total Patients = 100. So, Accuracy = (80 + 5) / 100 = 85/100.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Consider a new diagnostic test for Condition Q. The results from 100 patients are summarized in the table below:\n\n| | Disease + | Disease - | Total |\n| :---------------- | :---------- | :---------- | :---- |\n| Test Positive | 80 | 10 | 90 |\n| Test Negative | 5 | 5 | 10 |\n| Total | 85 | 15 | 100 |\n\nWhat is the **Accuracy** of this test?",
+        "image": "",
+        "opciones": [
+            "80/85",
+            "85/100",
+            "10/90",
+            "5/15"
+        ],
+        "respuesta_correcta": [
+            "85/100"
+        ],
+        "concept_to_study": "Accuracy of Diagnostic Tests",
+        "explicacion_openai": "Accuracy is calculated as (True Positives + True Negatives) / Total Patients. From the table, True Positives = 80, True Negatives = 5, and Total Patients = 100. So, Accuracy = (80 + 5) / 100 = 85/100.",
+        "image_explanation": ""
     }
 ]
