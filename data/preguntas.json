@@ -7404,385 +7404,650 @@
         "explicacion_openai": "The wall filter is used to eliminate low frequency signals caused by tissue motion, thus reducing clutter in the Doppler signal.",
         "image_explanation": ""
     },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Based on the spectral Doppler tracing shown, which of the following most accurately describes its vascular resistance profile?",
-    "image": "onda_trifasica.png",
-    "options": [
-      "High resistance",
-      "Low resistance",
-      "Probably seen in abnormal organ supply",
-      "Seen in stenotic areas"
-    ],
-    "correct_answer": [
-      "High resistance"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "A triphasic waveform demonstrates high-resistance flow, evident as a sharp systolic upstroke, brief diastolic reversal, and late-diastolic forward component.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. The first component of this waveform corresponds with:",
-    "image": "onda_trifasica.png",
-    "options": [
-      "Recoil",
-      "Peripheral vascular resistance",
-      "Diastole",
-      "Ventricular contraction"
-    ],
-    "correct_answer": [
-      "Ventricular contraction"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "The initial sharp upstroke reflects ventricular contraction generating forward systolic flow.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. The second component of this waveform corresponds with:",
-    "image": "onda_trifasica.png",
-    "options": [
-      "Wall elasticity",
-      "Systole",
-      "Diastole",
-      "Peripheral vascular resistance"
-    ],
-    "correct_answer": [
-      "Peripheral vascular resistance"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "The early diastolic reversal is caused by high peripheral resistance reflecting a brief backward flow.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. The third component of this waveform corresponds with:",
-    "image": "onda_trifasica.png",
-    "options": [
-      "Wall elasticity",
-      "Systole",
-      "Diastole",
-      "Peripheral vascular resistance"
-    ],
-    "correct_answer": [
-      "Wall elasticity"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "The late diastolic forward flow arises from elastic recoil of the arterial wall after systole.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. All are correct about this waveform, except:",
-    "image": "onda_trifasica.png",
-    "options": [
-      "High resistance",
-      "Spectral broadening",
-      "Laminar flow",
-      "Seen in normal peripheral arteries"
-    ],
-    "correct_answer": [
-      "Spectral broadening"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "A normal triphasic waveform is laminar, with minimal spectral broadening, high resistance, and is routinely seen in peripheral arteries at rest.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. What is the defining feature of the waveform’s systolic phase?",
-    "image": "onda_trifasica.png",
-    "options": [
-      "Steep upstroke with high peak velocity",
-      "Prolonged acceleration time",
-      "Blunted peak with spectral broadening",
-      "Elevated diastolic baseline"
-    ],
-    "correct_answer": [
-      "Steep upstroke with high peak velocity"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "The sharp systolic upstroke and high peak velocity reflect strong ventricular contraction and low proximal resistance.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. Which portion corresponds to elastic recoil of the arterial wall?",
-    "image": "onda_trifasica.png",
-    "options": [
-      "Late diastolic forward component",
-      "Early diastolic reversal",
-      "Systolic peak",
-      "Baseline spectral broadening"
-    ],
-    "correct_answer": [
-      "Late diastolic forward component"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "The late diastolic forward flow arises from elastic recoil of the vessel wall after systole.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. What does the brief reverse flow suggest about downstream impedance?",
-    "image": "onda_trifasica.png",
-    "options": [
-      "High peripheral resistance",
-      "Low downstream impedance",
-      "Venous hypertension",
-      "Cardiac arrhythmia"
-    ],
-    "correct_answer": [
-      "High peripheral resistance"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "The early diastolic reversal occurs because the high-resistance muscular bed briefly reflects flow backward.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. In which vessel would this pattern be abnormal at rest?",
-    "image": "onda_trifasica.png",
-    "options": [
-      "Internal carotid artery",
-      "Femoral artery",
-      "Renal artery",
-      "Popliteal artery"
-    ],
-    "correct_answer": [
-      "Internal carotid artery"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "Low-resistance beds like the internal carotid normally show continuous forward diastolic flow, not reversal.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. How would a proximal stenosis alter this waveform?",
-    "image": "onda_trifasica.png",
-    "options": [
-      "Decrease peak systolic velocity and loss of reversal",
-      "Increase diastolic reversal",
-      "Sharpen systolic upstroke",
-      "Elevate end-diastolic velocity"
-    ],
-    "correct_answer": [
-      "Decrease peak systolic velocity and loss of reversal"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "Upstream narrowing attenuates systolic flow and dampens the diastolic reversal component.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. Which change indicates increased distal resistance?",
-    "image": "onda_trifasica.png",
-    "options": [
-      "Augmented early diastolic reversal",
-      "Elevated diastolic forward flow",
-      "Broad systolic plateau",
-      "Monophasic pattern"
-    ],
-    "correct_answer": [
-      "Augmented early diastolic reversal"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "Greater reverse flow in early diastole signals a rise in downstream impedance.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. After exercise, which transformation is expected?",
-    "image": "onda_trifasica.png",
-    "options": [
-      "Monophasic flow with elevated diastolic forward flow",
-      "Increased reverse flow",
-      "Sharpened systolic peak",
-      "Persistent triphasic pattern"
-    ],
-    "correct_answer": [
-      "Monophasic flow with elevated diastolic forward flow"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "Exercise-induced vasodilation lowers resistance, abolishing the reverse component and sustaining diastolic flow.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. What does loss of the reverse component indicate clinically?",
-    "image": "onda_trifasica.png",
-    "options": [
-      "Proximal arterial occlusion",
-      "Distal arteriolar constriction",
-      "Venous insufficiency",
-      "Enhanced cardiac output"
-    ],
-    "correct_answer": [
-      "Proximal arterial occlusion"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "An upstream occlusion diminishes systolic energy and eliminates the diastolic reversal.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. Which physiological mechanism generates the late diastolic forward flow?",
-    "image": "onda_trifasica.png",
-    "options": [
-      "Elastic recoil of arterial wall",
-      "Peripheral vascular steal",
-      "Cardiac atrial kick",
-      "Reflected pulse wave"
-    ],
-    "correct_answer": [
-      "Elastic recoil of arterial wall"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "Elastic recoil after systole propels the late diastolic forward component.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. How would significant calcification modify the upstroke?",
-    "image": "onda_trifasica.png",
-    "options": [
-      "Blunted systolic upstroke",
-      "Sharper upstroke",
-      "Enhanced reverse flow",
-      "Elevated diastolic baseline"
-    ],
-    "correct_answer": [
-      "Blunted systolic upstroke"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "Calcification reduces vessel compliance and slows systolic acceleration.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. Which intervention most rapidly restores the baseline pattern after reactive hyperemia?",
-    "image": "onda_trifasica.png",
-    "options": [
-      "Allowing rest and recovery",
-      "Applying a cold compress",
-      "Administering a vasodilator",
-      "Increasing probe Doppler angle"
-    ],
-    "correct_answer": [
-      "Allowing rest and recovery"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "Returning to baseline muscle tone and distal resistance restores the triphasic pattern.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. What does the sharp systolic peak most directly reflect?",
-    "image": "onda_trifasica.png",
-    "options": [
-      "Strong ventricular contraction",
-      "High downstream resistance",
-      "Elastic recoil",
-      "Collateral flow"
-    ],
-    "correct_answer": [
-      "Strong ventricular contraction"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "A steep upstroke is generated by a powerful ventricular ejection into a low-resistance bed.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. Which condition would blunt both the systolic peak and reverse flow?",
-    "image": "onda_trifasica.png",
-    "options": [
-      "Proximal arterial occlusion",
-      "Distal vasodilation",
-      "Normal aging",
-      "Hyperthyroidism"
-    ],
-    "correct_answer": [
-      "Proximal arterial occlusion"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "An upstream occlusion dampens energy delivery and abolishes diastolic reversal.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. Which finding distinguishes this pattern from low-resistance flow?",
-    "image": "onda_trifasica.png",
-    "options": [
-      "Presence of early diastolic reversal",
-      "Elevated diastolic forward flow",
-      "Monophasic shape",
-      "Broad systolic peak"
-    ],
-    "correct_answer": [
-      "Presence of early diastolic reversal"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "Low-resistance beds do not exhibit a reverse flow phase in early diastole.",
-    "image_explanation": ""
-  },
-  {
-    "classification": "Pathology, Perfusion and Function",
-    "group": 301,
-    "question_type": "multiple_choice",
-    "statement": "Refer to the image. Which parameter best confirms high-resistance peripheral circulation?",
-    "image": "onda_trifasica.png",
-    "options": [
-      "Brief reverse diastolic component",
-      "Elevated end-diastolic velocity",
-      "Blunted systolic upstroke",
-      "Continuous forward flow"
-    ],
-    "correct_answer": [
-      "Brief reverse diastolic component"
-    ],
-    "concept_to_study": "Triphasic waveform",
-    "explanation_openai": "The early diastolic reversal is the hallmark of a high-resistance vascular bed.",
-    "image_explanation": ""
-  }
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Based on the spectral Doppler tracing shown, which of the following most accurately describes its vascular resistance profile?",
+        "image": "onda_trifasica.png",
+        "options": [
+            "High resistance",
+            "Low resistance",
+            "Probably seen in abnormal organ supply",
+            "Seen in stenotic areas"
+        ],
+        "correct_answer": [
+            "High resistance"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "A triphasic waveform demonstrates high-resistance flow, evident as a sharp systolic upstroke, brief diastolic reversal, and late-diastolic forward component.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. The first component of this waveform corresponds with:",
+        "image": "onda_trifasica.png",
+        "options": [
+            "Recoil",
+            "Peripheral vascular resistance",
+            "Diastole",
+            "Ventricular contraction"
+        ],
+        "correct_answer": [
+            "Ventricular contraction"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "The initial sharp upstroke reflects ventricular contraction generating forward systolic flow.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. The second component of this waveform corresponds with:",
+        "image": "onda_trifasica.png",
+        "options": [
+            "Wall elasticity",
+            "Systole",
+            "Diastole",
+            "Peripheral vascular resistance"
+        ],
+        "correct_answer": [
+            "Peripheral vascular resistance"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "The early diastolic reversal is caused by high peripheral resistance reflecting a brief backward flow.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. The third component of this waveform corresponds with:",
+        "image": "onda_trifasica.png",
+        "options": [
+            "Wall elasticity",
+            "Systole",
+            "Diastole",
+            "Peripheral vascular resistance"
+        ],
+        "correct_answer": [
+            "Wall elasticity"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "The late diastolic forward flow arises from elastic recoil of the arterial wall after systole.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. All are correct about this waveform, except:",
+        "image": "onda_trifasica.png",
+        "options": [
+            "High resistance",
+            "Spectral broadening",
+            "Laminar flow",
+            "Seen in normal peripheral arteries"
+        ],
+        "correct_answer": [
+            "Spectral broadening"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "A normal triphasic waveform is laminar, with minimal spectral broadening, high resistance, and is routinely seen in peripheral arteries at rest.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. What is the defining feature of the waveform’s systolic phase?",
+        "image": "onda_trifasica.png",
+        "options": [
+            "Steep upstroke with high peak velocity",
+            "Prolonged acceleration time",
+            "Blunted peak with spectral broadening",
+            "Elevated diastolic baseline"
+        ],
+        "correct_answer": [
+            "Steep upstroke with high peak velocity"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "The sharp systolic upstroke and high peak velocity reflect strong ventricular contraction and low proximal resistance.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. Which portion corresponds to elastic recoil of the arterial wall?",
+        "image": "onda_trifasica.png",
+        "options": [
+            "Late diastolic forward component",
+            "Early diastolic reversal",
+            "Systolic peak",
+            "Baseline spectral broadening"
+        ],
+        "correct_answer": [
+            "Late diastolic forward component"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "The late diastolic forward flow arises from elastic recoil of the vessel wall after systole.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. What does the brief reverse flow suggest about downstream impedance?",
+        "image": "onda_trifasica.png",
+        "options": [
+            "High peripheral resistance",
+            "Low downstream impedance",
+            "Venous hypertension",
+            "Cardiac arrhythmia"
+        ],
+        "correct_answer": [
+            "High peripheral resistance"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "The early diastolic reversal occurs because the high-resistance muscular bed briefly reflects flow backward.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. In which vessel would this pattern be abnormal at rest?",
+        "image": "onda_trifasica.png",
+        "options": [
+            "Internal carotid artery",
+            "Femoral artery",
+            "Renal artery",
+            "Popliteal artery"
+        ],
+        "correct_answer": [
+            "Internal carotid artery"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "Low-resistance beds like the internal carotid normally show continuous forward diastolic flow, not reversal.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. How would a proximal stenosis alter this waveform?",
+        "image": "onda_trifasica.png",
+        "options": [
+            "Decrease peak systolic velocity and loss of reversal",
+            "Increase diastolic reversal",
+            "Sharpen systolic upstroke",
+            "Elevate end-diastolic velocity"
+        ],
+        "correct_answer": [
+            "Decrease peak systolic velocity and loss of reversal"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "Upstream narrowing attenuates systolic flow and dampens the diastolic reversal component.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. Which change indicates increased distal resistance?",
+        "image": "onda_trifasica.png",
+        "options": [
+            "Augmented early diastolic reversal",
+            "Elevated diastolic forward flow",
+            "Broad systolic plateau",
+            "Monophasic pattern"
+        ],
+        "correct_answer": [
+            "Augmented early diastolic reversal"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "Greater reverse flow in early diastole signals a rise in downstream impedance.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. After exercise, which transformation is expected?",
+        "image": "onda_trifasica.png",
+        "options": [
+            "Monophasic flow with elevated diastolic forward flow",
+            "Increased reverse flow",
+            "Sharpened systolic peak",
+            "Persistent triphasic pattern"
+        ],
+        "correct_answer": [
+            "Monophasic flow with elevated diastolic forward flow"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "Exercise-induced vasodilation lowers resistance, abolishing the reverse component and sustaining diastolic flow.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. What does loss of the reverse component indicate clinically?",
+        "image": "onda_trifasica.png",
+        "options": [
+            "Proximal arterial occlusion",
+            "Distal arteriolar constriction",
+            "Venous insufficiency",
+            "Enhanced cardiac output"
+        ],
+        "correct_answer": [
+            "Proximal arterial occlusion"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "An upstream occlusion diminishes systolic energy and eliminates the diastolic reversal.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. Which physiological mechanism generates the late diastolic forward flow?",
+        "image": "onda_trifasica.png",
+        "options": [
+            "Elastic recoil of arterial wall",
+            "Peripheral vascular steal",
+            "Cardiac atrial kick",
+            "Reflected pulse wave"
+        ],
+        "correct_answer": [
+            "Elastic recoil of arterial wall"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "Elastic recoil after systole propels the late diastolic forward component.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. How would significant calcification modify the upstroke?",
+        "image": "onda_trifasica.png",
+        "options": [
+            "Blunted systolic upstroke",
+            "Sharper upstroke",
+            "Enhanced reverse flow",
+            "Elevated diastolic baseline"
+        ],
+        "correct_answer": [
+            "Blunted systolic upstroke"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "Calcification reduces vessel compliance and slows systolic acceleration.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. Which intervention most rapidly restores the baseline pattern after reactive hyperemia?",
+        "image": "onda_trifasica.png",
+        "options": [
+            "Allowing rest and recovery",
+            "Applying a cold compress",
+            "Administering a vasodilator",
+            "Increasing probe Doppler angle"
+        ],
+        "correct_answer": [
+            "Allowing rest and recovery"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "Returning to baseline muscle tone and distal resistance restores the triphasic pattern.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. What does the sharp systolic peak most directly reflect?",
+        "image": "onda_trifasica.png",
+        "options": [
+            "Strong ventricular contraction",
+            "High downstream resistance",
+            "Elastic recoil",
+            "Collateral flow"
+        ],
+        "correct_answer": [
+            "Strong ventricular contraction"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "A steep upstroke is generated by a powerful ventricular ejection into a low-resistance bed.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. Which condition would blunt both the systolic peak and reverse flow?",
+        "image": "onda_trifasica.png",
+        "options": [
+            "Proximal arterial occlusion",
+            "Distal vasodilation",
+            "Normal aging",
+            "Hyperthyroidism"
+        ],
+        "correct_answer": [
+            "Proximal arterial occlusion"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "An upstream occlusion dampens energy delivery and abolishes diastolic reversal.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. Which finding distinguishes this pattern from low-resistance flow?",
+        "image": "onda_trifasica.png",
+        "options": [
+            "Presence of early diastolic reversal",
+            "Elevated diastolic forward flow",
+            "Monophasic shape",
+            "Broad systolic peak"
+        ],
+        "correct_answer": [
+            "Presence of early diastolic reversal"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "Low-resistance beds do not exhibit a reverse flow phase in early diastole.",
+        "image_explanation": ""
+    },
+    {
+        "classification": "Pathology, Perfusion and Function",
+        "group": 301,
+        "question_type": "multiple_choice",
+        "statement": "Refer to the image. Which parameter best confirms high-resistance peripheral circulation?",
+        "image": "onda_trifasica.png",
+        "options": [
+            "Brief reverse diastolic component",
+            "Elevated end-diastolic velocity",
+            "Blunted systolic upstroke",
+            "Continuous forward flow"
+        ],
+        "correct_answer": [
+            "Brief reverse diastolic component"
+        ],
+        "concept_to_study": "Triphasic waveform",
+        "explanation_openai": "The early diastolic reversal is the hallmark of a high-resistance vascular bed.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "150 patients underwent Duplex ultrasound and CTA for lower extremity arterial stenosis.\n70 patients had a Significant Femoral Artery (SFA) stenosis by both US and CT. 30 patients had a SFA stenosis by US but NO stenosis by CT. 24 patients had no significant SFA stenosis by both US and CT. 26 patients had no significant stenosis by US but did have a significant stenosis by CT.\n\nBased on these results, what is the number of **False Negatives**?\n\n| | CT + (SFA Stenosis) | CT - (No SFA Stenosis) | Total (by US) |\n| :---------------- | :------------------ | :------------------- | :-------------- |\n| **US +** | 70 | 30 | 100 |\n| **US -** | 26 | 24 | 50 |\n| **Total (by CT)** | 96 | 54 | 150 |\n",
+        "image": "",
+        "opciones": [
+            "70",
+            "30",
+            "24",
+            "26"
+        ],
+        "respuesta_correcta": [
+            "26"
+        ],
+        "concept_to_study": "False Negatives in Vascular Diagnostic Tests (Duplex Ultrasound vs. CTA)",
+        "explicacion_openai": "False Negatives (FN) occur when the Duplex ultrasound is negative for SFA stenosis, but the CTA (gold standard) is positive. From the table, 26 patients had no significant stenosis by US but did have a significant stenosis by CT.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 2,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "180 patients were evaluated for Carotid Artery Stenosis (CAS) using a Doppler ultrasound screening and a DSA (Digital Subtraction Angiography) as the gold standard.\n85 patients showed CAS by both Doppler and DSA. 15 patients showed CAS by Doppler but NO stenosis by DSA. 60 patients showed no CAS by both Doppler and DSA. 20 patients showed no CAS by Doppler but did have a significant stenosis by DSA.\n\nBased on these results, what is the number of **False Negatives**?\n\n| | DSA + (CAS) | DSA - (No CAS) | Total (by Doppler) |\n| :---------------- | :------------ | :------------- | :----------------- |\n| **Doppler +** | 85 | 15 | 100 |\n| **Doppler -** | 20 | 60 | 80 |\n| **Total (by DSA)** | 105 | 75 | 180 |\n",
+        "image": "",
+        "opciones": [
+            "85",
+            "15",
+            "60",
+            "20"
+        ],
+        "respuesta_correcta": [
+            "20"
+        ],
+        "concept_to_study": "False Negatives in Vascular Diagnostic Tests (Doppler Ultrasound vs. DSA)",
+        "explicacion_openai": "False Negatives (FN) occur when the Doppler ultrasound is negative for CAS, but the DSA (gold standard) is positive. From the table, 20 patients showed no CAS by Doppler but did have a significant stenosis by DSA.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 3,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "120 patients suspected of having Deep Vein Thrombosis (DVT) were tested with a point-of-care ultrasound (POCUS) and a formal venous duplex ultrasound (gold standard).\n50 patients had DVT by both POCUS and formal duplex. 10 patients had DVT by POCUS but NO DVT by formal duplex. 45 patients had no DVT by both tests. 15 patients had no DVT by POCUS but did have DVT by formal duplex.\n\nBased on these results, what is the number of **False Negatives**?\n\n| | Formal Duplex + (DVT) | Formal Duplex - (No DVT) | Total (by POCUS) |\n| :------------------ | :-------------------- | :--------------------- | :--------------- |\n| **POCUS +** | 50 | 10 | 60 |\n| **POCUS -** | 15 | 45 | 60 |\n| **Total (by Formal Duplex)** | 65 | 55 | 120 |\n",
+        "image": "",
+        "opciones": [
+            "50",
+            "10",
+            "45",
+            "15"
+        ],
+        "respuesta_correcta": [
+            "15"
+        ],
+        "concept_to_study": "False Negatives in Vascular Diagnostic Tests (POCUS vs. Formal Venous Duplex)",
+        "explicacion_openai": "False Negatives (FN) occur when the POCUS is negative for DVT, but the formal venous duplex (gold standard) is positive. From the table, 15 patients had no DVT by POCUS but did have DVT by formal duplex.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 4,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "200 patients with suspected Peripheral Artery Disease (PAD) were screened using Ankle-Brachial Index (ABI) and confirmed with Magnetic Resonance Angiography (MRA) as the gold standard.\n100 patients showed PAD by both ABI and MRA. 20 patients showed PAD by ABI but not by MRA. 60 patients showed no PAD by both tests. 20 patients showed no PAD by ABI but did show PAD by MRA.\n\nBased on these results, what is the number of **False Negatives**?\n\n| | MRA + (PAD) | MRA - (No PAD) | Total (by ABI) |\n| :---------------- | :-------------------------- | :----------------------- | :-------------------------- |\n| **ABI +** | 100 | 20 | 120 |\n| **ABI -** | 20 | 60 | 80 |\n| **Total (by MRA)** | 120 | 80 | 200 |\n",
+        "image": "",
+        "opciones": [
+            "100",
+            "20",
+            "60",
+            "80"
+        ],
+        "respuesta_correcta": [
+            "20"
+        ],
+        "concept_to_study": "False Negatives in Vascular Diagnostic Tests (ABI vs. MRA)",
+        "explicacion_openai": "False Negatives (FN) occur when the ABI is negative for PAD, but the MRA (gold standard) is positive. From the table, 20 patients showed no PAD by ABI but did show PAD by MRA.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 5,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "90 individuals were screened for abdominal aortic aneurysm (AAA) using a physical palpation screening and confirmed with an abdominal ultrasound (gold standard).\n40 individuals had AAA by both tests. 5 individuals had AAA by physical palpation but not by ultrasound. 35 individuals had no AAA by both tests. 10 individuals had no AAA by physical palpation but did by ultrasound.\n\nBased on these results, what is the number of **False Negatives**?\n\n| | Ultrasound + (AAA) | Ultrasound - (No AAA) | Total (by Palpation) |\n| :------------------- | :----------------- | :--------------------- | :------------------- |\n| **Palpation +** | 40 | 5 | 45 |\n| **Palpation -** | 10 | 35 | 45 |\n| **Total (by Ultrasound)** | 50 | 40 | 90 |\n",
+        "image": "",
+        "opciones": [
+            "40",
+            "5",
+            "35",
+            "10"
+        ],
+        "respuesta_correcta": [
+            "10"
+        ],
+        "concept_to_study": "False Negatives in Vascular Screening (Physical Palpation vs. Abdominal Ultrasound)",
+        "explicacion_openai": "False Negatives (FN) occur when the physical palpation is negative for AAA, but the abdominal ultrasound (gold standard) is positive. From the table, 10 individuals had no AAA by physical palpation but did by ultrasound.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 6,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "250 patients were evaluated for renal artery stenosis using a Doppler renal artery ultrasound and a conventional renal angiography (gold standard).\n120 patients showed stenosis by both ultrasound and angiography. 30 patients showed stenosis by ultrasound but not by angiography. 80 patients showed no stenosis by both tests. 20 patients showed no stenosis by ultrasound but did by angiography.\n\nBased on these results, what is the number of **False Negatives**?\n\n| | Angiography + (Stenosis) | Angiography - (No Stenosis) | Total (by Ultrasound) |\n| :------------------- | :----------------------- | :-------------------- | :-------------------- |\n| **Ultrasound +** | 120 | 30 | 150 |\n| **Ultrasound -** | 20 | 80 | 100 |\n| **Total (by Angiography)** | 140 | 110 | 250 |\n",
+        "image": "",
+        "opciones": [
+            "120",
+            "30",
+            "80",
+            "20"
+        ],
+        "respuesta_correcta": [
+            "20"
+        ],
+        "concept_to_study": "False Negatives in Vascular Diagnostic Tests (Renal Artery Ultrasound vs. Angiography)",
+        "explicacion_openai": "False Negatives (FN) occur when the Doppler renal artery ultrasound is negative for stenosis, but the conventional renal angiography (gold standard) is positive. From the table, 20 patients showed no stenosis by ultrasound but did by angiography.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 7,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "110 patients with suspected chronic venous insufficiency (CVI) underwent a clinical examination and a venous duplex mapping (gold standard).\n45 patients were diagnosed with CVI by both methods. 10 patients were diagnosed with CVI by clinical exam but not by duplex mapping. 40 patients had no CVI by both methods. 15 patients had no CVI by clinical exam but were diagnosed with CVI by duplex mapping.\n\nBased on these results, what is the number of **False Negatives**?\n\n| | Duplex Mapping + (CVI) | Duplex Mapping - (No CVI) | Total (by Clinical Exam) |\n| :------------------- | :--------------------- | :-------------------- | :----------------------- |\n| **Clinical Exam +** | 45 | 10 | 55 |\n| **Clinical Exam -** | 15 | 40 | 55 |\n| **Total (by Duplex Mapping)** | 60 | 50 | 110 |\n",
+        "image": "",
+        "opciones": [
+            "45",
+            "10",
+            "40",
+            "15"
+        ],
+        "respuesta_correcta": [
+            "15"
+        ],
+        "concept_to_study": "False Negatives in Vascular Diagnostic Tests (Clinical Exam vs. Venous Duplex Mapping)",
+        "explicacion_openai": "False Negatives (FN) occur when the clinical examination is negative for CVI, but the venous duplex mapping (gold standard) is positive. From the table, 15 patients had no CVI by clinical exam but were diagnosed with CVI by duplex mapping.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 8,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "140 patients were evaluated for subclavian steal syndrome using a physical exam (auscultation of supraclavicular bruit) and a transcranial Doppler (TCD) as the gold standard.\n60 patients were positive for steal syndrome by both tests. 20 patients were positive by physical exam but negative by TCD. 40 patients were negative by both tests. 20 patients were negative by physical exam but positive by TCD.\n\nBased on these results, what is the number of **False Negatives**?\n\n| | TCD + (Steal Syndrome) | TCD - (No Steal Syndrome) | Total (by Physical Exam) |\n| :---------------- | :--------------------- | :------------------------ | :----------------------- |\n| **Physical Exam +** | 60 | 20 | 80 |\n| **Physical Exam -** | 20 | 40 | 60 |\n| **Total (by TCD)** | 80 | 60 | 140 |\n",
+        "image": "",
+        "opciones": [
+            "60",
+            "20",
+            "40",
+            "80"
+        ],
+        "respuesta_correcta": [
+            "20"
+        ],
+        "concept_to_study": "False Negatives in Vascular Diagnostic Tests (Physical Exam vs. Transcranial Doppler)",
+        "explicacion_openai": "False Negatives (FN) occur when the physical exam is negative for subclavian steal syndrome, but the TCD (gold standard) is positive. From the table, 20 patients were negative by physical exam but positive by TCD.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 9,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "100 limbs were screened for arterial insufficiency using a Segmental Pressure Study and confirmed with a contrast angiography (gold standard).\n35 limbs showed insufficiency by both Segmental Pressures and angiography. 10 limbs showed insufficiency by Segmental Pressures but not by angiography. 45 limbs showed no insufficiency by both tests. 10 limbs showed no insufficiency by Segmental Pressures but did by angiography.\n\nBased on these results, what is the number of **False Negatives**?\n\n| | Angiography + (Insufficiency) | Angiography - (No Insufficiency) | Total (by Segmental Pressure) |\n| :------------------------ | :---------------------------- | :------------------------- | :---------------------------- |\n| **Segmental Pressure +** | 35 | 10 | 45 |\n| **Segmental Pressure -** | 10 | 45 | 55 |\n| **Total (by Angiography)** | 45 | 55 | 100 |\n",
+        "image": "",
+        "opciones": [
+            "35",
+            "10",
+            "45",
+            "55"
+        ],
+        "respuesta_correcta": [
+            "10"
+        ],
+        "concept_to_study": "False Negatives in Vascular Diagnostic Tests (Segmental Pressures vs. Angiography)",
+        "explicacion_openai": "False Negatives (FN) occur when the Segmental Pressure Study is negative for arterial insufficiency, but the contrast angiography (gold standard) is positive. From the table, 10 limbs showed no insufficiency by Segmental Pressures but did by angiography.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 10,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "130 patients were evaluated for chronic limb ischemia using a clinical assessment and a Peripheral Angiography (gold standard).\n55 patients had ischemia by both methods. 15 patients had ischemia by clinical assessment but not by angiography. 45 patients had no ischemia by both methods. 15 patients had no ischemia by clinical assessment but did by angiography.\n\nBased on these results, what is the number of **False Negatives**?\n\n| | Angiography + (Ischemia) | Angiography - (No Ischemia) | Total (by Clinical Assessment) |\n| :----------------------- | :--------------------- | :---------------------- | :----------------------------- |\n| **Clinical Assessment +** | 55 | 15 | 70 |\n| **Clinical Assessment -** | 15 | 45 | 60 |\n| **Total (by Angiography)** | 70 | 60 | 130 |\n",
+        "image": "",
+        "opciones": [
+            "55",
+            "15",
+            "45",
+            "70"
+        ],
+        "respuesta_correcta": [
+            "15"
+        ],
+        "concept_to_study": "False Negatives in Vascular Diagnostic Tests (Clinical Assessment vs. Peripheral Angiography)",
+        "explicacion_openai": "False Negatives (FN) occur when the clinical assessment is negative for ischemia, but the Peripheral Angiography (gold standard) is positive. From the table, 15 patients had no ischemia by clinical assessment but did by angiography.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 11,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "160 patients with suspected Mesenteric Ischemia were screened with a Doppler ultrasound and confirmed with a CT Angiography (gold standard).\n80 patients showed ischemia by both Doppler and CTA. 20 patients showed ischemia by Doppler but not by CTA. 45 patients showed no ischemia by both tests. 15 patients showed no ischemia by Doppler but did by CTA.\n\nBased on these results, what is the number of **False Negatives**?\n\n| | CTA + (Ischemia) | CTA - (No Ischemia) | Total (by Doppler) |\n| :---------------- | :--------------- | :------------------ | :---------------- |\n| **Doppler +** | 80 | 20 | 100 |\n| **Doppler -** | 15 | 45 | 60 |\n| **Total (by CTA)** | 95 | 65 | 160 |\n",
+        "image": "",
+        "opciones": [
+            "80",
+            "20",
+            "45",
+            "15"
+        ],
+        "respuesta_correcta": [
+            "15"
+        ],
+        "concept_to_study": "False Negatives in Vascular Diagnostic Tests (Mesenteric Doppler vs. CTA)",
+        "explicacion_openai": "False Negatives (FN) occur when the Doppler ultrasound is negative for mesenteric ischemia, but the CT Angiography (gold standard) is positive. From the table, 15 patients showed no ischemia by Doppler but did by CTA.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 12,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "190 patients with suspected Popliteal Artery Aneurysm were screened with a physical exam (palpation) and confirmed with a conventional angiography (gold standard).\n95 patients had aneurysm by both tests. 25 patients had aneurysm by physical exam but not by angiography. 50 patients had no aneurysm by both tests. 20 patients had no aneurysm by physical exam but did by angiography.\n\nBased on these results, what is the number of **False Negatives**?\n\n| | Angiography + (Aneurysm) | Angiography - (No Aneurysm) | Total (by Physical Exam) |\n| :---------------- | :----------------------- | :---------------------- | :----------------------- |\n| **Physical Exam +** | 95 | 25 | 120 |\n| **Physical Exam -** | 20 | 50 | 70 |\n| **Total (by Angiography)** | 115 | 75 | 190 |\n",
+        "image": "",
+        "opciones": [
+            "95",
+            "25",
+            "50",
+            "20"
+        ],
+        "respuesta_correcta": [
+            "20"
+        ],
+        "concept_to_study": "False Negatives in Vascular Diagnostic Tests (Physical Exam vs. Angiography for Popliteal Aneurysm)",
+        "explicacion_openai": "False Negatives (FN) occur when the physical exam is negative for popliteal artery aneurysm, but the conventional angiography (gold standard) is positive. From the table, 20 patients had no aneurysm by physical exam but did by angiography.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 13,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "170 patients were screened for Dialysis Access Stenosis using a Doppler Flow Study (screening) and a Diagnostic Fistulogram (gold standard).\n75 patients had stenosis by both tests. 15 patients had stenosis by Doppler Flow Study but not by fistulogram. 60 patients had no stenosis by both tests. 20 patients had no stenosis by Doppler Flow Study but did by fistulogram.\n\nBased on these results, what is the number of **False Negatives**?\n\n| | Fistulogram + (Stenosis) | Fistulogram - (No Stenosis) | Total (by Doppler Flow Study) |\n| :---------------------- | :----------------------- | :------------------------ | :---------------------------- |\n| **Doppler Flow Study +** | 75 | 15 | 90 |\n| **Doppler Flow Study -** | 20 | 60 | 80 |\n| **Total (by Fistulogram)** | 95 | 75 | 170 |\n",
+        "image": "",
+        "opciones": [
+            "75",
+            "15",
+            "60",
+            "20"
+        ],
+        "respuesta_correcta": [
+            "20"
+        ],
+        "concept_to_study": "False Negatives in Vascular Diagnostic Tests (Doppler Flow Study vs. Fistulogram)",
+        "explicacion_openai": "False Negatives (FN) occur when the Doppler Flow Study is negative for stenosis, but the Diagnostic Fistulogram (gold standard) is positive. From the table, 20 patients had no stenosis by Doppler Flow Study but did by fistulogram.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Quality Assurance, Safety, and Physical Principles",
+        "grupo": 14,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "140 patients were evaluated for Vertebral Artery Stenosis using a transcranial Doppler (TCD) and a MRA of the neck (gold standard).\n65 patients had stenosis by both tests. 15 patients had stenosis by TCD but not by MRA. 40 patients had no stenosis by both tests. 20 patients had no stenosis by TCD but did by MRA.\n\nBased on these results, what is the number of **False Negatives**?\n\n| | MRA + (Stenosis) | MRA - (No Stenosis) | Total (by TCD) |\n| :---------------- | :--------------- | :------------------ | :------------- |\n| **TCD +** | 65 | 15 | 80 |\n| **TCD -** | 20 | 40 | 60 |\n| **Total (by MRA)** | 85 | 55 | 140 |\n",
+        "image": "",
+        "opciones": [
+            "65",
+            "15",
+            "40",
+            "20"
+        ],
+        "respuesta_correcta": [
+            "20"
+        ],
+        "concept_to_study": "False Negatives in Vascular Diagnostic Tests (Transcranial Doppler vs. MRA)",
+        "explicacion_openai": "False Negatives (FN) occur when the TCD is negative for vertebral artery stenosis, but the MRA (gold standard) is positive. From the table, 20 patients had no stenosis by TCD but did by MRA.",
+        "image_explanation": ""
+    }
 ]
-
