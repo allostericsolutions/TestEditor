@@ -9227,5 +9227,537 @@
         "concept_to_study": "Prevalence Definition",
         "explicacion_openai": "Prevalence is the proportion of a particular population found to be affected by a medical condition at a specific time.",
         "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 1,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The arterial pulsations felt in front of the ear and just above the zygomatic arch are from which artery?",
+        "image": "",
+        "opciones": [
+            "A. Maxillary",
+            "B. Transverse facial",
+            "C. Superficial temporal",
+            "D. Facial"
+        ],
+        "respuesta_correcta": [
+            "Superficial temporal"
+        ],
+        "concept_to_study": "Superficial Temporal Artery Palpation",
+        "explicacion_openai": "The superficial temporal artery is a terminal branch of the external carotid artery and its pulsations are easily palpable anterior to the ear and superior to the zygomatic arch.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 2,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The common carotid artery divides into its external and internal branches usually at the level of the upper border of the:",
+        "image": "",
+        "opciones": [
+            "A. Hyoid",
+            "B. Cricoid",
+            "C. Thyroid cartilage",
+            "D. Cricothyroid membrane"
+        ],
+        "respuesta_correcta": [
+            "Thyroid cartilage"
+        ],
+        "concept_to_study": "Carotid Bifurcation Level",
+        "explicacion_openai": "The common carotid artery typically bifurcates into the internal and external carotid arteries at the level of the superior border of the thyroid cartilage.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 3,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "What artery is usually the first branch of the external carotid artery?",
+        "image": "",
+        "opciones": [
+            "A. Inferior thyroid artery",
+            "B. Superior thyroid artery",
+            "C. Facial artery",
+            "D. Posterior auricular artery"
+        ],
+        "respuesta_correcta": [
+            "Superior thyroid artery"
+        ],
+        "concept_to_study": "External Carotid Artery First Branch",
+        "explicacion_openai": "The superior thyroid artery is usually the first branch of the external carotid artery.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 4,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following is not an artery in the circle of Willis?",
+        "image": "",
+        "opciones": [
+            "A. Anterior cerebral artery",
+            "B. Middle cerebral artery",
+            "C. Anterior communicating artery",
+            "D. Posterior communicating artery"
+        ],
+        "respuesta_correcta": [
+            "Middle cerebral artery"
+        ],
+        "concept_to_study": "Circle of Willis Anatomy",
+        "explicacion_openai": "The Circle of Willis is an arterial anastomosis at the base of the brain. The middle cerebral artery is a major branch of the internal carotid artery but is not considered part of the Circle of Willis itself.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 5,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following arteries arise(s) from the external carotid artery?",
+        "image": "",
+        "opciones": [
+            "A. Superior thyroid artery",
+            "B. Lingual artery",
+            "C. Facial artery",
+            "D. Ascending pharyngeal artery"
+        ],
+        "respuesta_correcta": [
+            "Superior thyroid artery"
+        ],
+        "concept_to_study": "External Carotid Artery Branches",
+        "explicacion_openai": "The external carotid artery gives rise to several branches supplying the face, scalp, and neck, including the superior thyroid, lingual, facial, and ascending pharyngeal arteries.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 6,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The prominence of the larynx is formed by the:",
+        "image": "",
+        "opciones": [
+            "A. Hyoid bone",
+            "B. Thyroid cartilage",
+            "C. Cricoid cartilage",
+            "D. Thyroid gland"
+        ],
+        "respuesta_correcta": [
+            "Thyroid cartilage"
+        ],
+        "concept_to_study": "Laryngeal Anatomy",
+        "explicacion_openai": "The prominence of the larynx, commonly known as the Adam's apple, is formed by the thyroid cartilage.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 7,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The vertebral artery usually arises from the:",
+        "image": "",
+        "opciones": [
+            "A. Subclavian artery",
+            "B. Thyrocervical trunk",
+            "C. Costocervical trunk",
+            "D. Superior thyroid artery"
+        ],
+        "respuesta_correcta": [
+            "Subclavian artery"
+        ],
+        "concept_to_study": "Vertebral Artery Origin",
+        "explicacion_openai": "The vertebral arteries typically arise from the subclavian arteries and ascend through the cervical vertebrae to supply the brain.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 8,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Palpation of arterial pulsations anterior to the ear and superior to the zygomatic arch indicates the presence of which artery?",
+        "image": "",
+        "opciones": [
+            "A. Maxillary",
+            "B. Superficial temporal",
+            "C. Facial",
+            "D. Posterior auricular"
+        ],
+        "respuesta_correcta": [
+            "Superficial temporal"
+        ],
+        "concept_to_study": "Superficial Temporal Artery Palpation",
+        "explicacion_openai": "The superficial temporal artery is a terminal branch of the external carotid artery and its pulsations are easily palpable anterior to the ear and superior to the zygomatic arch.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 9,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The artery responsible for pulsations felt just anterior to the tragus and superior to the zygomatic arch is the:",
+        "image": "",
+        "opciones": [
+            "A. Transverse facial",
+            "B. Superficial temporal",
+            "C. Maxillary",
+            "D. Occipital"
+        ],
+        "respuesta_correcta": [
+            "Superficial temporal"
+        ],
+        "concept_to_study": "Superficial Temporal Artery Palpation",
+        "explicacion_openai": "The superficial temporal artery is a terminal branch of the external carotid artery and its pulsations are easily palpable anterior to the ear and superior to the zygomatic arch.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 10,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which artery's pulsation is typically assessed just anterior to the ear and superior to the zygomatic arch?",
+        "image": "",
+        "opciones": [
+            "A. Facial",
+            "B. Superficial temporal",
+            "C. Maxillary",
+            "D. Auricular"
+        ],
+        "respuesta_correcta": [
+            "Superficial temporal"
+        ],
+        "concept_to_study": "Superficial Temporal Artery Palpation",
+        "explicacion_openai": "The superficial temporal artery is a terminal branch of the external carotid artery and its pulsations are easily palpable anterior to the ear and superior to the zygomatic arch.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 11,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "At approximately which anatomical landmark does the common carotid artery typically bifurcate into its internal and external branches?",
+        "image": "",
+        "opciones": [
+            "A. Hyoid bone",
+            "B. Thyroid cartilage",
+            "C. Cricoid cartilage",
+            "D. Laryngeal prominence"
+        ],
+        "respuesta_correcta": [
+            "Thyroid cartilage"
+        ],
+        "concept_to_study": "Carotid Bifurcation Level",
+        "explicacion_openai": "The common carotid artery typically bifurcates into the internal and external carotid arteries at the level of the superior border of the thyroid cartilage.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 12,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The bifurcation of the common carotid artery into the internal and external carotid arteries commonly occurs at the level of the superior border of the:",
+        "image": "",
+        "opciones": [
+            "A. Cricoid cartilage",
+            "B. Thyroid cartilage",
+            "C. Hyoid bone",
+            "D. Laryngeal prominence"
+        ],
+        "respuesta_correcta": [
+            "Thyroid cartilage"
+        ],
+        "concept_to_study": "Carotid Bifurcation Level",
+        "explicacion_openai": "The common carotid artery typically bifurcates into the internal and external carotid arteries at the level of the superior border of the thyroid cartilage.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 13,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The upper border of which laryngeal structure is the usual site for the common carotid artery bifurcation?",
+        "image": "",
+        "opciones": [
+            "A. Cricoid cartilage",
+            "B. Hyoid bone",
+            "C. Thyroid cartilage",
+            "D. Epiglottis"
+        ],
+        "respuesta_correcta": [
+            "Thyroid cartilage"
+        ],
+        "concept_to_study": "Carotid Bifurcation Level",
+        "explicacion_openai": "The common carotid artery typically bifurcates into the internal and external carotid arteries at the level of the superior border of the thyroid cartilage.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 14,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The superior thyroid artery is typically the initial branch arising from which major artery?",
+        "image": "",
+        "opciones": [
+            "A. Internal carotid artery",
+            "B. Subclavian artery",
+            "C. External carotid artery",
+            "D. Vertebral artery"
+        ],
+        "respuesta_correcta": [
+            "External carotid artery"
+        ],
+        "concept_to_study": "External Carotid Artery First Branch",
+        "explicacion_openai": "The superior thyroid artery is usually the first branch of the external carotid artery.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 15,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following is generally considered the first major branch of the external carotid artery?",
+        "image": "",
+        "opciones": [
+            "A. Lingual artery",
+            "B. Facial artery",
+            "C. Superior thyroid artery",
+            "D. Ascending pharyngeal artery"
+        ],
+        "respuesta_correcta": [
+            "Superior thyroid artery"
+        ],
+        "concept_to_study": "External Carotid Artery First Branch",
+        "explicacion_openai": "The superior thyroid artery is usually the first branch of the external carotid artery.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 16,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The external carotid artery most commonly gives off which artery as its first branch?",
+        "image": "",
+        "opciones": [
+            "A. Maxillary artery",
+            "B. Superficial temporal artery",
+            "C. Superior thyroid artery",
+            "D. Occipital artery"
+        ],
+        "respuesta_correcta": [
+            "Superior thyroid artery"
+        ],
+        "concept_to_study": "External Carotid Artery First Branch",
+        "explicacion_openai": "The superior thyroid artery is usually the first branch of the external carotid artery.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 17,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following arteries is a major branch of the internal carotid artery but is NOT part of the Circle of Willis?",
+        "image": "",
+        "opciones": [
+            "A. Anterior cerebral artery",
+            "B. Middle cerebral artery",
+            "C. Posterior communicating artery",
+            "D. Anterior communicating artery"
+        ],
+        "respuesta_correcta": [
+            "Middle cerebral artery"
+        ],
+        "concept_to_study": "Circle of Willis Anatomy",
+        "explicacion_openai": "The Circle of Willis is an arterial anastomosis at the base of the brain. The middle cerebral artery is a major branch of the internal carotid artery but is not considered part of the Circle of Willis itself.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 18,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of these arteries is a significant branch of the internal carotid artery but does not form part of the Circle of Willis?",
+        "image": "",
+        "opciones": [
+            "A. Anterior cerebral artery",
+            "B. Posterior communicating artery",
+            "C. Middle cerebral artery",
+            "D. Anterior communicating artery"
+        ],
+        "respuesta_correcta": [
+            "Middle cerebral artery"
+        ],
+        "concept_to_study": "Circle of Willis Anatomy",
+        "explicacion_openai": "The Circle of Willis is an arterial anastomosis at the base of the brain. The middle cerebral artery is a major branch of the internal carotid artery but is not considered part of the Circle of Willis itself.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 19,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The Circle of Willis is an arterial anastomosis that includes all of the following EXCEPT:",
+        "image": "",
+        "opciones": [
+            "A. Anterior cerebral artery",
+            "B. Posterior cerebral artery",
+            "C. Middle cerebral artery",
+            "D. Anterior communicating artery"
+        ],
+        "respuesta_correcta": [
+            "Middle cerebral artery"
+        ],
+        "concept_to_study": "Circle of Willis Anatomy",
+        "explicacion_openai": "The Circle of Willis is an arterial anastomosis at the base of the brain. The middle cerebral artery is a major branch of the internal carotid artery but is not considered part of the Circle of Willis itself.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 20,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of the following arteries is a branch of the external carotid artery?",
+        "image": "",
+        "opciones": [
+            "A. Ophthalmic artery",
+            "B. Vertebral artery",
+            "C. Superior thyroid artery",
+            "D. Middle cerebral artery"
+        ],
+        "respuesta_correcta": [
+            "Superior thyroid artery"
+        ],
+        "concept_to_study": "External Carotid Artery Branches",
+        "explicacion_openai": "The external carotid artery gives rise to several branches supplying the face, scalp, and neck, including the superior thyroid, lingual, facial, and ascending pharyngeal arteries.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 21,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The lingual artery is a branch of which major artery?",
+        "image": "",
+        "opciones": [
+            "A. Internal carotid artery",
+            "B. External carotid artery",
+            "C. Subclavian artery",
+            "D. Vertebral artery"
+        ],
+        "respuesta_correcta": [
+            "External carotid artery"
+        ],
+        "concept_to_study": "External Carotid Artery Branches",
+        "explicacion_openai": "The external carotid artery gives rise to several branches supplying the face, scalp, and neck, including the superior thyroid, lingual, facial, and ascending pharyngeal arteries.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 22,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which of these arteries typically originates from the external carotid artery?",
+        "image": "",
+        "opciones": [
+            "A. Facial artery",
+            "B. Ophthalmic artery",
+            "C. Middle cerebral artery",
+            "D. Vertebral artery"
+        ],
+        "respuesta_correcta": [
+            "Facial artery"
+        ],
+        "concept_to_study": "External Carotid Artery Branches",
+        "explicacion_openai": "The external carotid artery gives rise to several branches supplying the face, scalp, and neck, including the superior thyroid, lingual, facial, and ascending pharyngeal arteries.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 23,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The Adam's apple, a prominent feature of the neck, is anatomically known as the:",
+        "image": "",
+        "opciones": [
+            "A. Hyoid bone",
+            "B. Thyroid cartilage",
+            "C. Cricoid cartilage",
+            "D. Epiglottis"
+        ],
+        "respuesta_correcta": [
+            "Thyroid cartilage"
+        ],
+        "concept_to_study": "Laryngeal Anatomy",
+        "explicacion_openai": "The prominence of the larynx, commonly known as the Adam's apple, is formed by the thyroid cartilage.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 24,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which cartilaginous structure forms the anterior prominence of the larynx?",
+        "image": "",
+        "opciones": [
+            "A. Cricoid cartilage",
+            "B. Thyroid cartilage",
+            "C. Arytenoid cartilage",
+            "D. Corniculate cartilage"
+        ],
+        "respuesta_correcta": [
+            "Thyroid cartilage"
+        ],
+        "concept_to_study": "Laryngeal Anatomy",
+        "explicacion_openai": "The prominence of the larynx, commonly known as the Adam's apple, is formed by the thyroid cartilage.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 25,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The most prominent part of the larynx, often visible externally, is primarily composed of the:",
+        "image": "",
+        "opciones": [
+            "A. Hyoid bone",
+            "B. Cricoid cartilage",
+            "C. Thyroid cartilage",
+            "D. Tracheal rings"
+        ],
+        "respuesta_correcta": [
+            "Thyroid cartilage"
+        ],
+        "concept_to_study": "Laryngeal Anatomy",
+        "explicacion_openai": "The prominence of the larynx, commonly known as the Adam's apple, is formed by the thyroid cartilage.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 26,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The origin of the vertebral artery is typically from the:",
+        "image": "",
+        "opciones": [
+            "A. Internal carotid artery",
+            "B. Subclavian artery",
+            "C. Common carotid artery",
+            "D. Brachiocephalic trunk"
+        ],
+        "respuesta_correcta": [
+            "Subclavian artery"
+        ],
+        "concept_to_study": "Vertebral Artery Origin",
+        "explicacion_openai": "The vertebral arteries typically arise from the subclavian arteries and ascend through the cervical vertebrae to supply the brain.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 27,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "Which major artery is the usual source for the vertebral artery?",
+        "image": "",
+        "opciones": [
+            "A. Aorta",
+            "B. Common carotid artery",
+            "C. Subclavian artery",
+            "D. Brachiocephalic trunk"
+        ],
+        "respuesta_correcta": [
+            "Subclavian artery"
+        ],
+        "concept_to_study": "Vertebral Artery Origin",
+        "explicacion_openai": "The vertebral arteries typically arise from the subclavian arteries and ascend through the cervical vertebrae to supply the brain.",
+        "image_explanation": ""
+    },
+    {
+        "clasificacion": "Normal Anatomy, Perfusion, and Function",
+        "grupo": 28,
+        "tipo_pregunta": "opcion_multiple",
+        "enunciado": "The subclavian artery is the typical origin for which major artery that ascends to supply the brain?",
+        "image": "",
+        "opciones": [
+            "A. Middle cerebral artery",
+            "B. Vertebral artery",
+            "C. Basilar artery",
+            "D. Ophthalmic artery"
+        ],
+        "respuesta_correcta": [
+            "Vertebral artery"
+        ],
+        "concept_to_study": "Vertebral Artery Origin",
+        "explicacion_openai": "The vertebral arteries typically arise from the subclavian arteries and ascend through the cervical vertebrae to supply the brain.",
+        "image_explanation": ""
     }
 ]
