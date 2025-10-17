@@ -7405,7 +7405,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Based on the spectral Doppler tracing shown, which of the following most accurately describes its vascular resistance profile?",
@@ -7424,7 +7424,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. The first component of this waveform corresponds with:",
@@ -7443,7 +7443,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. The second component of this waveform corresponds with:",
@@ -7462,7 +7462,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. The third component of this waveform corresponds with:",
@@ -7481,7 +7481,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. All are correct about this waveform, except:",
@@ -7500,7 +7500,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. What is the defining feature of the waveform’s systolic phase?",
@@ -7519,7 +7519,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. Which portion corresponds to elastic recoil of the arterial wall?",
@@ -7538,7 +7538,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. What does the brief reverse flow suggest about downstream impedance?",
@@ -7557,7 +7557,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. In which vessel would this pattern be abnormal at rest?",
@@ -7576,7 +7576,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. How would a proximal stenosis alter this waveform?",
@@ -7595,7 +7595,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. Which change indicates increased distal resistance?",
@@ -7614,7 +7614,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. After exercise, which transformation is expected?",
@@ -7633,7 +7633,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. What does loss of the reverse component indicate clinically?",
@@ -7652,7 +7652,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. Which physiological mechanism generates the late diastolic forward flow?",
@@ -7671,7 +7671,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. How would significant calcification modify the upstroke?",
@@ -7690,7 +7690,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. Which intervention most rapidly restores the baseline pattern after reactive hyperemia?",
@@ -7709,7 +7709,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. What does the sharp systolic peak most directly reflect?",
@@ -7728,7 +7728,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. Which condition would blunt both the systolic peak and reverse flow?",
@@ -7747,7 +7747,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. Which finding distinguishes this pattern from low-resistance flow?",
@@ -7766,7 +7766,7 @@
         "image_explanation": ""
     },
     {
-        "classification": "Pathology, Perfusion and Function",
+        "clasificacion": "Pathology, Perfusion and Function",
         "group": 301,
         "question_type": "multiple_choice",
         "statement": "Refer to the image. Which parameter best confirms high-resistance peripheral circulation?",
