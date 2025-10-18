@@ -10595,5 +10595,101 @@
         "concept_to_study": "Prevalence Definition",
         "explicacion_openai": "Prevalence is the proportion of a particular population found to be affected by a medical condition at a specific time.",
         "image_explanation": ""
-    }
+    },
+    {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 1,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Which of the following is NOT typically considered a clinical manifestation of acute pulmonary embolism (PE)?",
+    "image": "",
+    "opciones": [
+      "Sudden onset dyspnea",
+      "Tachypnea",
+      "Pleuritic chest pain",
+      "Bradycardia"
+    ],
+    "respuesta_correcta": [
+      "Bradycardia"
+    ],
+    "concept_to_study": "PE Clinical Manifestations",
+    "explicacion_openai": "Acute pulmonary embolism (PE) commonly presents with symptoms such as sudden onset dyspnea (shortness of breath), tachypnea (rapid breathing), pleuritic chest pain (pain that worsens with breathing), cough, and tachycardia (rapid heart rate). Bradycardia (slow heart rate) is less common than tachycardia in PE, as the body typically responds to hypoxemia and increased pulmonary vascular resistance with an increased heart rate.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 2,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Which of the following clinical findings is LEAST likely to be associated with deep venous thrombosis (DVT)?",
+    "image": "",
+    "opciones": [
+      "Unilateral leg swelling",
+      "Calf pain and tenderness",
+      "Warmth and erythema of the affected limb",
+      "Coldness and pallor of the affected limb"
+    ],
+    "respuesta_correcta": [
+      "Coldness and pallor of the affected limb"
+    ],
+    "concept_to_study": "DVT Clinical Findings",
+    "explicacion_openai": "Deep venous thrombosis (DVT) typically causes venous congestion due to impaired venous return. This often leads to unilateral leg swelling, pain, warmth, and erythema (redness) of the affected limb. Coldness and pallor are signs more indicative of arterial insufficiency or occlusion, which affects arterial inflow, rather than venous outflow obstruction characteristic of DVT.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 3,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Which of the following symptoms is LEAST characteristic of a pulmonary embolism (PE)?",
+    "image": "",
+    "opciones": [
+      "Cough",
+      "Hemoptysis",
+      "Syncope",
+      "Severe epigastric pain"
+    ],
+    "respuesta_correcta": [
+      "Severe epigastric pain"
+    ],
+    "concept_to_study": "PE Symptoms",
+    "explicacion_openai": "Common clinical symptoms of pulmonary embolism (PE) include cough, hemoptysis (coughing up blood), dyspnea (shortness of breath), tachypnea, pleuritic chest pain, tachycardia, and syncope (fainting). Severe epigastric pain is not a typical primary symptom of PE. While some patients might experience non-specific abdominal discomfort, it is not a characteristic manifestation.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 4,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Which of the following is NOT a typical physical finding associated with deep venous thrombosis (DVT)?",
+    "image": "",
+    "opciones": [
+      "Palpable venous cord",
+      "Increased circumference of the affected limb",
+      "Distended superficial veins",
+      "Absent pedal pulses"
+    ],
+    "respuesta_correcta": [
+      "Absent pedal pulses"
+    ],
+    "concept_to_study": "DVT Physical Findings",
+    "explicacion_openai": "Physical findings suggestive of deep venous thrombosis (DVT) include unilateral leg swelling (leading to increased limb circumference), calf pain and tenderness, warmth, erythema, and sometimes a palpable venous cord or distended superficial veins due to collateral flow. Absent pedal pulses are indicative of arterial compromise and are not typically associated with DVT, which primarily affects venous return.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 5,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Which of the following clinical findings is LEAST likely to be present in a patient with a pulmonary embolism (PE)?",
+    "image": "",
+    "opciones": [
+      "Hypoxemia",
+      "Tachycardia",
+      "Wheezing",
+      "Anxiety"
+    ],
+    "respuesta_correcta": [
+      "Wheezing"
+    ],
+    "concept_to_study": "PE Clinical Findings",
+    "explicacion_openai": "Pulmonary embolism (PE) can manifest with various clinical signs, including hypoxemia (low blood oxygen levels), tachycardia (rapid heart rate), anxiety, dyspnea, and pleuritic chest pain. Wheezing, however, is a respiratory sound primarily associated with bronchospasm or airway obstruction (e.g., asthma, COPD) and is not a typical finding in PE. While other auscultatory findings like crackles might occur, wheezing is less characteristic.",
+    "image_explanation": ""
+  }
 ]
+
