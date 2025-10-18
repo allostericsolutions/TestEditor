@@ -7408,7 +7408,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Based on the spectral Doppler tracing shown, which of the following most accurately describes its vascular resistance profile?",
+        "enunciado": "Based on the spectral Doppler tracing shown, which of the following most accurately describes its vascular resistance profile?",
         "image": "onda_trifasica.png",
         "options": [
             "High resistance",
@@ -7427,7 +7427,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. The first component of this waveform corresponds with:",
+        "enunciado": "Refer to the image. The first component of this waveform corresponds with:",
         "image": "onda_trifasica.png",
         "options": [
             "Recoil",
@@ -7446,7 +7446,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. The second component of this waveform corresponds with:",
+        "enunciado": "Refer to the image. The second component of this waveform corresponds with:",
         "image": "onda_trifasica.png",
         "options": [
             "Wall elasticity",
@@ -7465,7 +7465,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. The third component of this waveform corresponds with:",
+        "enunciado": "Refer to the image. The third component of this waveform corresponds with:",
         "image": "onda_trifasica.png",
         "options": [
             "Wall elasticity",
@@ -7484,7 +7484,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. All are correct about this waveform, except:",
+        "enunciado": "Refer to the image. All are correct about this waveform, except:",
         "image": "onda_trifasica.png",
         "options": [
             "High resistance",
@@ -7503,7 +7503,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. What is the defining feature of the waveform’s systolic phase?",
+        "enunciado": "Refer to the image. What is the defining feature of the waveform’s systolic phase?",
         "image": "onda_trifasica.png",
         "options": [
             "Steep upstroke with high peak velocity",
@@ -7522,7 +7522,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. Which portion corresponds to elastic recoil of the arterial wall?",
+        "enunciado": "Refer to the image. Which portion corresponds to elastic recoil of the arterial wall?",
         "image": "onda_trifasica.png",
         "options": [
             "Late diastolic forward component",
@@ -7541,7 +7541,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. What does the brief reverse flow suggest about downstream impedance?",
+        "enunciado": "Refer to the image. What does the brief reverse flow suggest about downstream impedance?",
         "image": "onda_trifasica.png",
         "options": [
             "High peripheral resistance",
@@ -7560,7 +7560,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. In which vessel would this pattern be abnormal at rest?",
+        "enunciado": "Refer to the image. In which vessel would this pattern be abnormal at rest?",
         "image": "onda_trifasica.png",
         "options": [
             "Internal carotid artery",
@@ -7579,7 +7579,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. How would a proximal stenosis alter this waveform?",
+        "enunciado": "Refer to the image. How would a proximal stenosis alter this waveform?",
         "image": "onda_trifasica.png",
         "options": [
             "Decrease peak systolic velocity and loss of reversal",
@@ -7598,7 +7598,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. Which change indicates increased distal resistance?",
+        "enunciado": "Refer to the image. Which change indicates increased distal resistance?",
         "image": "onda_trifasica.png",
         "options": [
             "Augmented early diastolic reversal",
@@ -7617,7 +7617,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. After exercise, which transformation is expected?",
+        "enunciado": "Refer to the image. After exercise, which transformation is expected?",
         "image": "onda_trifasica.png",
         "options": [
             "Monophasic flow with elevated diastolic forward flow",
@@ -7636,7 +7636,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. What does loss of the reverse component indicate clinically?",
+        "enunciado": "Refer to the image. What does loss of the reverse component indicate clinically?",
         "image": "onda_trifasica.png",
         "options": [
             "Proximal arterial occlusion",
@@ -7655,7 +7655,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. Which physiological mechanism generates the late diastolic forward flow?",
+        "enunciado": "Refer to the image. Which physiological mechanism generates the late diastolic forward flow?",
         "image": "onda_trifasica.png",
         "options": [
             "Elastic recoil of arterial wall",
@@ -7674,7 +7674,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. How would significant calcification modify the upstroke?",
+        "enunciado": "Refer to the image. How would significant calcification modify the upstroke?",
         "image": "onda_trifasica.png",
         "options": [
             "Blunted systolic upstroke",
@@ -7693,7 +7693,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. Which intervention most rapidly restores the baseline pattern after reactive hyperemia?",
+        "enunciado": "Refer to the image. Which intervention most rapidly restores the baseline pattern after reactive hyperemia?",
         "image": "onda_trifasica.png",
         "options": [
             "Allowing rest and recovery",
@@ -7712,7 +7712,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. What does the sharp systolic peak most directly reflect?",
+        "enunciado": "Refer to the image. What does the sharp systolic peak most directly reflect?",
         "image": "onda_trifasica.png",
         "options": [
             "Strong ventricular contraction",
@@ -7731,7 +7731,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. Which condition would blunt both the systolic peak and reverse flow?",
+        "enunciado": "Refer to the image. Which condition would blunt both the systolic peak and reverse flow?",
         "image": "onda_trifasica.png",
         "options": [
             "Proximal arterial occlusion",
@@ -7750,7 +7750,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. Which finding distinguishes this pattern from low-resistance flow?",
+        "enunciado": "Refer to the image. Which finding distinguishes this pattern from low-resistance flow?",
         "image": "onda_trifasica.png",
         "options": [
             "Presence of early diastolic reversal",
@@ -7769,7 +7769,7 @@
         "clasificacion": "Pathology, Perfusion and Function",
         "grupo": 301,
          "tipo_pregunta": "opcion_multiple",
-        "tipo_pregunta": "Refer to the image. Which parameter best confirms high-resistance peripheral circulation?",
+        "enunciado": "Refer to the image. Which parameter best confirms high-resistance peripheral circulation?",
         "image": "onda_trifasica.png",
         "options": [
             "Brief reverse diastolic component",
