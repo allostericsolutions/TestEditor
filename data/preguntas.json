@@ -10595,5 +10595,920 @@
         "concept_to_study": "Splenic Vein Thrombosis / Complications",
         "explicacion_openai": "Thrombosis of the splenic vein can obstruct splenic outflow, causing elevated pressure in the splenic and portal venous systems, which may result in portal hypertension and the formation of esophageal varices.",
         "image_explanation": ""
-    }
+    },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 1,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Which of the following individuals is most likely to be considered at significant risk for developing deep venous thrombosis (DVT)?",
+    "image": "",
+    "opciones": [
+      "A 65-year-old woman with a fractured hip",
+      "A 38-year-old man with Hypertension",
+      "A 78-year-old woman admitted for Asthma",
+      "A 19-year-old male recovering from a mild ankle sprain"
+    ],
+    "respuesta_correcta": [
+      "A 65-year-old woman with a fractured hip"
+    ],
+    "concept_to_study": "DVT Risk Factors",
+    "explicacion_openai": "The risk of developing deep venous thrombosis (DVT) is influenced by a combination of factors, including advanced age, immobility, major trauma, surgery, cancer, hypercoagulable states, obesity, and chronic illnesses. To determine who is most likely to be at significant risk, we evaluate the risk factors associated with each option:\n\nA 65-year-old woman with a fractured hip (Correct Answer):\nAge: 65 years old is considered advanced age, which inherently increases DVT risk.\nTrauma/Immobility: A fractured hip is a major trauma requiring prolonged immobility and often surgery. These factors (significant trauma, immobility, and potential surgical intervention) are very potent and direct risk factors for DVT development, often considered among the most significant.\nConclusion: This patient presents a combination of factors placing her at high risk for DVT.\n\nA 78-year-old woman admitted for Asthma:\nAge: 78 years old is advanced age, a significant risk factor.\nImmobility: Hospital admission, regardless of the cause (asthma in this case), often leads to reduced mobility and venous stasis, which are significant risk factors for DVT.\nConclusion: This patient is at moderate to high risk for DVT. While her age is greater than in the correct answer, the hip fracture in the correct answer represents acute, severe trauma and immobility more directly linked to DVT than hospitalization for asthma.\n\nA 38-year-old man with Hypertension:\nAge: 38 years old is a relatively young age.\nHypertension: Hypertension is a well-established risk factor for arterial diseases (like coronary artery disease or stroke), but it is not a direct or significant risk factor for deep venous thrombosis (DVT).\nConclusion: This individual has a low risk for DVT.\n\nA 19-year-old male recovering from a mild ankle sprain:\nAge: 19 years old is a very young age, intrinsically conferring low risk.\nTrauma: A mild ankle sprain represents minor trauma and typically involves limited and temporary immobility. It is not considered a significant risk factor for DVT.\nConclusion: This individual has the lowest risk among all the options.\n\nComparison:\nComparing the options, the 65-year-old woman with a fractured hip presents the most potent combination of acute and chronic risk factors (major trauma, significant immobility, and advanced age) placing her at the highest risk for developing DVT compared to the other scenarios.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 2,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "What is the most significant concern for individuals experiencing acute deep venous thrombosis (DVT)?",
+    "image": "",
+    "opciones": [
+      "Damage to venous valves may occur.",
+      "Pulmonary embolism may occur.",
+      "Venous hypertension may occlude arterial inflow.",
+      "Extension of deep vein thrombus may occlude superficial veins."
+    ],
+    "respuesta_correcta": [
+      "Pulmonary embolism may occur."
+    ],
+    "concept_to_study": "Significant DVT Complication",
+    "explicacion_openai": "While complications like damage to venous valves and pain are associated with acute deep venous thrombosis (DVT), the most severe and feared outcome is pulmonary embolism (PE). PE is described as an extremely serious sequela of DVT, making it the primary clinical concern.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 3,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Which of the following are recognized causes of deep venous thrombosis (DVT)?",
+    "image": "",
+    "opciones": [
+      "Trauma",
+      "Hypercoagulability",
+      "Extrinsic compression of deep veins",
+      "Varicose veins",
+      "All of the above except D"
+    ],
+    "respuesta_correcta": [
+      "All of the above except D"
+    ],
+    "concept_to_study": "Causes of DVT",
+    "explicacion_openai": "Key contributors to deep venous thrombosis (DVT) include intimal injury (often resulting from trauma), hypercoagulability (an increased tendency for blood to clot), and stasis (slowed blood flow, which can be caused by extrinsic compression). Varicose veins are typically a result of venous insufficiency or previous DVT, not a direct cause of new DVT. Therefore, options A, B, and C are causes, making \"All of the above except D\" the correct choice.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 4,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "In patients with secondary varicose veins, when does venous hypertension typically reach its peak pressure?",
+    "image": "",
+    "opciones": [
+      "At rest",
+      "During muscle contraction",
+      "During deep inspiration",
+      "While standing quietly"
+    ],
+    "respuesta_correcta": [
+      "During muscle contraction"
+    ],
+    "concept_to_study": "Venous Hypertension Peak Pressure",
+    "explicacion_openai": "Muscle contraction actively pushes blood into the superficial veins via incompetent perforating veins. This mechanism leads to the highest pressure within the superficial venous system, characterized by venous hypertension, during periods of muscle contraction.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 5,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Which of the following factors is least likely to be associated with the development of deep venous thrombosis (DVT)?",
+    "image": "",
+    "opciones": [
+      "Diabetes",
+      "Pelvic mass",
+      "Previous DVT",
+      "Hip replacement surgery"
+    ],
+    "respuesta_correcta": [
+      "Diabetes"
+    ],
+    "concept_to_study": "Least Likely DVT Risk Factor",
+    "explicacion_openai": "Diabetes is identified as a risk factor for atherosclerosis, but not directly for deep venous thrombosis (DVT). In contrast, a pelvic mass, a history of previous DVT, and hip replacement surgery are all recognized contributors or risk factors for DVT. Therefore, diabetes is the factor least likely to contribute to DVT.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 6,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Virchow's triad, a foundational concept for understanding thrombosis, comprises which of the following components?",
+    "image": "",
+    "opciones": [
+      "Aging, cancer, and bed rest",
+      "Stasis, increased thrombogenesis, and aging",
+      "Stasis, aging, and venous injury",
+      "Stasis, hypercoagulability, and intimal injury"
+    ],
+    "respuesta_correcta": [
+      "Stasis, hypercoagulability, and intimal injury"
+    ],
+    "concept_to_study": "Virchow's Triad",
+    "explicacion_openai": "Virchow's triad, a cornerstone in understanding the pathogenesis of thrombosis, consists of three primary factors: 1. Intimal injury (damage to the inner lining of blood vessels), 2. Hypercoagulability (an increased tendency for blood to clot), and 3. Stasis (abnormalities in blood flow, such as slowing or pooling). Stasis, hypercoagulability, and intimal injury (Correct Answer) accurately lists these three components.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 7,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Identify the factor that is NOT considered a direct risk factor for deep venous thrombosis (DVT).",
+    "image": "",
+    "opciones": [
+      "Cancer",
+      "Surgery",
+      "Age",
+      "Smoking"
+    ],
+    "respuesta_correcta": [
+      "Smoking"
+    ],
+    "concept_to_study": "Non-Direct DVT Risk Factor",
+    "explicacion_openai": "Smoking is not a direct risk factor for deep venous thrombosis (DVT). While it might be indirectly implicated when combined with other factors like oral contraceptives, it is not listed as a primary or direct contributor on its own. Cancer, surgery, and advanced age, however, are recognized risk factors for DVT.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 8,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Approximately what proportion of pulmonary emboli are believed to originate from deep venous thrombosis in the lower extremities?",
+    "image": "",
+    "opciones": [
+      ">95%",
+      "60%",
+      "About 40%",
+      "10%"
+    ],
+    "respuesta_correcta": [
+      ">95%"
+    ],
+    "concept_to_study": "PE Origin from Lower Extremity DVT",
+    "explicacion_openai": "The overwhelming majority of pulmonary emboli stem from deep venous thrombosis (DVT) in the lower extremities, which is why diagnosing and treating DVT is of critical importance. This strong association supports the understanding that a very high percentage, such as over 95%, of pulmonary emboli originate from this source.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 9,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "What is the typical understanding regarding the nature of chronic venous insufficiency and associated ulceration?",
+    "image": "",
+    "opciones": [
+      "Chronic but controllable",
+      "Chronic and uncontrollable",
+      "Acute and uncontrollable",
+      "Always severely disabling"
+    ],
+    "respuesta_correcta": [
+      "Chronic but controllable"
+    ],
+    "concept_to_study": "Nature of Chronic Venous Insufficiency",
+    "explicacion_openai": "Chronic venous insufficiency and its associated ulcerations are conditions that, while difficult to cure completely, can have their symptoms managed and controlled. This implies they are chronic in nature but amenable to management and control.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 10,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Which of the following is NOT a recognized cause of lymphedema?",
+    "image": "",
+    "opciones": [
+      "Congenital lymphatic malformation",
+      "Infection",
+      "Parasitic infestation (e.g., filariasis)",
+      "Radiation and chemotherapy",
+      "Obesity"
+    ],
+    "respuesta_correcta": [
+      "Obesity"
+    ],
+    "concept_to_study": "Causes of Lymphedema",
+    "explicacion_openai": "Lymphatic dysfunction, leading to lymphedema, can result from trauma or surgical removal of lymph pathways, infection, inflammation, and treatments like radiation and chemotherapy. Congenital malformations and parasitic infestations are also known causes. Obesity, while potentially exacerbating other conditions, is not listed as a direct cause of lymphedema in this context.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 11,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "What anatomical structure is most commonly affected by varicose veins?",
+    "image": "",
+    "opciones": [
+      "A dilatation of a perforating vein",
+      "A dilatation of the small saphenous vein",
+      "A femoral vein aneurysm",
+      "A dilatation of the great saphenous vein or superficial tributary"
+    ],
+    "respuesta_correcta": [
+      "A dilatation of the great saphenous vein or superficial tributary"
+    ],
+    "concept_to_study": "Anatomy of Varicose Veins",
+    "explicacion_openai": "Varicose veins typically manifest as dilatations or enlargements of the great saphenous vein and its superficial tributaries. This can occur as primary varices (originating in the superficial system) or secondary varices (resulting from issues in the deep venous system). A femoral vein aneurysm is a distinct pathology involving abnormal dilation of the femoral vein, not typical varicose veins.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 12,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Varicose veins that develop due to insufficient valves in the deep venous system and incompetent perforating veins are specifically termed:",
+    "image": "",
+    "opciones": [
+      "Secondary varices",
+      "Congenital varices",
+      "Arteriovenous malformation",
+      "Spider veins"
+    ],
+    "respuesta_correcta": [
+      "Secondary varices"
+    ],
+    "concept_to_study": "Types of Varicose Veins",
+    "explicacion_openai": "Varicose veins that arise as a consequence of chronic elevated pressure transmitted from an impaired deep venous system, characterized by valvular insufficiency and incompetent perforators, are classified as secondary varices. Arteriovenous malformations are abnormal connections between arteries and veins, a different pathology.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 13,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "What is a Baker's cyst primarily composed of?",
+    "image": "",
+    "opciones": [
+      "Synovial fluid from the knee joint",
+      "Red blood cells in a venous sinus",
+      "Serous fluid from a bursa",
+      "Fibrous tissue just beneath the skin"
+    ],
+    "respuesta_correcta": [
+      "Synovial fluid from the knee joint"
+    ],
+    "concept_to_study": "Baker's Cyst Composition",
+    "explicacion_openai": "A Baker's cyst, also known as a popliteal cyst, is defined as a fluid-filled sac that forms at the back of the knee. It is specifically a collection of synovial fluid originating from the knee joint. Serous fluid from a bursa is a different type of fluid collection.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 14,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "If a thrombus located in a gastrocnemius vein (approximately 10-15 cm distal to the knee) were to extend proximally, which major vein would it most likely involve next?",
+    "image": "",
+    "opciones": [
+      "The posterior tibial veins",
+      "The anterior tibial veins",
+      "The sural veins",
+      "The popliteal vein"
+    ],
+    "respuesta_correcta": [
+      "The popliteal vein"
+    ],
+    "concept_to_study": "Calf Vein Anatomy and Extension",
+    "explicacion_openai": "The venous drainage of the calf indicates that the gastrocnemius veins converge and empty into the popliteal vein. Therefore, a thrombus originating in a gastrocnemius vein and propagating proximally would naturally extend into the popliteal vein. The sural veins are also deep calf veins, but the gastrocnemius veins drain directly into the popliteal.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 15,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "A thrombus is identified within a soleal vein, located approximately 15-20 cm proximal to the ankle. If this thrombus were to extend proximally, which venous pathway would it most likely enter?",
+    "image": "",
+    "opciones": [
+      "The posterior tibial veins",
+      "The anterior tibial veins",
+      "The popliteal vein",
+      "The great saphenous vein"
+    ],
+    "respuesta_correcta": [
+      "The posterior tibial veins"
+    ],
+    "concept_to_study": "Soleal Vein Anatomy and Extension",
+    "explicacion_openai": "The soleal veins are tributaries that drain into the posterior tibial and peroneal veins. These veins are considered common sites for the initiation of deep venous thrombosis. Consequently, proximal propagation of a thrombus from a soleal vein would typically lead to involvement of the posterior tibial veins. The great saphenous vein is a superficial vein and not a direct proximal continuation of soleal veins.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 16,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "What is the estimated percentage of untreated deep venous thromboses originating in the calf veins that are likely to extend proximally to the popliteal vein or higher?",
+    "image": "",
+    "opciones": [
+      "5-10%",
+      "15-20%",
+      "40-50%",
+      "70-80%"
+    ],
+    "respuesta_correcta": [
+      "15-20%"
+    ],
+    "concept_to_study": "DVT Proximal Extension Rate",
+    "explicacion_openai": "Studies suggest that a significant portion of untreated deep venous thromboses (DVTs) that begin in the calf veins will propagate proximally. The estimated range for this progression to the popliteal vein or higher is generally considered to be between 20% and 30%. Among the given options, 15-20% (Correct Answer) is the closest estimate to the lower bound of this commonly cited range. While no option perfectly matches the 20-30% figure, 15-20% (Correct Answer) represents the most accurate approximation available, as it is the closest to the target range without being significantly too high. Options C (40-50%) and D (70-80%) represent a much higher likelihood of proximal extension, which is not typical for untreated calf DVTs. Option A (5-10%) is too low. Therefore, 15-20% is considered the best answer representing the likelihood of proximal extension within the provided choices.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 17,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "What is a potential complication that can arise from the process of deep venous recanalization?",
+    "image": "",
+    "opciones": [
+      "Damage to venous valves, allowing reflux",
+      "Embolization of thrombus",
+      "Increased superficial venous collaterals",
+      "Pain in the area of thrombus"
+    ],
+    "respuesta_correcta": [
+      "Damage to venous valves, allowing reflux"
+    ],
+    "concept_to_study": "DVT Recanalization Complication",
+    "explicacion_openai": "Recanalization refers to the process by which a previously occluded blood vessel reopens. A known complication associated with the recanalization of deep veins is damage to the venous valves. This damage can lead to valvular insufficiency and subsequent venous reflux. Embolization is more associated with acute thrombus, and pain is a symptom of DVT, not a complication of recanalization itself.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 18,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "A 35-year-old woman presents three weeks post-femur fracture with swelling in the ipsilateral calf. Before any diagnostic imaging, what conditions should be considered in the differential diagnosis?",
+    "image": "",
+    "opciones": [
+      "Arteriovenous fistula",
+      "Deep venous thrombosis",
+      "Compartment syndrome",
+      "Two of the above (A and B)"
+    ],
+    "respuesta_correcta": [
+      "Two of the above (A and B)"
+    ],
+    "concept_to_study": "Differential Diagnosis Post-Femur Fracture Swelling",
+    "explicacion_openai": "Following a femur fracture, calf swelling can be indicative of several conditions. The most immediate concern is deep venous thrombosis (DVT) due to immobility and trauma. A less common but possible cause is a traumatic arteriovenous (AV) fistula, which can also lead to increased venous pressure and swelling distally. Compartment syndrome is a serious condition related to increased pressure within muscle compartments, often associated with fractures, but typically presents with severe pain out of proportion, paresthesias, and signs of ischemia, rather than isolated swelling as the primary feature. Therefore, both DVT and traumatic AV fistula should be included in the preliminary differential diagnosis.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 19,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Which of the following conditions is LEAST likely to cause symptoms of chronic venous insufficiency (CVI)?",
+    "image": "",
+    "opciones": [
+      "Isolated thrombosis of the gastrocnemius vein",
+      "Deep vein aneurysm",
+      "Superficial insufficiency",
+      "Pelvic venous congestion"
+    ],
+    "respuesta_correcta": [
+      "Isolated thrombosis of the gastrocnemius vein"
+    ],
+    "concept_to_study": "Least Likely Cause of CVI Symptoms",
+    "explicacion_openai": "Chronic venous insufficiency (CVI) can stem from various issues within the venous system, including thrombosis in the calf veins, popliteal vein, or iliac veins, as well as primary superficial venous insufficiency. Deep vein aneurysms and pelvic venous congestion can also contribute to CVI. However, isolated thrombosis confined solely to the gastrocnemius veins is generally considered unlikely to produce significant symptoms of CVI.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 20,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "When patients suspect they have venous disease, what characteristic is often associated with the pain they experience?",
+    "image": "",
+    "opciones": [
+      "Only during the day",
+      "Sharp and stabbing",
+      "Relieved by elevation",
+      "Mostly felt at night"
+    ],
+    "respuesta_correcta": [
+      "Relieved by elevation"
+    ],
+    "concept_to_study": "Venous Pain Characteristics",
+    "explicacion_openai": "A common characteristic of pain associated with venous disease is its relief upon elevation of the affected limb. Elevating the legs helps to reduce venous pressure and, consequently, alleviate the discomfort. Sharp and stabbing pain is more typical of arterial issues or nerve pain.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 21,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "The accuracy of diagnosing deep venous thrombosis (DVT) based solely on clinical symptoms such as pain, swelling, and erythema is approximately:",
+    "image": "",
+    "opciones": [
+      "10-15% accurate",
+      "45-65% accurate",
+      "65-75% accurate",
+      "75-85% accurate"
+    ],
+    "respuesta_correcta": [
+      "45-65% accurate"
+    ],
+    "concept_to_study": "Accuracy of Clinical DVT Diagnosis",
+    "explicacion_openai": "Clinical signs and symptoms like pain, swelling, and erythema in the lower extremity can suggest deep venous thrombosis (DVT). However, relying solely on these clinical indicators for diagnosis is known to be imprecise. Studies indicate that the accuracy of diagnosing DVT based on symptoms alone is approximately 50%, with ranges often cited between 45% and 65%.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 22,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "What is a typical characteristic of edema resulting from deep venous thrombosis (DVT)?",
+    "image": "",
+    "opciones": [
+      "Swelling of the feet",
+      "Swelling in the ankles and feet",
+      "Swelling in the ankles and legs but not the feet",
+      "Swelling of the toes"
+    ],
+    "respuesta_correcta": [
+      "Swelling in the ankles and legs but not the feet"
+    ],
+    "concept_to_study": "DVT Edema Characteristics",
+    "explicacion_openai": "Edema associated with deep venous thrombosis (DVT) commonly presents as swelling in the ankles and legs. A distinguishing feature is that the swelling typically does not extend to the feet, as venous disease generally spares the distal extremities in this manner. Swelling of the toes is also not a typical presentation of DVT edema.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 23,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Identify the condition that is NOT considered a cause or risk factor for acute deep venous thrombosis (DVT).",
+    "image": "",
+    "opciones": [
+      "Trauma",
+      "Extrinsic compression upon deep veins",
+      "Vasculitis",
+      "Arthritis"
+    ],
+    "respuesta_correcta": [
+      "Arthritis"
+    ],
+    "concept_to_study": "Non-DVT Cause/Risk Factor",
+    "explicacion_openai": "Trauma, extrinsic compression of deep veins, and hypercoagulability are all well-established causes or significant risk factors for acute deep venous thrombosis (DVT). Vasculitis is inflammation of blood vessels, which can sometimes be associated with thrombotic events but is not a primary cause of DVT in the same way as the others. Arthritis, on the other hand, is generally not considered a direct cause or risk factor for DVT.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 24,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Chronic unilateral swelling, aching, and a feeling of heaviness in a lower extremity are most indicative of which condition?",
+    "image": "",
+    "opciones": [
+      "Lipidemia",
+      "Postphlebitic syndrome",
+      "Primary varicose veins",
+      "Lymphedema"
+    ],
+    "respuesta_correcta": [
+      "Postphlebitic syndrome"
+    ],
+    "concept_to_study": "Symptoms of Postphlebitic Syndrome",
+    "explicacion_openai": "The constellation of symptoms including chronic unilateral lower extremity swelling, aching, and a sensation of heaviness is highly suggestive of postphlebitic syndrome. This condition typically develops after deep venous thrombosis (DVT) and involves long-term changes in the venous system. Lymphedema also causes swelling but often has a different character and etiology.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 25,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "A patient with pre-existing chronic venous insufficiency experiences a sudden onset of edema and pain in the affected leg. What is the most probable underlying cause?",
+    "image": "",
+    "opciones": [
+      "Recurrence of acute deep venous thrombosis",
+      "Elevated right-heart pressures",
+      "Failure to wear surgical support stockings",
+      "Acute arterial occlusion"
+    ],
+    "respuesta_correcta": [
+      "Recurrence of acute deep venous thrombosis"
+    ],
+    "concept_to_study": "Acute Worsening of CVI",
+    "explicacion_openai": "In a patient with established chronic venous insufficiency, a sudden exacerbation of edema and pain in the affected leg is a serious symptom. Given that a history of deep venous thrombosis (DVT) significantly increases the risk of subsequent DVT, a recurrence of acute DVT is the most likely explanation for this acute worsening of symptoms. Acute arterial occlusion would typically present with different symptoms (e.g., coldness, pallor, absent pulses).",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 26,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Bilateral pitting edema in both lower extremities is most commonly associated with which type of underlying cause?",
+    "image": "",
+    "opciones": [
+      "Cardiac or systemic origin",
+      "Primary varicose veins",
+      "Secondary varicose veins",
+      "Hypothyroidism"
+    ],
+    "respuesta_correcta": [
+      "Cardiac or systemic origin"
+    ],
+    "concept_to_study": "Causes of Bilateral Edema",
+    "explicacion_openai": "Pitting edema affecting both lower extremities simultaneously is typically indicative of a systemic or cardiac origin. Conditions such as congestive heart failure are frequently implicated in causing such bilateral fluid retention and swelling. Hypothyroidism can cause edema, but it's often less severe and may not be the primary cause of significant bilateral pitting edema compared to cardiac or systemic issues.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 27,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Which of the following statements accurately describe the flow characteristics in veins with valvular insufficiency?",
+    "image": "",
+    "opciones": [
+      "Caudal blood flow may be abnormal while the patient is quietly standing.",
+      "Venous pressure at the ankle in the supine patient does not differ from that of normal limbs.",
+      "Venous pressure at the ankle in the walking patient is markedly increased compared to that of normal limbs.",
+      "B, C, and D"
+    ],
+    "respuesta_correcta": [
+      "B, C, and D"
+    ],
+    "concept_to_study": "Venous Valvular Insufficiency Hemodynamics",
+    "explicacion_openai": "In veins exhibiting valvular insufficiency:\n\nAbnormal distal blood flow can be observed when the patient is standing quietly, as gravity and incompetent valves allow for retrograde flow.\nWhen the patient is in a supine position, hydrostatic pressure is eliminated, and the venous pressure at the ankle is comparable to that of normal limbs.\nDuring ambulation (walking), the normal calf muscle pump action is impaired by valvular insufficiency, leading to a markedly increased venous pressure at the ankle compared to normal limbs.\nTherefore, statements B, C, and D are all true regarding insufficient veins.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 28,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Regarding the physiological response to exercise in patients diagnosed with postphlebitic syndrome, which of the following statements is INCORRECT?",
+    "image": "",
+    "opciones": [
+      "They usually have a quick decrease in venous pressure that takes a minute or two to return to pre-exercise levels.",
+      "In normal individuals, venous pressure decreases rapidly after exercise.",
+      "Venous claudication is a symptom of venous insufficiency.",
+      "Secondary varices can become more prominent with exercise."
+    ],
+    "respuesta_correcta": [
+      "They usually have a quick decrease in venous pressure that takes a minute or two to return to pre-exercise levels."
+    ],
+    "concept_to_study": "Exercise Response in Postphlebitic Syndrome",
+    "explicacion_openai": "The question asks to identify the INCORRECT statement regarding the physiological response to exercise, both in patients with postphlebitic syndrome (PPS) and general venous physiology.\n\nStatement A (Correct Answer): They usually have a quick decrease in venous pressure that takes a minute or two to return to pre-exercise levels (Correct Answer). This statement describes a normal physiological response to exercise. However, in patients with postphlebitic syndrome (PPS), residual damage to venous valves and/or obstruction leads to impaired venous return. Therefore, their venous pressure does not decrease rapidly after exercise; it often remains elevated or takes much longer to normalize. Thus, this statement is INCORRECT as a description of patients with PPS.\n\nStatement B: \"In normal individuals, venous pressure decreases rapidly after exercise.\" This statement is CORRECT. In healthy individuals, the calf muscle pump is efficient, venous valves are competent, and ankle venous pressure drops quickly post-exercise.\n\nStatement C: \"Venous claudication is a symptom of venous insufficiency.\" This statement is CORRECT. Venous claudication (pain during exercise due to venous congestion) is a characteristic symptom of venous insufficiency.\n\nStatement D: \"Secondary varices can become more prominent with exercise.\" This statement is CORRECT. Exercise can increase blood flow and pressure in the venous system, potentially making secondary varices more visible or symptomatic.\n\nConclusion:\nThe only incorrect statement, particularly in the context of exercise response in patients with postphlebitic syndrome, is the one describing a rapid decrease and return of venous pressure to pre-exercise levels.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 29,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "A patient presenting with limb swelling, who has recently traveled from a region endemic for filariasis, should raise suspicion for which condition?",
+    "image": "",
+    "opciones": [
+      "Lymphedema",
+      "Renal failure",
+      "Chronic venous insufficiency",
+      "Lipidemia"
+    ],
+    "respuesta_correcta": [
+      "Lymphedema"
+    ],
+    "concept_to_study": "Filariasis and Lymphedema",
+    "explicacion_openai": "Filariasis is a parasitic disease caused by nematodes that inhabit the lymphatic system. A common clinical manifestation of filariasis is lymphedema, which is characterized by swelling of the affected limb due to impaired lymphatic drainage. Therefore, a patient with limb swelling returning from an endemic area should be suspected of having lymphedema. Chronic venous insufficiency can also cause swelling but is not directly linked to filariasis.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 30,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "In a patient presenting with bilateral lower extremity edema and nephrotic syndrome, where is a thrombus most likely suspected to be located?",
+    "image": "",
+    "opciones": [
+      "IVC",
+      "Iliac veins",
+      "Renal veins",
+      "Portal vein"
+    ],
+    "respuesta_correcta": [
+      "IVC"
+    ],
+    "concept_to_study": "Thrombosis Location in Bilateral Edema/Nephrotic Syndrome",
+    "explicacion_openai": "Bilateral lower extremity edema, especially when accompanied by nephrotic syndrome, suggests a significant obstruction to venous return that affects both legs. This level of obstruction is most likely to occur at or above the iliac veins, with the inferior vena cava (IVC) being the most probable site. Thrombosis in the IVC can lead to impaired venous drainage from both legs and is also associated with conditions like renal vein thrombosis, which can manifest with nephrotic syndrome. However, the primary cause of bilateral edema points to IVC obstruction.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 31,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "What is the primary underlying cause of the vast majority of lower extremity ulcers?",
+    "image": "",
+    "opciones": [
+      "Venous disease",
+      "Lymphatic disease",
+      "Peripheral neuropathy",
+      "Hyperlipidemia"
+    ],
+    "respuesta_correcta": [
+      "Venous disease"
+    ],
+    "concept_to_study": "Primary Cause of Lower Extremity Ulcers",
+    "explicacion_openai": "The overwhelming majority of ulcers found on the lower extremities are attributed to venous disease, specifically chronic venous insufficiency. Surveys indicate that approximately three-quarters of such ulcers stem from impaired venous circulation and its consequences. Peripheral neuropathy can cause foot ulcers, but it's not the primary cause of the vast majority of lower extremity ulcers.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 32,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Under normal circumstances, blood flows from superficial to deep calf veins via perforating veins. This direction of flow is reversed when:",
+    "image": "",
+    "opciones": [
+      "The individual is ambulatory.",
+      "There are varicosities.",
+      "Deep venous obstruction is present.",
+      "Superficial venous hypertension"
+    ],
+    "respuesta_correcta": [
+      "Deep venous obstruction is present."
+    ],
+    "concept_to_study": "Perforating Vein Flow Reversal",
+    "explicacion_openai": "Normally, perforating veins facilitate the unidirectional flow of blood from the superficial venous system to the deep venous system in the calf. This normal flow pattern is reversed when there is obstruction within the deep venous system. The increased pressure in the deep veins due to obstruction can force blood backward through the perforating veins into the superficial system, especially if the valves in the perforators are also incompetent. Superficial venous hypertension is often a consequence of this reversal, not the primary cause of reversal.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 33,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "A patient exhibits acute, pronounced bright red discoloration and edema localized to the anterior calf. What is the most probable diagnosis?",
+    "image": "",
+    "opciones": [
+      "Superficial thrombophlebitis",
+      "Cellulitis",
+      "Deep vein aneurysm",
+      "Incompetent perforating veins"
+    ],
+    "respuesta_correcta": [
+      "Cellulitis"
+    ],
+    "concept_to_study": "Differential Diagnosis of Anterior Calf Redness/Edema",
+    "explicacion_openai": "The clinical presentation of acute, pronounced bright red discoloration and edema along the anterior calf is highly suggestive of cellulitis. Cellulitis is an infection of the skin and subcutaneous tissues, often presenting with these inflammatory signs. While other conditions like superficial thrombophlebitis or DVT can cause calf symptoms, the specific description of bright red discoloration points strongly towards an infectious process like cellulitis. A deep vein aneurysm is a structural abnormality and not an acute inflammatory process.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 34,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Which of the following clinical findings is LEAST likely to be associated with a pulmonary embolism (PE)?",
+    "image": "",
+    "opciones": [
+      "Reduced arterial blood gasses",
+      "Bradycardia",
+      "Shortness of breath",
+      "Rest pain"
+    ],
+    "respuesta_correcta": [
+      "Rest pain"
+    ],
+    "concept_to_study": "Least Likely PE Clinical Finding",
+    "explicacion_openai": "Common clinical manifestations of pulmonary embolism (PE) include shortness of breath (dyspnea), diaphoresis (excessive sweating), and potentially reduced arterial blood gases (hypoxemia). Bradycardia (slow heart rate) is less common than tachycardia. Rest pain, however, is typically an indicator of arterial insufficiency, not venous thromboembolic disease like PE.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 35,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "What is the characteristic skin discoloration typically observed in patients with chronic venous insufficiency?",
+    "image": "",
+    "opciones": [
+      "Cyanotic (bluish) color in toes and feet",
+      "Pallor on elevation, rubor on dependency of limb",
+      "Rusty brown color at ankles and calves",
+      "Shiny, taut skin on the lower legs"
+    ],
+    "respuesta_correcta": [
+      "Rusty brown color at ankles and calves"
+    ],
+    "concept_to_study": "Skin Discoloration in CVI",
+    "explicacion_openai": "Chronic venous insufficiency often leads to characteristic changes in skin pigmentation, particularly around the ankles and calves. The most typical finding is a rusty brown or hemosiderin deposition, resulting from the breakdown of red blood cells that have leaked from engorged superficial veins. Shiny, taut skin is more indicative of arterial insufficiency.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 36,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "What is the term for a condition presenting as a severely swollen, blue, and cool lower extremity?",
+    "image": "",
+    "opciones": [
+      "Stasis dermatitis",
+      "Phlegmasia cerulea dolens",
+      "Acute arterial occlusion",
+      "Lymphedema"
+    ],
+    "respuesta_correcta": [
+      "Phlegmasia cerulea dolens"
+    ],
+    "concept_to_study": "Phlegmasia Cerulea Dolens",
+    "explicacion_openai": "Phlegmasia cerulea dolens is a severe form of deep venous thrombosis characterized by extensive venous obstruction. It typically presents with a severely swollen, blue (cyanotic), and cool limb, often accompanied by intense pain. This condition signifies compromised arterial inflow due to extreme venous congestion. Acute arterial occlusion would present with a cold, pale, pulseless limb, not blue and swollen.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 37,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Regarding the clinical examination for diagnosing deep venous thrombosis (DVT), it is considered:",
+    "image": "",
+    "opciones": [
+      "Not specific but sensitive",
+      "Specific but not sensitive",
+      "Neither specific nor sensitive",
+      "Highly accurate and reliable"
+    ],
+    "respuesta_correcta": [
+      "Neither specific nor sensitive"
+    ],
+    "concept_to_study": "Clinical Examination for DVT",
+    "explicacion_openai": "The clinical examination for deep venous thrombosis (DVT) is notoriously unreliable. Symptoms such as pain, swelling, and warmth are not exclusive to DVT and can be present in many other conditions. Conversely, DVT can exist without obvious clinical signs. Therefore, the clinical examination is considered neither specific (meaning it doesn't uniquely identify DVT) nor sensitive (meaning it doesn't reliably detect all cases of DVT).",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 38,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Identify the condition that is NOT typically associated with chronic venous disease.",
+    "image": "",
+    "opciones": [
+      "Brawny edema",
+      "Subcutaneous fibrosis",
+      "Hyperkeratosis",
+      "Thickening of toenails"
+    ],
+    "respuesta_correcta": [
+      "Thickening of toenails"
+    ],
+    "concept_to_study": "Conditions NOT Associated with Chronic Venous Disease",
+    "explicacion_openai": "Chronic venous disease is often associated with findings such as brawny edema (hard, swollen tissue), subcutaneous fibrosis (thickening of the tissue beneath the skin), and cutaneous atrophy (thinning of the skin). Hyperkeratosis (thickening of the outer layer of the skin) can also be seen. Thickening of the toenails, however, is a classic sign of chronic arterial insufficiency, indicating poor blood flow to the extremities.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 39,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Which statement accurately describes chronic venous ulceration?",
+    "image": "",
+    "opciones": [
+      "Pain is severe and is relieved by dependency.",
+      "Lesions are usually found on the lower third of the leg around the medial aspect of the ankle.",
+      "Lesions are typically dry and crusted.",
+      "Granulation tissue is not produced during healing."
+    ],
+    "respuesta_correcta": [
+      "Lesions are usually found on the lower third of the leg around the medial aspect of the ankle."
+    ],
+    "concept_to_study": "Chronic Venous Ulcer Characteristics",
+    "explicacion_openai": "Chronic venous ulcers characteristically develop in the lower third of the leg, most commonly around the medial aspect of the ankle, often referred to as the \"stocking area.\" Unlike arterial ulcers, venous ulcers are typically associated with mild to moderate pain and can exhibit granulation tissue, and may bleed when manipulated. Dependency usually exacerbates rather than relieves the pain. Dry and crusted lesions are more typical of arterial ulcers.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 40,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Following a significant car accident, a patient reports severe pain in the anterior right knee and massive edema of the left lower extremity. What is the most likely diagnosis?",
+    "image": "",
+    "opciones": [
+      "Bilateral superficial venous thrombosis",
+      "Localized right popliteal deep venous thrombosis",
+      "Left superficial venous thrombosis",
+      "Extensive left femoropopliteal deep venous thrombosis"
+    ],
+    "respuesta_correcta": [
+      "Extensive left femoropopliteal deep venous thrombosis"
+    ],
+    "concept_to_study": "Massive Leg Edema Differential Diagnosis Post-Trauma",
+    "explicacion_openai": "Massive edema in a lower extremity strongly suggests a significant obstruction to venous outflow. This obstruction is most likely caused by an extensive thrombus within the femoropopliteal veins of that leg. The location of the edema (left leg) points to the pathology being on the left side. Left superficial venous thrombosis would not typically cause massive edema. The severe pain in the anterior right knee is likely unrelated to the cause of the massive left leg edema.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 41,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "An elderly patient with mid-calf pain is found via ultrasound to have a nonocclusive femoral vein thrombus. After heparin administration, the calf pain intensifies significantly. A follow-up ultrasound reveals:",
+    "image": "",
+    "opciones": [
+      "Nonocclusive thrombus at the superficial femoral",
+      "A popliteal aneurysm",
+      "A hypoechoic mass in the shape of an egg at mid calf, thought to be a hematoma",
+      "A calf muscle tear"
+    ],
+    "respuesta_correcta": [
+      "A hypoechoic mass in the shape of an egg at mid calf, thought to be a hematoma"
+    ],
+    "concept_to_study": "Complication of Heparin Therapy",
+    "explicacion_openai": "The intensification of calf pain following heparin administration, especially in the context of a known thrombus, suggests a complication related to the anticoagulant therapy. While heparin-induced thrombocytopenia (HIT) is a possibility, a more direct hemorrhagic complication like a hematoma is a strong consideration, particularly if the pain is localized and severe. A second ultrasound demonstrating a hypoechoic mass resembling an egg at mid-calf, interpreted as a hematoma, would be consistent with this complication. A calf muscle tear is a traumatic injury and less likely to be directly precipitated by heparin administration in this context.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 42,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "A patient with a history of deep venous thrombosis (DVT) four years ago now presents with chronic unilateral leg swelling. What is the most probable finding upon examination?",
+    "image": "",
+    "opciones": [
+      "The popliteal vein is thrombosed.",
+      "The popliteal vein is patent and the valves are competent.",
+      "The popliteal vein is patent and the valves are incompetent.",
+      "Duplex ultrasound is always inconclusive."
+    ],
+    "respuesta_correcta": [
+      "The popliteal vein is patent and the valves are incompetent."
+    ],
+    "concept_to_study": "Chronic Swelling After DVT (Popliteal Vein)",
+    "explicacion_openai": "Chronic unilateral leg swelling following a past deep venous thrombosis (DVT) is most commonly due to residual damage to the venous valves, leading to their incompetence. While chronic obstruction of the vein is a possibility, it is often less common than valvular incompetence in producing chronic swelling after DVT. A patent vein with incompetent valves allows for venous reflux, causing persistent edema. Bilateral swelling would suggest a different etiology, such as heart failure. Duplex ultrasound is a primary diagnostic tool and is generally conclusive.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 43,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Chronic obstruction within the deep venous system is known to cause an increase in which of the following hemodynamic parameters?",
+    "image": "",
+    "opciones": [
+      "Arterial inflow",
+      "Venous capacitance",
+      "Ambulatory venous pressure",
+      "Ambulatory residual venous volume"
+    ],
+    "respuesta_correcta": [
+      "Ambulatory venous pressure"
+    ],
+    "concept_to_study": "Hemodynamics of Chronic Venous Obstruction",
+    "explicacion_openai": "Ambulatory venous pressure increases considerably in chronic venous obstruction.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 44,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Brawny skin changes at the ankle most likely represent:",
+    "image": "",
+    "opciones": [
+      "Acute valvular insufficiency",
+      "Chronic venous insufficiency",
+      "Superficial thrombophlebitis",
+      "Chronic arterial ischemia"
+    ],
+    "respuesta_correcta": [
+      "Chronic venous insufficiency"
+    ],
+    "concept_to_study": "Brawny Skin Changes",
+    "explicacion_openai": "Brawny skin changes, characterized by hardened, thickened, and often discolored skin, are a hallmark sign of chronic venous insufficiency. These changes result from long-standing venous hypertension, leading to inflammation, edema, and deposition of hemosiderin in the tissues. Superficial thrombophlebitis is an acute inflammation of a superficial vein, not typically associated with brawny changes.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 45,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Which statement best differentiates venous ulcers from arterial ulcers?",
+    "image": "",
+    "opciones": [
+      "Venous ulcers are usually not painful and are located cephalad to the foot.",
+      "Venous ulcers are usually painful and are located cephalad to the foot.",
+      "Venous ulcers are associated with decreased arterial pulses.",
+      "Arterial ulcers are treated with anticoagulation."
+    ],
+    "respuesta_correcta": [
+      "Venous ulcers are usually not painful and are located cephalad to the foot."
+    ],
+    "concept_to_study": "Venous vs. Arterial Ulcers",
+    "explicacion_openai": "Venous ulcers typically present with less pain compared to arterial ulcers and are commonly found in the lower third of the leg, proximal to the foot (e.g., around the medial ankle). They are often treated with compression therapy, such as Unna boots. In contrast, arterial ulcers are usually painful, often described as \"rest pain,\" and are frequently located distally on the feet or toes, and are associated with diminished arterial pulses. Anticoagulation is not the primary treatment for arterial ulcers.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 46,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Which of the following clinical tests is NOT typically employed by a general practitioner for the diagnosis of deep venous thrombosis (DVT)?",
+    "image": "",
+    "opciones": [
+      "Passive dorsiflexion of foot (Homans' sign)",
+      "Anteroposterior calf compression (Bancroft's sign)",
+      "Palpation for calf tenderness",
+      "Tourniquet test"
+    ],
+    "respuesta_correcta": [
+      "Tourniquet test"
+    ],
+    "concept_to_study": "Clinical Tests for DVT Diagnosis (GP)",
+    "explicacion_openai": "While several clinical signs like Homans' sign, Bancroft's sign, and Lowenberg's sign have been historically used to aid in the diagnosis of deep venous thrombosis (DVT), the tourniquet test is generally reserved for assessing superficial venous incompetence. Palpation for calf tenderness is a common symptom assessment, not a specific named test like the others, but it is part of the clinical examination.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 47,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Which of the following is a common physical finding observed in patients experiencing a pulmonary embolism (PE)?",
+    "image": "",
+    "opciones": [
+      "Apnea",
+      "Hypotension",
+      "Bradypenia",
+      "Tachypnea"
+    ],
+    "respuesta_correcta": [
+      "Tachypnea"
+    ],
+    "concept_to_study": "Pulmonary Embolism (PE) Physical Findings",
+    "explicacion_openai": "Tachypnea, which is characterized by rapid breathing, is a frequent physical finding in patients with pulmonary embolism (PE). This occurs as the body attempts to compensate for reduced oxygenation caused by the blockage in the pulmonary arteries. Hypotension can occur in severe PE, but tachypnea is a more common and direct finding. Apnea (cessation of breathing) and bradypenia (slow breathing) are not typical findings.",
+    "image_explanation": ""
+  },
+  {
+    "clasificacion": "Pathology, Perfusion, and Function",
+    "grupo": 48,
+    "tipo_pregunta": "opcion_multiple",
+    "enunciado": "Which of the following is NOT considered part of the typical clinical presentation of pulmonary embolism (PE)?",
+    "image": "",
+    "opciones": [
+      "Dyspnea",
+      "Hemoptysis",
+      "Positive lower extremity venous ultrasound",
+      "Tachypnea"
+    ],
+    "respuesta_correcta": [
+      "Positive lower extremity venous ultrasound"
+    ],
+    "concept_to_study": "PE Clinical Presentation (Excluding Imaging)",
+    "explicacion_openai": "The clinical presentation of pulmonary embolism (PE) commonly includes symptoms such as dyspnea (shortness of breath) and tachypnea (rapid breathing). Hemoptysis (coughing up blood) is also a recognized symptom of PE. A positive lower extremity venous ultrasound is an imaging study finding, not a clinical sign or symptom, and is typically performed when there are symptoms suggestive of DVT, which is a common source of PE.",
+    "image_explanation": ""
+  }
 ]
+
